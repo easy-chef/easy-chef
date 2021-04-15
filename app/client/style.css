@@ -2,3 +2,17 @@
   background: url('images/easychef-header.jpeg');
   background-size: cover;
 }
+
+.recipe-background {
+  background: url('images/recipe_background.jpg');
+  background-size: cover;
+}
+
+.recipe-title {
+  margin-top: 50px;
+}
+
+.recipe-details {
+  margin-top: 20px;
+}
+
