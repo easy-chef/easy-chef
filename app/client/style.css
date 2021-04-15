@@ -1,3 +1,4 @@
-.semantic-green-background {
-  background-color: #016936;
+.easychef-landing-background {
+  background: url('images/easychef-header.jpeg');
+  background-size: cover;
 }
