@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Meteor } from 'meteor/meteor';
 import { withTracker } from 'meteor/react-meteor-data';
 import { withRouter, NavLink } from 'react-router-dom';
-import { Menu, Dropdown, Header } from 'semantic-ui-react';
+import { Menu, Dropdown, Icon, Header } from 'semantic-ui-react';
 import { Roles } from 'meteor/alanning:roles';
 
 /** The NavBar appears at the top of every page. Rendered by the App Layout component. */
@@ -15,14 +15,17 @@ class NavBar extends React.Component {
         <Menu.Item onClick={this.handleItemClick}as={NavLink} activeClassName="" exact to="/" >
           <Header inverted as='h1'>Easy Chef</Header>
         </Menu.Item>
+        <Menu.Item as={NavLink} activeClassName="active" exact to="/list" key='list'><Icon name="search"/>Search for Recipes</Menu.Item>
+        <Menu.Item as={NavLink} activeClassName="active" exact to="/add" key='add'>View Vendors</Menu.Item>
         {this.props.currentUser ? (
-          [<Menu.Item as={NavLink} activeClassName="active" exact to="/add" key='add'>Add Recipe</Menu.Item>,
-            <Menu.Item as={NavLink} activeClassName="active" exact to="/list" key='list'>Your Recipe List</Menu.Item>,
-            <Menu.Item as={NavLink} activeClassName="active" exact to="/list" key='list'>View Profile</Menu.Item>,
-            <Menu.Item as={NavLink} activeClassName="active" exact to="/list" key='list'>Search Page</Menu.Item>]
-        ) : ''}
-        {Roles.userIsInRole(Meteor.userId(), 'admin') ? (
-          <Menu.Item as={NavLink} activeClassName="active" exact to="/admin" key='admin'>Admin</Menu.Item>
+          [<Menu.Item>
+            <Dropdown id="navbar-current-user" text="Your Recipes" icon={'clone outline'}>
+              <Dropdown.Menu>
+                <Dropdown.Item as={NavLink} activeClassName="active" exact to="/add" key='add'><Icon name='clone outline'/>Recipe List</Dropdown.Item>
+                <Dropdown.Item as={NavLink} activeClassName="active" exact to="/list" key='list'><Icon name='plus square outline'/>Add Recipe</Dropdown.Item>
+              </Dropdown.Menu>
+            </Dropdown></Menu.Item>,
+          <Menu.Item as={NavLink} activeClassName="active" exact to="/list" key='list'><Icon name="id badge"/>View Profile</Menu.Item>]
         ) : ''}
         <Menu.Item position="right">
           {this.props.currentUser === '' ? (
@@ -33,9 +36,13 @@ class NavBar extends React.Component {
               </Dropdown.Menu>
             </Dropdown>
           ) : (
-            <Dropdown id="navbar-current-user" text={this.props.currentUser} pointing="top right" icon={'user'}>
+            <Dropdown id="navbar-current-user" text={this.props.currentUser} pointing="top right" icon={'user circle'}>
               <Dropdown.Menu>
                 <Dropdown.Item id="navbar-sign-out" icon="sign out" text="Sign Out" as={NavLink} exact to="/signout"/>
+                {Roles.userIsInRole(Meteor.userId(), 'admin') ? (
+                  <Dropdown.Item as={NavLink} activeClassName="active" exact to="/admin" key='admin'>Admin</Dropdown.Item>) : ''}
+                {Roles.userIsInRole(Meteor.userId(), 'vendor') ? (
+                  <Dropdown.Item as={NavLink} activeClassName="active" exact to="/list" key='list'>Edit Vendor Profile</Dropdown.Item>) : ''}
               </Dropdown.Menu>
             </Dropdown>
           )}
