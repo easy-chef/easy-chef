@@ -7,14 +7,15 @@ import { Stuffs } from '../../api/stuff/Stuff';
 import RecipeName from '../components/RecipeName';
 import RecipeDetails from '../components/RecipeDetails';
 
-/** Renders a table containing all of the Stuff documents. Use <StuffItem> to render each row. */
+/** Renders a page of an individual recipe and its details.  Use <RecipeName> and <RecipeDetails> to render specific info.  */
 class IndividualRecipeDetails extends React.Component {
 
   recipes = [{
-    recipeName: 'Mac n Cheese', recipeAuthor: 'Elliot',
+    recipeName: 'Tasty Mac \'n Cheese', recipeAuthor: 'Elliot',
     description: 'A family recipe passed down to generations that is affordable to make! I was able to get the ingredients relatively cheap at The Market near student housing.  ' +
         'Foodland at Ala Moana is also a great alternative to search for ingredients.',
-    image: 'https://images.unsplash.com/photo-1543339531-242d0bc29010?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bWFjYXJvbmklMjBhbmQlMjBjaGVlc2V8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60', total: '15', restrictions: ['gluten-free'],
+    image: 'https://images.unsplash.com/photo-1543339531-242d0bc29010?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bWFjYXJvbmklMjBhbmQlMjBjaGVlc2V8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+    rating: '4', total: '15', restrictions: ['gluten-free'],
     ingredients: ['8oz. elbow macaroni', '3 tablespoon butter', '3 tablespoon flour', '1/4 teaspoon salt', 'dash pepper', '1 cup milk', '1 cup shredded cheese'], tools: ['stove', 'saucepan', 'large pot'],
     // eslint-disable-next-line max-len
     steps: ['Boil lightly salted water then proceed to cook elbow macaroni until cooked.  Afterwards, proceed to drain.',
@@ -37,6 +38,8 @@ class IndividualRecipeDetails extends React.Component {
     );
   }
 }
+
+// To be replaced with recipe documents/related collection
 
 // Require an array of Stuff documents in the props.
 IndividualRecipeDetails.propTypes = {

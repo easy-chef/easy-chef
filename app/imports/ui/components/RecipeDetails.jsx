@@ -1,9 +1,9 @@
 import React from 'react';
-import { Grid, List, Divider, Card, Item } from 'semantic-ui-react';
+import { Grid, List, Divider, Card, Item, Icon } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
 import { NavLink, withRouter } from 'react-router-dom';
 
-/** Renders recipe details. See pages/IndividualRecipe.jsx. */
+/** Renders recipe details. See pages/IndividualRecipeDetails.jsx. */
 class RecipeDetails extends React.Component {
   render() {
     return (
@@ -13,20 +13,20 @@ class RecipeDetails extends React.Component {
             <Grid.Column>
               <Card fluid color='black'>
                 <Card.Content>
-                  <Card.Header>Ingredients</Card.Header>
+                  <Card.Header><Icon name='shopping basket'/>Ingredients</Card.Header>
                   <Card.Description>
                     <List bulleted items={this.props.recipe.ingredients}/>
                   </Card.Description>
                 </Card.Content>
                 <Card.Content extra>
-                  <Item as={NavLink} exact to="/inprogress">Locate ingredients</Item>
+                  <Item as={NavLink} exact to="/inprogress"><Icon name='map'/>Locate ingredients</Item>
                 </Card.Content>
               </Card>
             </Grid.Column>
             <Grid.Column>
               <Card fluid color='black'>
                 <Card.Content>
-                  <Card.Header>Tools</Card.Header>
+                  <Card.Header><Icon name='utensil spoon'/>Tools</Card.Header>
                   <Card.Description>
                     <List bulleted items={this.props.recipe.tools}/>
                   </Card.Description>
@@ -39,7 +39,7 @@ class RecipeDetails extends React.Component {
             <Grid.Column>
               <Card fluid color='black'>
                 <Card.Content>
-                  <Card.Header>Steps</Card.Header>
+                  <Card.Header><Icon name='pencil alternate'/>Steps</Card.Header>
                   <Card.Description>
                     <List ordered items={this.props.recipe.steps}/>
                   </Card.Description>
