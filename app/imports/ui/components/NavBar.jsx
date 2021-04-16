@@ -16,13 +16,13 @@ class NavBar extends React.Component {
           <Header inverted as='h1'>Easy Chef</Header>
         </Menu.Item>
         <Menu.Item as={NavLink} activeClassName="active" exact to="/list" key='list'><Icon name="search"/>Search for Recipes</Menu.Item>
-        <Menu.Item as={NavLink} activeClassName="active" exact to="/add" key='add'>View Vendors</Menu.Item>
+        <Menu.Item as={NavLink} activeClassName="active" exact to="/view" key='view'><Icon name="shopping basket"/>View Vendors</Menu.Item>
         {this.props.currentUser ? (
-          [<Menu.Item>
-            <Dropdown id="navbar-current-user" text="Your Recipes" icon={'clone outline'}>
+          [<Menu.Item key='recipe'>
+            <Dropdown id="navbar-current-user" text="Your Recipes" icon={'caret down'}>
               <Dropdown.Menu>
-                <Dropdown.Item as={NavLink} activeClassName="active" exact to="/add" key='add'><Icon name='clone outline'/>Recipe List</Dropdown.Item>
-                <Dropdown.Item as={NavLink} activeClassName="active" exact to="/list" key='list'><Icon name='plus square outline'/>Add Recipe</Dropdown.Item>
+                <Dropdown.Item as={NavLink} activeClassName="active" exact to="/ist" key='list'><Icon name='clone outline'/>Recipe List</Dropdown.Item>
+                <Dropdown.Item as={NavLink} activeClassName="active" exact to="/add" key='add'><Icon name='plus square outline'/>Add Recipe</Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown></Menu.Item>,
           <Menu.Item as={NavLink} activeClassName="active" exact to="/list" key='list'><Icon name="id badge"/>View Profile</Menu.Item>]
@@ -40,9 +40,9 @@ class NavBar extends React.Component {
               <Dropdown.Menu>
                 <Dropdown.Item id="navbar-sign-out" icon="sign out" text="Sign Out" as={NavLink} exact to="/signout"/>
                 {Roles.userIsInRole(Meteor.userId(), 'admin') ? (
-                  <Dropdown.Item as={NavLink} activeClassName="active" exact to="/admin" key='admin'>Admin</Dropdown.Item>) : ''}
+                  <Dropdown.Item as={NavLink} activeClassName="active" exact to="/admin" key='admin'><Icon name="folder open"/>Admin</Dropdown.Item>) : ''}
                 {Roles.userIsInRole(Meteor.userId(), 'vendor') ? (
-                  <Dropdown.Item as={NavLink} activeClassName="active" exact to="/list" key='list'>Edit Vendor Profile</Dropdown.Item>) : ''}
+                  <Dropdown.Item as={NavLink} activeClassName="active" exact to="/list" key='list'><Icon name="pencil alternate"/>Edit Vendor Profile</Dropdown.Item>) : ''}
               </Dropdown.Menu>
             </Dropdown>
           )}
