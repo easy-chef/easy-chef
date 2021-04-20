@@ -14,5 +14,11 @@
   "monti": {
     "appId": "changeme",
     "appSecret": "changeme"
-  }
+  },
+
+  "defaultProfiles": [
+    { "name": "John", "bio": "I love to cook!", "image": "https://lh3.googleusercontent.com/proxy/Kp89H9_-GKaB-o6I7T2Kavf3u2Q0OZ1Z3QY_gYsI92xvPhz8s97IyYAfIPq8OJKxT0hEU0Z73Emqur63sQQddTd3SHG0mbVINvDBWPEEFMf8AkU", "owner": "john@foo.com" },
+    { "name": "Admin", "bio": "I'm an admin!", "image": "http://getdrawings.com/free-icon/default-avatar-icon-60.png", "owner": "admin@foo.com" },
+    { "name": "Vendor", "bio": "I'm a vendor!", "image": "https://openclipart.org/image/800px/256581", "owner": "vendor@foo.com" }
+  ]
 }
