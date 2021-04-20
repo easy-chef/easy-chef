@@ -3,13 +3,22 @@
     "appId": "RyvthR2jQyp8vZen8",
     "appSecret": "47819872-185f-466a-a7b8-331e72795cfb"
   },
-
   "defaultAccounts": [
-    { "email": "admin@foo.com", "password": "changeme", "role": "admin" },
-    { "email": "vendor@foo.com", "password":  "changeme", "role":  "vendor"},
-    { "email": "john@foo.com", "password": "changeme" }
+    {
+      "profileEmail": "admin@foo.com",
+      "password": "changeme",
+      "role": "admin"
+    },
+    {
+      "profileEmail": "vendor@foo.com",
+      "password": "changeme",
+      "role": "vendor"
+    },
+    {
+      "profileEmail": "john@foo.com",
+      "password": "changeme"
+    }
   ],
-
   "defaultData": [
     { "name": "Basket", "quantity": 3, "owner": "john@foo.com", "condition": "excellent" },
     { "name": "Bicycle", "quantity": 2, "owner": "john@foo.com", "condition": "poor" },
@@ -20,6 +29,72 @@
   "defaultProfiles": [
     { "name": "John", "bio": "I love to cook!", "image": "https://lh3.googleusercontent.com/proxy/Kp89H9_-GKaB-o6I7T2Kavf3u2Q0OZ1Z3QY_gYsI92xvPhz8s97IyYAfIPq8OJKxT0hEU0Z73Emqur63sQQddTd3SHG0mbVINvDBWPEEFMf8AkU", "owner": "john@foo.com" },
     { "name": "Admin", "bio": "I'm an admin!", "image": "http://getdrawings.com/free-icon/default-avatar-icon-60.png", "owner": "admin@foo.com" },
-    { "name": "Vendor", "bio": "I'm a vendor!", "image": "https://openclipart.org/image/800px/256581", "owner": "vendor@foo.com" }
+    { "name": "Vendor", "bio": "I'm a vendor!", "image": "https://openclipart.org/image/800px/256581", "owner": "vendor@foo.com" },
+  ],
+  "defaultRecipes": [
+    {
+      "recipeName": "Tasty Mac 'n Cheese",
+      "recipeAuthor": "Elliot",
+      "recipeEmail": "john@foo.com",
+      "description": "A family recipe passed down to generations that is affordable to make! I was able to get the ingredients relatively cheap at The Market near student housing. Foodland at Ala Moana is also a great alternative to search for ingredients.",
+      "image": "https://images.unsplash.com/photo-1543339531-242d0bc29010?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bWFjYXJvbmklMjBhbmQlMjBjaGVlc2V8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+      "rating": 4,
+      "total": 15,
+      "restrictions": [
+        "gluten-free"
+      ],
+      "ingredients": [
+        "8oz. elbow macaroni",
+        "3 tablespoon butter",
+        "3 tablespoon flour",
+        "1/4 teaspoon salt",
+        "dash pepper",
+        "1 cup milk",
+        "1 cup shredded cheese"
+      ],
+      "tools": [
+        "stove",
+        "saucepan",
+        "large pot"
+      ],
+      "steps": [
+        "Boil lightly salted water then proceed to cook elbow macaroni until cooked.  Afterwards, proceed to drain.",
+        "Melt butter in a saucepan over medium heat, then stir in flour and salt for 5 minutes.  Then pour in milk while stirring until it is smooth and bubbling. Next, add cheddar cheese and continue to stir until cheese is melted",
+        "Fold macaroni into cheese sauce until it is coated.",
+        "Enjoy!"
+      ]
+    },
+    {
+      "recipeName": "Tasty Mac 'n Cheese 2",
+      "recipeAuthor": "Elliot",
+      "recipeEmail": "john@foo.com",
+      "description": "The sequel to Mac 'n Cheese",
+      "image": "https://images.unsplash.com/photo-1543339531-242d0bc29010?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bWFjYXJvbmklMjBhbmQlMjBjaGVlc2V8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+      "rating": 3,
+      "total": 15,
+      "restrictions": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        "8oz. elbow macaroni",
+        "3 tablespoon butter",
+        "3 tablespoon flour",
+        "1/4 teaspoon salt",
+        "dash pepper",
+        "1 cup milk",
+        "1 cup shredded cheese"
+      ],
+      "tools": [
+        "stove",
+        "saucepan",
+        "large pot"
+      ],
+      "steps": [
+        "Boil lightly salted water then proceed to cook elbow macaroni until cooked.  Afterwards, proceed to drain.",
+        "Melt butter in a saucepan over medium heat, then stir in flour and salt for 5 minutes.  Then pour in milk while stirring until it is smooth and bubbling. Next, add cheddar cheese and continue to stir until cheese is melted",
+        "Fold macaroni into cheese sauce until it is coated.",
+        "Enjoy!"
+      ]
+    }
   ]
 }

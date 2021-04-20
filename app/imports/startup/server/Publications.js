@@ -1,14 +1,23 @@
 import { Meteor } from 'meteor/meteor';
 import { Roles } from 'meteor/alanning:roles';
 import { Stuffs } from '../../api/stuff/Stuff';
-import { Profiles } from '../../api/profile/Profile';
+import { Profiles } from '../../api/profile/profiles';
+import { Recipes } from '../../api/recipe/Recipes';
 
 // User-level publication.
 // If logged in, then publish documents owned by this user. Otherwise publish nothing.
-Meteor.publish(Stuffs.userPublicationName, function () {
+Meteor.publish(Profiles.userPublicationName, function () {
   if (this.userId) {
     const username = Meteor.users.findOne(this.userId).username;
-    return Stuffs.collection.find({ owner: username });
+    return Profiles.collection.find({ profileEmail: username });
+  }
+  return this.ready();
+});
+
+Meteor.publish(Recipes.userPublicationName, function () {
+  if (this.userId) {
+    const username = Meteor.users.findOne(this.userId).username;
+    return Recipes.collection.find({ recipeEmail: username });
   }
   return this.ready();
 });

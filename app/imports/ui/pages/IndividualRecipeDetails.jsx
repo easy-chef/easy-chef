@@ -17,7 +17,6 @@ class IndividualRecipeDetails extends React.Component {
     image: 'https://images.unsplash.com/photo-1543339531-242d0bc29010?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bWFjYXJvbmklMjBhbmQlMjBjaGVlc2V8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
     rating: '4', total: '15', restrictions: ['gluten-free'],
     ingredients: ['8oz. elbow macaroni', '3 tablespoon butter', '3 tablespoon flour', '1/4 teaspoon salt', 'dash pepper', '1 cup milk', '1 cup shredded cheese'], tools: ['stove', 'saucepan', 'large pot'],
-    // eslint-disable-next-line max-len
     steps: ['Boil lightly salted water then proceed to cook elbow macaroni until cooked.  Afterwards, proceed to drain.',
       'Melt butter in a saucepan over medium heat, then stir in flour and salt for 5 minutes.  Then pour in milk while stirring until it is smooth and bubbling.  ' +
       'Next, add cheddar cheese and continue to stir until cheese is melted', 'Fold macaroni into cheese sauce until it is coated.', 'Enjoy!'],
@@ -49,7 +48,7 @@ IndividualRecipeDetails.propTypes = {
 
 // withTracker connects Meteor data to React components. https://guide.meteor.com/react.html#using-withTracker
 export default withTracker(() => {
-  // Get access to Stuff documents.
+  // Get access to Recipe documents.
   const subscription = Meteor.subscribe(Stuffs.userPublicationName);
   // Determine if the subscription is ready
   const ready = subscription.ready();
