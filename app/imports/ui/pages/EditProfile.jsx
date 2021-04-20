@@ -39,7 +39,7 @@ class EditProfile extends React.Component {
               <TextField name='image'/>
               <SubmitField value='Submit'/>
               <ErrorsField/>
-              <HiddenField name='owner' value={this.props.owner}/>
+              <HiddenField name='owner' value={this.props.doc.owner}/>
             </Segment>
           </AutoForm>
         </Grid.Column>

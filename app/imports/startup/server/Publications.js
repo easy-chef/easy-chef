@@ -1,7 +1,7 @@
 import { Meteor } from 'meteor/meteor';
 import { Roles } from 'meteor/alanning:roles';
 import { Stuffs } from '../../api/stuff/Stuff';
-import { Profiles } from '../../api/profile/profiles';
+import { Profiles } from '../../api/profile/Profile';
 import { Recipes } from '../../api/recipe/Recipes';
 
 // User-level publication.
