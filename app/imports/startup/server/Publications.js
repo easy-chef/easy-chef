@@ -31,12 +31,6 @@ Meteor.publish(Stuffs.adminPublicationName, function () {
   return this.ready();
 });
 
-// Profile Publication.
-Meteor.publish(Profiles.userPublicationName, () => Profiles.collection.find());
-
-// Recipe Publication.
-Meteor.publish(Recipes.userPublicationName, () => Recipes.collection.find());
-
 // alanning:roles publication
 // Recommended code to publish roles for each user.
 Meteor.publish(null, function () {

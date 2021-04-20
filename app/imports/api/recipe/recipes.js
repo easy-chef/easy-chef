@@ -20,13 +20,17 @@ class RecipesCollection {
       image: String,
       rating: Number,
       total: Number,
-      restrictions: {
+      restrictions: Array,
+      'restrictions.$': {
         type: String,
         allowedValues: ['gluten-free', 'lactose intolerance', 'vegetarian', 'no peanuts'],
       },
-      ingredients: String,
-      tools: String,
-      steps: String,
+      ingredients: Array,
+      'ingredients.$': String,
+      tools: Array,
+      'tools.$': String,
+      steps: Array,
+      'steps.$': String,
     }, { tracker: Tracker });
     // Attach the schema to the collection, so all attempts to insert a document are checked against schema.
     this.collection.attachSchema(this.schema);
