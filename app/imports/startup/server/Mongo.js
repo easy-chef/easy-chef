@@ -1,18 +1,47 @@
 import { Meteor } from 'meteor/meteor';
-import { Stuffs } from '../../api/stuff/Stuff.js';
+import { Recipes } from '../../api/recipe/recipes';
+import { Profiles } from '../../api/profile/profiles';
 
 /* eslint-disable no-console */
 
-// Initialize the database with a default data document.
-function addData(data) {
-  console.log(`  Adding: ${data.name} (${data.owner})`);
-  Stuffs.collection.insert(data);
+function updateCreatedRecipe(createdRecipe) {
+  Recipes.collection.update({ recipeName: createdRecipe }, { $set: { name: createdRecipe } }, { upsert: true });
 }
 
-// Initialize the StuffsCollection if empty.
-if (Stuffs.collection.find().count() === 0) {
-  if (Meteor.settings.defaultData) {
-    console.log('Creating default data.');
-    Meteor.settings.defaultData.map(data => addData(data));
+function addCreatedRecipe(createdRecipe) {
+  if (Meteor.settings.defaultRecipes) {
+    console.log(`  Adding: ${createdRecipe.recipeName} (${createdRecipe.recipeEmail})`);
+
+  }
+
+}
+
+// Creates a new profile.
+function createProfiles(profileName, bio, profileImage, rating, createdRecipes, savedRecipes, profileEmail) {
+  console.log(`Creating profile ${profileEmail}`);
+  // createUser(profileEmail, role);
+  Profiles.collection.insert({ profileName, bio, profileImage, rating, createdRecipes, savedRecipes, profileEmail });
+  // Add created recipes.
+  createdRecipes.map(recipe => Recipes.collection.insert({ recipeEmail: profileEmail, recipe }));
+  // Update recipes in recipes collection.
+  createdRecipes.map(recipe => updateCreatedRecipe(recipe));
+}
+
+if (Recipes.collection.find().count() === 0) {
+  console.log('Creating default recipes');
+  Meteor.settings.defaultRecipes.map(recipe => addCreatedRecipe(recipe));
+
+}
+
+// Initialize the Database if there are no users.
+
+if (Meteor.users.find().count() === 0) {
+  if (Meteor.settings.defaultProfiles && Meteor.settings.defaultRecipes) {
+    console.log('Creating default profiles');
+    Meteor.settings.defaultProfiles.map(profile => createProfiles(profile));
+    console.log('Creating default recipes');
+    Meteor.settings.defaultRecipes.map(recipe => addCreatedRecipe(recipe));
+  } else {
+    console.log('Hey did you break something? Might as well treat us for Raising Canes if you dont do something about it.');
   }
 }
