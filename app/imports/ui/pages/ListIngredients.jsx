@@ -27,6 +27,7 @@ class ListIngredients extends React.Component {
               <Table.HeaderCell>Size</Table.HeaderCell>
               <Table.HeaderCell>Quantity</Table.HeaderCell>
               <Table.HeaderCell>Edit</Table.HeaderCell>
+              <Table.HeaderCell>Delete</Table.HeaderCell>
             </Table.Row>
           </Table.Header>
           <Table.Body>
@@ -34,6 +35,7 @@ class ListIngredients extends React.Component {
           </Table.Body>
         </Table>
       </Container>
+
     );
   }
 }
