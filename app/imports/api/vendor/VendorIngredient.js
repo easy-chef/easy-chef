@@ -3,7 +3,7 @@ import SimpleSchema from 'simpl-schema';
 import { Tracker } from 'meteor/tracker';
 
 /**
- * The VendorIngredientsCollection. It encapsulates state and variable values for recipes.
+ * The VendorIngredientsCollection. It encapsulates state and variable values for vendor's ingredients.
  */
 class VendorIngredientsCollection {
   constructor() {
