@@ -22,6 +22,11 @@
     { "name": "Vendor", "bio": "I'm a vendor!", "image": "https://openclipart.org/image/800px/256581", "owner": "vendor@foo.com" }
   ],
 
+  "defaultVendors": [
+    { "name":  "The Market", "bio": "We sell basic necessities and items conveniently located at student housing!", "storeHours":  "2:00PM - 10:00PM", "address": "2585 Dole St Honolulu, HI 96822", "email": "vendor@foo.com", "owner": "vendor@foo.com"},
+    { "name":  "Foodland", "bio": "We offer a variety of fresh and quality ingredients that are always available ", "storeHours":  "6:00AM - 9:00PM", "address": "1450 Ala Moana Blvd, Honolulu, HI 96814", "email": "vendor@foo.com", "owner": "vendor@foo.com"}
+  ],
+
   "defaultRecipes": [
     {
       "recipeName": "Tasty Mac 'n Cheese",
