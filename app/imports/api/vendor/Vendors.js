@@ -3,19 +3,21 @@ import SimpleSchema from 'simpl-schema';
 import { Tracker } from 'meteor/tracker';
 
 /**
- * The StuffsCollection. It encapsulates state and variable values for stuff.
+ * The VendorCollection. It encapsulates state and variable values for recipes.
  */
-class ProfilesCollection {
+class VendorCollection {
   constructor() {
     // The name of this collection.
-    this.name = 'ProfilesCollection';
+    this.name = 'VendorsCollection';
     // Define the Mongo collection.
     this.collection = new Mongo.Collection(this.name);
     // Define the structure of each document in the collection.
     this.schema = new SimpleSchema({
       name: String,
       bio: String,
-      image: String,
+      storeHours: String,
+      address: String,
+      email: String,
       owner: String,
     }, { tracker: Tracker });
     // Attach the schema to the collection, so all attempts to insert a document are checked against schema.
@@ -23,12 +25,11 @@ class ProfilesCollection {
     // Define names for publications and subscriptions
     this.userPublicationName = `${this.name}.publication.user`;
     this.adminPublicationName = `${this.name}.publication.admin`;
-    this.vendorPublicationName = `${this.name}.publication.vendor`;
   }
 }
 
 /**
- * The singleton instance of the ProfilesCollection.
- * @type {ProfilesCollection}
+ * The singleton instance of the VendorsCollection.
+ * @type {VendorCollection}
  */
-export const Profiles = new ProfilesCollection();
+export const Vendors = new VendorCollection();
