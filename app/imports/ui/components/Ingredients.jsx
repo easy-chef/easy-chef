@@ -1,10 +1,15 @@
 import React from 'react';
-import { Table } from 'semantic-ui-react';
+import { Icon, Table } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
 import { Link, withRouter } from 'react-router-dom';
+import { VendorIngredients } from '../../api/vendor/VendorIngredient';
 
 /** Renders a single row in the List Stuff (Admin) table. See pages/ListStuffAdmin.jsx. */
 class Ingredients extends React.Component {
+  handleClick = () => {
+    VendorIngredients.collection.remove(this.props.vendoringredient._id);
+  }
+
   render() {
     return (
       <Table.Row>
@@ -14,6 +19,9 @@ class Ingredients extends React.Component {
         <Table.Cell>{this.props.vendoringredient.quantity}</Table.Cell>
         <Table.Cell>
           <Link to={`/editingredients/${this.props.vendoringredient._id}`}>Edit</Link>
+        </Table.Cell>
+        <Table.Cell>
+          <Icon name='trash' textAlign='right' onClick={this.handleClick}></Icon>
         </Table.Cell>
       </Table.Row>
     );
