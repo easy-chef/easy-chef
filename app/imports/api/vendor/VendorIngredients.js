@@ -3,32 +3,31 @@ import SimpleSchema from 'simpl-schema';
 import { Tracker } from 'meteor/tracker';
 
 /**
- * The ProfilesCollection. It encapsulates state and variable values for profile.
+ * The VendorIngredientsCollection. It encapsulates state and variable values for recipes.
  */
-class ProfilesCollection {
+class VendorIngredientsCollection {
   constructor() {
     // The name of this collection.
-    this.name = 'ProfilesCollection';
+    this.name = 'VendorIngredientCollection';
     // Define the Mongo collection.
     this.collection = new Mongo.Collection(this.name);
     // Define the structure of each document in the collection.
     this.schema = new SimpleSchema({
       name: String,
-      bio: String,
-      image: String,
-      owner: String,
+      vendor: String,
+      price: Number,
+      quantity: Number,
     }, { tracker: Tracker });
     // Attach the schema to the collection, so all attempts to insert a document are checked against schema.
     this.collection.attachSchema(this.schema);
     // Define names for publications and subscriptions
     this.userPublicationName = `${this.name}.publication.user`;
     this.adminPublicationName = `${this.name}.publication.admin`;
-    this.vendorPublicationName = `${this.name}.publication.vendor`;
   }
 }
 
 /**
- * The singleton instance of the ProfilesCollection.
- * @type {ProfilesCollection}
+ * The singleton instance of the VendorsIngredientsCollection.
+ * @type {VendorIngredientsCollection}
  */
-export const Profiles = new ProfilesCollection();
+export const VendorIngredients = new VendorIngredientsCollection();
