@@ -17,9 +17,14 @@
   ],
 
   "defaultProfiles": [
-    { "name": "John", "bio": "I love to cook!", "image": "https://lh3.googleusercontent.com/proxy/Kp89H9_-GKaB-o6I7T2Kavf3u2Q0OZ1Z3QY_gYsI92xvPhz8s97IyYAfIPq8OJKxT0hEU0Z73Emqur63sQQddTd3SHG0mbVINvDBWPEEFMf8AkU", "owner": "john@foo.com" },
+    { "name": "John", "bio": "I love to cook!", "image": "https://openclipart.org/image/800px/4749", "owner": "john@foo.com" },
     { "name": "Admin", "bio": "I'm an admin!", "image": "http://getdrawings.com/free-icon/default-avatar-icon-60.png", "owner": "admin@foo.com" },
     { "name": "Vendor", "bio": "I'm a vendor!", "image": "https://openclipart.org/image/800px/256581", "owner": "vendor@foo.com" }
+  ],
+
+  "defaultVendors": [
+    { "name":  "The Market", "bio": "We sell basic necessities and items conveniently located at student housing!", "storeHours":  "2:00PM - 10:00PM", "address": "2585 Dole St Honolulu, HI 96822", "email": "vendor@foo.com", "owner": "vendor@foo.com"},
+    { "name":  "Foodland", "bio": "We offer a variety of fresh and quality ingredients that are always available ", "storeHours":  "6:00AM - 9:00PM", "address": "1450 Ala Moana Blvd, Honolulu, HI 96814", "email": "vendor@foo.com", "owner": "vendor@foo.com"}
   ],
 
   "defaultRecipes": [
@@ -87,5 +92,12 @@
         "Enjoy!"
       ]
     }
+  ],
+
+  "defaultIngredients": [
+    { "ingredient": "Milk", "price": "$5.99", "size": "Gallon", "quantity": "75", "owner": "vendor@foo.com" },
+    { "ingredient": "Butter", "price": "$7.39", "size": "16 oz", "quantity": "200", "owner": "vendor@foo.com" },
+    { "ingredient": "Flour", "price": "$3.69", "size": "2 lb", "quantity": "50", "owner": "vendor@foo.com" },
+    { "ingredient": "Salt", "price": "$2.79", "size": "26 oz", "quantity": "125", "owner": "vendor@foo.com" }
   ]
 }

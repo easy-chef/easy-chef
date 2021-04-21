@@ -3,13 +3,28 @@ import { Roles } from 'meteor/alanning:roles';
 import { Stuffs } from '../../api/stuff/Stuff';
 import { Profiles } from '../../api/profile/Profile';
 import { Recipes } from '../../api/recipe/Recipes';
+import { VendorIngredients } from '../../api/vendor/VendorIngredient';
 
 // User-level publication.
 // If logged in, then publish documents owned by this user. Otherwise publish nothing.
 Meteor.publish(Profiles.userPublicationName, function () {
   if (this.userId) {
     const username = Meteor.users.findOne(this.userId).username;
-    return Profiles.collection.find({ profileEmail: username });
+    return Profiles.collection.find({ owner: username });
+  }
+  return this.ready();
+});
+
+Meteor.publish(Profiles.adminPublicationName, function () {
+  if (this.userId && Roles.userIsInRole(this.userId, 'admin')) {
+    return Profiles.collection.find();
+  }
+  return this.ready();
+});
+
+Meteor.publish(Profiles.vendorPublicationName, function () {
+  if (this.userId && Roles.userIsInRole(this.userId, 'vendor')) {
+    return Profiles.collection.find();
   }
   return this.ready();
 });
@@ -22,7 +37,7 @@ Meteor.publish(Recipes.userPublicationName, function () {
   return this.ready();
 });
 
-// Admin-level publication.
+// Admin/vendor-level publication.
 // If logged in and with admin role, then publish all documents from all users. Otherwise publish nothing.
 Meteor.publish(Stuffs.adminPublicationName, function () {
   if (this.userId && Roles.userIsInRole(this.userId, 'admin')) {
@@ -31,17 +46,12 @@ Meteor.publish(Stuffs.adminPublicationName, function () {
   return this.ready();
 });
 
-Meteor.publish(Profiles.userPublicationName, function () {
+// Vendor-level publication.
+// If logged in and with vendor role, then publish all documents from all users. Otherwise publish nothing.
+Meteor.publish(VendorIngredients.vendorPublicationName, function () {
   if (this.userId) {
     const username = Meteor.users.findOne(this.userId).username;
-    return Profiles.collection.find({ owner: username });
-  }
-  return this.ready();
-});
-
-Meteor.publish(Profiles.adminPublicationName, function () {
-  if (this.userId && Roles.userIsInRole(this.userId, 'admin')) {
-    return Profiles.collection.find();
+    return VendorIngredients.collection.find({ owner: username });
   }
   return this.ready();
 });
