@@ -21,7 +21,7 @@ class NavBar extends React.Component {
           [<Menu.Item key='recipe'>
             <Dropdown id="navbar-current-user" text="Your Recipes" icon={'caret down'}>
               <Dropdown.Menu>
-                <Dropdown.Item as={NavLink} activeClassName="active" exact to="/ist" key='list'><Icon name='clone outline'/>Recipe List</Dropdown.Item>
+                <Dropdown.Item as={NavLink} activeClassName="active" exact to="/list" key='list'><Icon name='clone outline'/>Recipe List</Dropdown.Item>
                 <Dropdown.Item as={NavLink} activeClassName="active" exact to="/add" key='add'><Icon name='plus square outline'/>Add Recipe</Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown></Menu.Item>,
