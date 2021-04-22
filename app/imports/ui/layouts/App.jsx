@@ -9,7 +9,8 @@ import Footer from '../components/Footer';
 import Landing from '../pages/Landing';
 import ListStuff from '../pages/ListStuff';
 import ListStuffAdmin from '../pages/ListStuffAdmin';
-import AddStuff from '../pages/AddStuff';
+// import AddStuff from '../pages/AddStuff';
+import AddRecipe from '../pages/AddRecipe';
 import EditStuff from '../pages/EditStuff';
 import NotFound from '../pages/NotFound';
 import Signin from '../pages/Signin';
@@ -36,7 +37,7 @@ class App extends React.Component {
             <Route path="/signout" component={Signout}/>
             <Route path="/inprogress" component={NotFound}/>
             <ProtectedRoute path="/list" component={ListStuff}/>
-            <ProtectedRoute path="/add" component={AddStuff}/>
+            <ProtectedRoute path="/add" component={AddRecipe}/>
             <ProtectedRoute path="/recipe" component={IndividualRecipe}/>
             <ProtectedRoute path="/edit/:_id" component={EditStuff}/>
             <ProtectedRoute path="/viewprofile" component={ViewProfile}/>
