@@ -35,7 +35,7 @@ class EditIngredients extends React.Component {
           <AutoForm schema={bridge} onSubmit={data => this.submit(data)} model={this.props.doc}>
             <Segment>
               <TextField name='ingredient'/>
-              <TextField name='price'/>
+              <TextField name='price' iconLeft="dollar"/>
               <TextField name='size'/>
               <NumField name='quantity' decimal={false}/>
               <SubmitField value='Submit'/>

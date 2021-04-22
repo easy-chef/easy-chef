@@ -14,7 +14,7 @@ class Ingredients extends React.Component {
     return (
       <Table.Row>
         <Table.Cell>{this.props.vendoringredient.ingredient}</Table.Cell>
-        <Table.Cell>{this.props.vendoringredient.price}</Table.Cell>
+        <Table.Cell>${this.props.vendoringredient.price}</Table.Cell>
         <Table.Cell>{this.props.vendoringredient.size}</Table.Cell>
         <Table.Cell>{this.props.vendoringredient.quantity}</Table.Cell>
         <Table.Cell>

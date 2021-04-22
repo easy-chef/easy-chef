@@ -45,8 +45,8 @@ class AddIngredient extends React.Component {
           <AutoForm ref={ref => { fRef = ref; }} schema={bridge} onSubmit={data => this.submit(data, fRef)} >
             <Segment>
               <TextField name='ingredient'/>
-              <TextField name='price'/>
-              <TextField name='size'/>
+              <TextField name='price' iconLeft="dollar"/>
+              <TextField name='size' placeholder="Please enter a number followed by the unit of measurement. Example: 3 oz"/>
               <NumField name='quantity' decimal={false}/>
               <SubmitField value='Submit'/>
               <ErrorsField/>
