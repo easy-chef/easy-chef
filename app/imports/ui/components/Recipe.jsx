@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Image, Feed } from 'semantic-ui-react';
+import { Card, Image } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
 import { Link, withRouter } from 'react-router-dom';
 
@@ -14,7 +14,9 @@ class Recipe extends React.Component {
             size='mini'
             src={this.props.recipe.image}
           />
-          <Card.Header>{this.props.recipe.recipeName}</Card.Header>
+          <Card.Header>
+            <Link to={`/edit/${this.props.recipe._id}`}>{this.props.recipe.recipeName}</Link>
+          </Card.Header>
           <Card.Meta>{this.props.recipe.recipeAuthor} {this.props.recipe.recipeEmail}</Card.Meta>
           <Card.Description>
             {this.props.recipe.description}
