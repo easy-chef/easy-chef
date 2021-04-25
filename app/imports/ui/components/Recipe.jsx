@@ -15,7 +15,7 @@ class Recipe extends React.Component {
             src={this.props.recipe.image}
           />
           <Card.Header>
-            <Link to={`/edit/${this.props.recipe._id}`}>{this.props.recipe.recipeName}</Link>
+            <Link to={`/recipe/${this.props.recipe._id}`}>{this.props.recipe.recipeName}</Link>
           </Card.Header>
           <Card.Meta>{this.props.recipe.recipeAuthor} {this.props.recipe.recipeEmail}</Card.Meta>
           <Card.Description>

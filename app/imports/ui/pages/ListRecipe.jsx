@@ -76,13 +76,13 @@ class ListRecipe extends React.Component {
 
   // If the subscription(s) have been received, render the page, otherwise show a loading icon.
   render() {
-    return (this.props.ready) ? this.renderPage() : <Loader active>Getting data</Loader>;
+    return (this.props.ready) ? this.renderPage() : <Loader active>Getting recipe</Loader>;
   }
 
   renderPage() {
     return (
       <Container>
-        <Header as="h2" textAlign="center" inverted>List Contacts</Header>
+        <Header as="h2" textAlign="center" inverted>List Recipes</Header>
         <Search className="search-recipe"/>
         <Card.Group>
           {this.props.recipes.map((recipe, index) => <Recipe key={index} recipe={recipe}/>)}

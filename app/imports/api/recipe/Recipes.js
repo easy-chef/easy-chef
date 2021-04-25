@@ -24,7 +24,7 @@ class RecipesCollection {
       restrictions: Array,
       'restrictions.$': {
         type: String,
-        allowedValues: ['gluten-free', 'lactose intolerance', 'vegetarian', 'no peanuts'],
+        allowedValues: ['gluten-free', 'lactose intolerance', 'vegetarian', 'no peanuts', 'none'],
       },
       ingredients: Array,
       'ingredients.$': String,
