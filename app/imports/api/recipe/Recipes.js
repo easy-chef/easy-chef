@@ -19,6 +19,7 @@ class RecipesCollection {
       description: String,
       image: String,
       rating: Number,
+      servings: Number,
       total: Number,
       restrictions: Array,
       'restrictions.$': {
