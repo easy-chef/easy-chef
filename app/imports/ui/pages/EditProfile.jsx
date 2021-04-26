@@ -1,7 +1,7 @@
 import React from 'react';
 import { Grid, Loader, Header, Segment } from 'semantic-ui-react';
 import swal from 'sweetalert';
-import { AutoForm, ErrorsField, HiddenField, LongTextField, SubmitField, TextField } from 'uniforms-semantic';
+import { AutoForm, ErrorsField, LongTextField, SubmitField, TextField } from 'uniforms-semantic';
 import { Meteor } from 'meteor/meteor';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
@@ -15,8 +15,8 @@ class EditProfile extends React.Component {
 
   // On successful submit, insert the data.
   submit(data) {
-    const { name, bio, image, owner, _id } = data;
-    Profiles.collection.update(_id, { $set: { name, bio, image, owner } }, (error) => (error ?
+    const { name, bio, image, _id } = data;
+    Profiles.collection.update(_id, { $set: { name, bio, image } }, (error) => (error ?
       swal('Error', error.message, 'error') :
       swal('Success', 'Item updated successfully', 'success')));
   }
@@ -32,14 +32,14 @@ class EditProfile extends React.Component {
       <Grid container centered>
         <Grid.Column>
           <Header as="h2" textAlign="center" inverted>Edit Profile</Header>
-          <AutoForm schema={bridge} onSubmit={data => this.submit(data)} model={this.props.doc}>
+          <AutoForm schema={bridge} onSubmit={data => this.submit(data) } model={this.props.doc}>
             <Segment>
               <TextField name='name'/>
               <LongTextField name='bio'/>
               <TextField name='image'/>
+              <TextField name='owner'/>
               <SubmitField value='Submit'/>
               <ErrorsField/>
-              <HiddenField name='owner'/>
             </Segment>
           </AutoForm>
         </Grid.Column>
