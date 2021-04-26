@@ -1,6 +1,6 @@
 import { Meteor } from 'meteor/meteor';
 import { Profiles } from '../../api/profile/Profile';
-import { Vendors } from '../../api/vendor/Vendors';
+import { VendorProfiles } from '../../api/vendor/VendorProfile';
 import { Recipes } from '../../api/recipe/Recipes';
 import { VendorIngredients } from '../../api/vendor/VendorIngredient';
 
@@ -35,20 +35,6 @@ if (Profiles.collection.find().count() === 0) {
 }
 
 // Initialize the database with a default data document.
-function addVendor(vendor) {
-  console.log(`  Adding: ${vendor.name} (${vendor.owner})`);
-  Vendors.collection.insert(vendor);
-}
-
-// Initialize the VendorsCollection if empty.
-if (Vendors.collection.find().count() === 0) {
-  if (Meteor.settings.defaultVendors) {
-    console.log('Creating default Vendors.');
-    Meteor.settings.defaultVendors.map(vendor => addVendor(vendor));
-  }
-}
-
-// Initialize the database with a default data document.
 function addIngredient(data) {
   console.log(`  Adding: ${data.ingredient} (${data.owner})`);
   VendorIngredients.collection.insert(data);
@@ -59,5 +45,19 @@ if (VendorIngredients.collection.find().count() === 0) {
   if (Meteor.settings.defaultIngredients) {
     console.log('Creating default Ingredients.');
     Meteor.settings.defaultIngredients.map(data => addIngredient(data));
+  }
+}
+
+// Initialize the database with a default data document.
+function addVendorProfile(data) {
+  console.log(`  Adding: ${data.name} (${data.owner})`);
+  VendorProfiles.collection.insert(data);
+}
+
+// Initialize the VendorProfilesCollection if empty.
+if (VendorProfiles.collection.find().count() === 0) {
+  if (Meteor.settings.vendorProfiles) {
+    console.log('Creating vendor Profiles.');
+    Meteor.settings.vendorProfiles.map(data => addVendorProfile(data));
   }
 }

@@ -16,7 +16,7 @@ class NavBar extends React.Component {
           <Header inverted as='h1'>Easy Chef</Header>
         </Menu.Item>
         <Menu.Item as={NavLink} activeClassName="active" exact to="/list" key='list'><Icon name="search"/>Search for Recipes</Menu.Item>
-        <Menu.Item as={NavLink} activeClassName="active" exact to="/view" key='view'><Icon name="shopping basket"/>View Vendors</Menu.Item>
+        <Menu.Item as={NavLink} activeClassName="active" exact to="/viewvendors" key='viewvendors'><Icon name="shopping basket"/>View Vendors</Menu.Item>
         {this.props.currentUser ? (
           [<Menu.Item key='recipe'>
             <Dropdown id="navbar-current-user" text="Your Recipes" icon={'caret down'}>

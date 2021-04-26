@@ -7,6 +7,8 @@
   "defaultAccounts": [
     { "email": "admin@foo.com", "password": "changeme", "role": "admin" },
     { "email": "vendor@foo.com", "password":  "changeme", "role":  "vendor"},
+    { "email": "foodland@foo.com", "password":  "changeme", "role":  "vendor"},
+    { "email": "safeway@foo.com", "password":  "changeme", "role":  "vendor"},
     { "email": "john@foo.com", "password": "changeme" }
   ],
   "defaultData": [
@@ -19,12 +21,9 @@
   "defaultProfiles": [
     { "name": "John", "bio": "I love to cook!", "image": "https://openclipart.org/image/800px/4749", "owner": "john@foo.com" },
     { "name": "Admin", "bio": "I'm an admin!", "image": "http://getdrawings.com/free-icon/default-avatar-icon-60.png", "owner": "admin@foo.com" },
-    { "name": "Vendor", "bio": "I'm a vendor!", "image": "https://openclipart.org/image/800px/256581", "owner": "vendor@foo.com" }
-  ],
-
-  "defaultVendors": [
-    { "name":  "The Market", "bio": "We sell basic necessities and items conveniently located at student housing!", "storeHours":  "2:00PM - 10:00PM", "address": "2585 Dole St Honolulu, HI 96822", "email": "vendor@foo.com", "owner": "vendor@foo.com"},
-    { "name":  "Foodland", "bio": "We offer a variety of fresh and quality ingredients that are always available ", "storeHours":  "6:00AM - 9:00PM", "address": "1450 Ala Moana Blvd, Honolulu, HI 96814", "email": "vendor@foo.com", "owner": "vendor@foo.com"}
+    { "name": "Vendor", "bio": "I'm a vendor!", "image": "https://openclipart.org/image/800px/256581", "owner": "vendor@foo.com" },
+    { "name": "Safeway", "bio": "We're a part of your neighborhood, providing fresh ingredients and more ways to save.", "image": "https://www.pngitem.com/pimgs/m/489-4897030_logo-safeway-hd-png-download.png", "owner": "safeway@foo.com" },
+    { "name": "Foodland", "bio": "Official EasyChef account for Foodland Hawaii, Hawaii's Best Grocery Store!", "image": "https://www.foodland.com/files/uploads/FLMktg20_15379_FL-KokuaShoppingService-SocialPost-Store_0.png", "owner": "foodland@foo.com" }
   ],
 
   "defaultRecipes": [
@@ -98,6 +97,20 @@
     { "ingredient": "Milk", "price": "5.99", "size": "Gallon", "quantity": "75", "owner": "vendor@foo.com" },
     { "ingredient": "Butter", "price": "7.39", "size": "16 oz", "quantity": "200", "owner": "vendor@foo.com" },
     { "ingredient": "Flour", "price": "3.69", "size": "2 lb", "quantity": "50", "owner": "vendor@foo.com" },
-    { "ingredient": "Salt", "price": "2.79", "size": "26 oz", "quantity": "125", "owner": "vendor@foo.com" }
+    { "ingredient": "Salt", "price": "2.79", "size": "26 oz", "quantity": "125", "owner": "vendor@foo.com" },
+    { "ingredient": "Milk", "price": "5.99", "size": "Gallon", "quantity": "75", "owner": "foodland@foo.com" },
+    { "ingredient": "Butter", "price": "7.39", "size": "16 oz", "quantity": "200", "owner": "foodland@foo.com" },
+    { "ingredient": "Flour", "price": "3.69", "size": "2 lb", "quantity": "50", "owner": "foodland@foo.com" },
+    { "ingredient": "Salt", "price": "2.79", "size": "26 oz", "quantity": "125", "owner": "foodland@foo.com" },
+    { "ingredient": "Milk", "price": "4.49", "size": "Gallon", "quantity": "60", "owner": "safeway@foo.com" },
+    { "ingredient": "Butter", "price": "3.50", "size": "16 oz", "quantity": "210", "owner": "safeway@foo.com" },
+    { "ingredient": "Flour", "price": "3.99", "size": "5 lb", "quantity": "80", "owner": "safeway@foo.com" },
+    { "ingredient": "Salt", "price": "0.99", "size": "26 oz", "quantity": "100", "owner": "safeway@foo.com" }
+  ],
+
+  "vendorProfiles": [
+    { "name": "Vendor", "bio": "I'm a vendor!", "image": "https://openclipart.org/image/800px/256581", "storeHours": "8AM-8PM Everyday", "address": "123 Vendor St", "email": "vendor@foo.com", "owner": "vendor@foo.com" },
+    { "name": "Safeway", "bio": "We're a part of your neighborhood, providing fresh ingredients and more ways to save.", "image": "https://www.pngitem.com/pimgs/m/489-4897030_logo-safeway-hd-png-download.png",  "storeHours": "Open 24 Hours", "address": "888 Kapahulu Ave, Honolulu, HI 96816", "email": "safeway@foo.com", "owner": "safeway@foo.com" },
+    { "name": "Foodland", "bio": "Official EasyChef account for Foodland Hawaii, Hawaii's Best Grocery Store!", "image": "https://www.foodland.com/files/uploads/FLMktg20_15379_FL-KokuaShoppingService-SocialPost-Store_0.png", "storeHours": "6AM-9PM Everyday", "address": "2939 Harding Ave, Honolulu, HI 96816", "email": "foodland@foo.com", "owner": "foodland@foo.com" }
   ]
 }

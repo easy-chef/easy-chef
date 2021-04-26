@@ -2,6 +2,7 @@ import { Meteor } from 'meteor/meteor';
 import { Roles } from 'meteor/alanning:roles';
 import { Stuffs } from '../../api/stuff/Stuff';
 import { Profiles } from '../../api/profile/Profile';
+import { VendorProfiles } from '../../api/vendor/VendorProfile';
 import { Recipes } from '../../api/recipe/Recipes';
 import { VendorIngredients } from '../../api/vendor/VendorIngredient';
 
@@ -54,6 +55,12 @@ Meteor.publish(VendorIngredients.vendorPublicationName, function () {
     return VendorIngredients.collection.find({ owner: username });
   }
   return this.ready();
+});
+
+Meteor.publish(VendorProfiles.public, function () {
+  return VendorProfiles.collection.find({
+    userId: { $exists: false },
+  });
 });
 
 // alanning:roles publication
