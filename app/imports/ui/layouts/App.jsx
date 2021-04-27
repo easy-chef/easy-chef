@@ -7,10 +7,12 @@ import { HashRouter as Router, Route, Switch, Redirect } from 'react-router-dom'
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import Landing from '../pages/Landing';
-import ListStuff from '../pages/ListStuff';
+// import ListStuff from '../pages/ListStuff';
+import ListRecipe from '../pages/ListRecipe';
 import ListStuffAdmin from '../pages/ListStuffAdmin';
-import AddStuff from '../pages/AddStuff';
-import EditStuff from '../pages/EditStuff';
+// import AddStuff from '../pages/AddStuff';
+import AddRecipe from '../pages/AddRecipe';
+import EditRecipe from '../pages/EditRecipe';
 import NotFound from '../pages/NotFound';
 import Signin from '../pages/Signin';
 import Signup from '../pages/Signup';
@@ -21,7 +23,6 @@ import EditProfile from '../pages/EditProfile';
 import ListIngredients from '../pages/ListIngredients';
 import EditIngredients from '../pages/EditIngredients';
 import AddIngredient from '../pages/AddIngredient';
-import ViewVendors from '../pages/ViewVendors';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 class App extends React.Component {
@@ -36,11 +37,10 @@ class App extends React.Component {
             <Route path="/signup" component={Signup}/>
             <Route path="/signout" component={Signout}/>
             <Route path="/inprogress" component={NotFound}/>
-            <Route path="/viewvendors" component={ViewVendors}/>
-            <ProtectedRoute path="/list" component={ListStuff}/>
-            <ProtectedRoute path="/add" component={AddStuff}/>
-            <ProtectedRoute path="/recipe" component={IndividualRecipe}/>
-            <ProtectedRoute path="/edit/:_id" component={EditStuff}/>
+            <ProtectedRoute path="/list" component={ListRecipe}/>
+            <ProtectedRoute path="/add" component={AddRecipe}/>
+            <ProtectedRoute path="/recipe/:_id" component={IndividualRecipe}/>
+            <ProtectedRoute path="/edit/:_id" component={EditRecipe}/>
             <ProtectedRoute path="/viewprofile" component={ViewProfile}/>
             <ProtectedRoute path="/editprofile" component={EditProfile}/>
             <AdminProtectedRoute path="/admin" component={ListStuffAdmin}/>
