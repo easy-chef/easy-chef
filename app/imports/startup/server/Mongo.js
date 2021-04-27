@@ -7,17 +7,17 @@ import { VendorIngredients } from '../../api/vendor/VendorIngredient';
 /* eslint-disable no-console */
 
 //  Adds recipes to Recipes collection.
-function addCreatedRecipe(recipe) {
-  if (Meteor.settings.defaultRecipes) {
-    console.log(`  Adding: ${recipe.recipeName} (${recipe.recipeEmail})`);
-    Recipes.collection.insert(recipe);
-  }
+function addRecipe(data) {
+  // if (Meteor.settings.defaultRecipes) {
+  console.log(`  Adding: ${data.recipeName} (${data.recipeEmail})`);
+  Recipes.collection.insert(data);
+  // }
 }
 
 // Creates default recipes if Recipes collection is empty.
 if (Recipes.collection.find().count() === 0) {
   console.log('Creating default recipes');
-  Meteor.settings.defaultRecipes.map(recipe => addCreatedRecipe(recipe));
+  Meteor.settings.defaultRecipes.map(data => addRecipe(data));
 }
 
 // Initialize the database with a default data document.
