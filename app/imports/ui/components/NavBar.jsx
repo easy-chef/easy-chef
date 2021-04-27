@@ -12,16 +12,16 @@ class NavBar extends React.Component {
     const menuStyle = { marginBottom: '10px' };
     return (
       <Menu color={'green'} style={menuStyle} attached="top" borderless inverted>
-        <Menu.Item onClick={this.handleItemClick}as={NavLink} activeClassName="" exact to="/" >
+        <Menu.Item onClick={this.handleItemClick} as={NavLink} activeClassName="" exact to="/" >
           <Header inverted as='h1'>Easy Chef</Header>
         </Menu.Item>
-        <Menu.Item as={NavLink} activeClassName="active" exact to="/list" key='list'><Icon name="search"/>Search for Recipes</Menu.Item>
+        <Menu.Item as={NavLink} activeClassName="active" exact to="/search" key='search'><Icon name="search"/>Search for Recipes</Menu.Item>
         <Menu.Item as={NavLink} activeClassName="active" exact to="/viewvendors" key='viewvendors'><Icon name="shopping basket"/>View Vendors</Menu.Item>
         {this.props.currentUser ? (
           [<Menu.Item key='recipe'>
             <Dropdown id="navbar-current-user" text="Your Recipes" icon={'caret down'}>
               <Dropdown.Menu>
-                <Dropdown.Item as={NavLink} activeClassName="active" exact to="/ist" key='list'><Icon name='clone outline'/>Recipe List</Dropdown.Item>
+                <Dropdown.Item as={NavLink} activeClassName="active" exact to="/list" key='list'><Icon name='clone outline'/>Recipe List</Dropdown.Item>
                 <Dropdown.Item as={NavLink} activeClassName="active" exact to="/add" key='add'><Icon name='plus square outline'/>Add Recipe</Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown></Menu.Item>,
