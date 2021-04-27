@@ -12,7 +12,7 @@ import ListRecipe from '../pages/ListRecipe';
 import ListStuffAdmin from '../pages/ListStuffAdmin';
 // import AddStuff from '../pages/AddStuff';
 import AddRecipe from '../pages/AddRecipe';
-import EditStuff from '../pages/EditStuff';
+import EditRecipe from '../pages/EditRecipe';
 import NotFound from '../pages/NotFound';
 import Signin from '../pages/Signin';
 import Signup from '../pages/Signup';
@@ -40,7 +40,7 @@ class App extends React.Component {
             <ProtectedRoute path="/list" component={ListRecipe}/>
             <ProtectedRoute path="/add" component={AddRecipe}/>
             <ProtectedRoute path="/recipe/:_id" component={IndividualRecipe}/>
-            <ProtectedRoute path="/edit/:_id" component={EditStuff}/>
+            <ProtectedRoute path="/edit/:_id" component={EditRecipe}/>
             <ProtectedRoute path="/viewprofile" component={ViewProfile}/>
             <ProtectedRoute path="/editprofile" component={EditProfile}/>
             <AdminProtectedRoute path="/admin" component={ListStuffAdmin}/>
