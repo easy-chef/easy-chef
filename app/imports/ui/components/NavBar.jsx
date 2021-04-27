@@ -19,10 +19,10 @@ class NavBar extends React.Component {
         <Menu.Item as={NavLink} activeClassName="active" exact to="/viewvendors" key='viewvendors'><Icon name="shopping basket"/>View Vendors</Menu.Item>
         {this.props.currentUser ? (
           [<Menu.Item key='recipe'>
-            <Dropdown id="navbar-current-user" text="Your Recipes" icon={'caret down'}>
+            <Dropdown id='navbar-your-recipes' text="Your Recipes" icon={'caret down'}>
               <Dropdown.Menu>
-                <Dropdown.Item as={NavLink} activeClassName="active" exact to="/list" key='list'><Icon name='clone outline'/>Recipe List</Dropdown.Item>
-                <Dropdown.Item as={NavLink} activeClassName="active" exact to="/add" key='add'><Icon name='plus square outline'/>Add Recipe</Dropdown.Item>
+                <Dropdown.Item id="navbar-recipe-list" as={NavLink} activeClassName="active" exact to="/list" key='list'><Icon name='clone outline'/>Recipe List</Dropdown.Item>
+                <Dropdown.Item id="navbar-recipe-add" as={NavLink} activeClassName="active" exact to="/add" key='add'><Icon name='plus square outline'/>Add Recipe</Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown></Menu.Item>,
           ]
@@ -31,8 +31,8 @@ class NavBar extends React.Component {
           <Menu.Item key='ingredients'>
             <Dropdown id="navbar-ingredients" text="Ingredients" icon={'caret down'}>
               <Dropdown.Menu>
-                <Dropdown.Item as={NavLink} activeClassName="active" exact to="/listingredients" key='listingredients'><Icon name='clone outline'/>View/Edit</Dropdown.Item>
-                <Dropdown.Item as={NavLink} activeClassName="active" exact to="/addingredient" key='addingredient'><Icon name='plus square outline'/>Add</Dropdown.Item>
+                <Dropdown.Item id="navbar-list-ingredients" as={NavLink} activeClassName="active" exact to="/listingredients" key='listingredients'><Icon name='clone outline'/>View/Edit</Dropdown.Item>
+                <Dropdown.Item id="navbar-add-ingredients" as={NavLink} activeClassName="active" exact to="/addingredient" key='addingredient'><Icon name='plus square outline'/>Add</Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown></Menu.Item>
         ) : ''}

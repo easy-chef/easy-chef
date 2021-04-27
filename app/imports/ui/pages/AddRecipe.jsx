@@ -68,7 +68,7 @@ class AddRecipe extends React.Component {
   render() {
     let fRef = null;
     return (
-      <Grid container centered>
+      <Grid id="add-recipe-page" container centered>
         <Grid.Column>
           <Header as="h2" textAlign="center">Add Recipes</Header>
           <AutoForm ref={ref => { fRef = ref; }} schema={bridge} onSubmit={data => this.submit(data, fRef)} >

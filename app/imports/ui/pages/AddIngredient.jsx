@@ -39,7 +39,7 @@ class AddIngredient extends React.Component {
   render() {
     let fRef = null;
     return (
-      <Grid container centered>
+      <Grid id="add-ingredient" container centered>
         <Grid.Column>
           <Header as="h2" textAlign="center" inverted>Add Ingredient</Header>
           <AutoForm ref={ref => { fRef = ref; }} schema={bridge} onSubmit={data => this.submit(data, fRef)} >
