@@ -30,7 +30,7 @@ class EditProfile extends React.Component {
   renderPage() {
     console.log(this.props.doc);
     return (
-      <Grid container centered>
+      <Grid id="edit-profile" container centered>
         <Grid.Column>
           <Header as="h2" textAlign="center" inverted>Edit Profile</Header>
           <AutoForm schema={bridge} onSubmit={data => this.submit(data) } model={this.props.doc}>

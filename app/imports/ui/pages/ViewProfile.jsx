@@ -17,7 +17,7 @@ class ViewProfile extends React.Component {
   // Render the page once subscriptions have been received.
   renderPage() {
     return (
-      <Grid container>
+      <Grid id="view-profile" container>
         {this.props.profiles.map((profile, index) => <Profile key={index}
           profile={profile}/>)}
       </Grid>

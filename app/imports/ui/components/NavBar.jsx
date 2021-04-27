@@ -19,10 +19,10 @@ class NavBar extends React.Component {
         <Menu.Item as={NavLink} activeClassName="active" exact to="/view" key='view'><Icon name="shopping basket"/>View Vendors</Menu.Item>
         {this.props.currentUser ? (
           [<Menu.Item key='recipe'>
-            <Dropdown id="navbar-current-user" text="Your Recipes" icon={'caret down'}>
+            <Dropdown id='navbar-your-recipes' text="Your Recipes" icon={'caret down'}>
               <Dropdown.Menu>
-                <Dropdown.Item as={NavLink} activeClassName="active" exact to="/list" key='list'><Icon name='clone outline'/>Recipe List</Dropdown.Item>
-                <Dropdown.Item as={NavLink} activeClassName="active" exact to="/add" key='add'><Icon name='plus square outline'/>Add Recipe</Dropdown.Item>
+                <Dropdown.Item id="navbar-recipe-list" as={NavLink} activeClassName="active" exact to="/list" key='list'><Icon name='clone outline'/>Recipe List</Dropdown.Item>
+                <Dropdown.Item id="navbar-recipe-add" as={NavLink} activeClassName="active" exact to="/add" key='add'><Icon name='plus square outline'/>Add Recipe</Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown></Menu.Item>,
           ]

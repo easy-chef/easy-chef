@@ -18,7 +18,7 @@ class IndividualRecipeDetails extends React.Component {
   // Render the page once subscriptions have been received.
   renderPage() {
     return (
-      <div>
+      <div id="individual-recipe">
         <RecipeName recipe={this.props.recipe}/>
         <RecipeDetails recipe={this.props.recipe}/>
       </div>

@@ -36,6 +36,26 @@ class NavBar {
     await testController.click('#login-dropdown');
     await testController.click('#login-dropdown-sign-up');
   }
+
+  async gotoProfile(testController) {
+    await testController.click('#navbar-current-user');
+    await testController.click('#navbar-view-profile');
+  }
+
+  async gotoEditProfile(testController) {
+    await testController.click('#navbar-current-user');
+    await testController.click('#navbar-edit-profile');
+  }
+
+  async gotoListRecipe(testController) {
+    await testController.click('#navbar-your-recipes');
+    await testController.click('#navbar-recipe-list');
+  }
+
+  async gotoAddRecipe(testController) {
+    await testController.click('#navbar-your-recipes');
+    await testController.click('#navbar-recipe-add');
+  }
 }
 
 export const navBar = new NavBar();

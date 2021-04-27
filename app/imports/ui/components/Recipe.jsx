@@ -15,7 +15,7 @@ class Recipe extends React.Component {
             src={this.props.recipe.image}
           />
           <Card.Header>
-            <Link to={`/recipe/${this.props.recipe._id}`}>{this.props.recipe.recipeName}</Link>
+            <Link id="view-individual-recipe" to={`/recipe/${this.props.recipe._id}`}>{this.props.recipe.recipeName}</Link>
           </Card.Header>
           <Card.Meta>{this.props.recipe.recipeAuthor} ({this.props.recipe.recipeEmail})</Card.Meta>
           <Card.Description>
@@ -23,7 +23,7 @@ class Recipe extends React.Component {
           </Card.Description>
         </Card.Content>
         <Card.Content extra>
-          <Link to={`/edit/${this.props.recipe._id}`}>Edit</Link>
+          <Link id="view-edit-recipe" to={`/edit/${this.props.recipe._id}`}>Edit</Link>
         </Card.Content>
       </Card>
     );

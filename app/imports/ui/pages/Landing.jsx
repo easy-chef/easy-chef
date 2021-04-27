@@ -6,7 +6,7 @@ class Landing extends React.Component {
   render() {
     return (
       <div className="easychef-landing-background">
-        <Grid container centered stackable columns={3}>
+        <Grid id="landing-page" container centered stackable columns={3}>
 
           <Grid.Column textAlign='center'>
             <Icon size="huge" name="users" inverted />
