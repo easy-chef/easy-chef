@@ -38,7 +38,7 @@ class App extends React.Component {
             <Route path="/inprogress" component={NotFound}/>
             <Route path="/viewvendors" component={ViewVendors}/>
             <ProtectedRoute path="/list" component={ListStuff}/>
-            <ProtectedRoute path="/add" component={AddStuff}/>
+            <ProtectedRoute path="/add" component={AddRecipe}/>
             <ProtectedRoute path="/recipe" component={IndividualRecipe}/>
             <ProtectedRoute path="/edit/:_id" component={EditStuff}/>
             <ProtectedRoute path="/viewprofile" component={ViewProfile}/>
