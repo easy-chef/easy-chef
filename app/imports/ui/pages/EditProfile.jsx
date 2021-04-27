@@ -1,7 +1,7 @@
 import React from 'react';
 import { Grid, Loader, Header, Segment } from 'semantic-ui-react';
 import swal from 'sweetalert';
-import { AutoForm, ErrorsField, LongTextField, SubmitField, TextField } from 'uniforms-semantic';
+import { AutoForm, ErrorsField, LongTextField, SubmitField, TextField, HiddenField } from 'uniforms-semantic';
 import { Meteor } from 'meteor/meteor';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
@@ -28,6 +28,7 @@ class EditProfile extends React.Component {
 
   // Render the form. Use Uniforms: https://github.com/vazco/uniforms
   renderPage() {
+    console.log(this.props.doc);
     return (
       <Grid container centered>
         <Grid.Column>
@@ -37,9 +38,9 @@ class EditProfile extends React.Component {
               <TextField name='name'/>
               <LongTextField name='bio'/>
               <TextField name='image'/>
-              <TextField name='owner'/>
               <SubmitField value='Submit'/>
               <ErrorsField/>
+              <HiddenField name='owner' />
             </Segment>
           </AutoForm>
         </Grid.Column>
@@ -56,14 +57,20 @@ EditProfile.propTypes = {
 };
 
 // withTracker connects Meteor data to React components. https://guide.meteor.com/react.html#using-withTracker
-export default withTracker(({ match }) => {
+export default withTracker(() => {
   // Get the documentID from the URL field. See imports/ui/layouts/App.jsx for the route containing :_id.
-  const documentId = match.params._id;
-  // Get access to Stuff documents.
+  // const userId = Meteor.userId();
   const subscription = Meteor.subscribe(Profiles.userPublicationName);
+  const user = Meteor.user();
+  const username = Object(user).username;
+  console.log(user);
   // Get the document
+  // const username = Meteor.users.findOne(userId).username;
+  const document = Profiles.collection.findOne({ owner: username });
+  // console.log(typeof document);
+  // console.log(document);
   return {
-    doc: Profiles.collection.findOne(documentId),
+    doc: document,
     ready: subscription.ready(),
   };
 })(EditProfile);
