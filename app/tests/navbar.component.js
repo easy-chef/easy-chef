@@ -56,6 +56,17 @@ class NavBar {
     await testController.click('#navbar-your-recipes');
     await testController.click('#navbar-recipe-add');
   }
+
+  async gotoViewEditIngredients(testController) {
+    await testController.click('#navbar-ingredients');
+    await testController.click('#navbar-list-ingredients');
+  }
+
+  async gotoAddIngredients(testController) {
+    await testController.click('#navbar-ingredients');
+    await testController.click('#navbar-add-ingredients');
+  }
+
 }
 
 export const navBar = new NavBar();

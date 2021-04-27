@@ -18,7 +18,7 @@ class Ingredients extends React.Component {
         <Table.Cell>{this.props.vendoringredient.size}</Table.Cell>
         <Table.Cell>{this.props.vendoringredient.quantity}</Table.Cell>
         <Table.Cell>
-          <Link to={`/editingredients/${this.props.vendoringredient._id}`}>Edit</Link>
+          <Link id='view-edit-ingredient' to={`/editingredients/${this.props.vendoringredient._id}`}>Edit</Link>
         </Table.Cell>
         <Table.Cell>
           <Icon name='trash' textAlign='right' onClick={this.handleClick}></Icon>

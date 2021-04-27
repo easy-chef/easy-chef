@@ -17,7 +17,7 @@ class ListIngredients extends React.Component {
   // Render the page once subscriptions have been received.
   renderPage() {
     return (
-      <Container>
+      <Container id="view-ingredient">
         <Header as="h2" textAlign="center" inverted>List Ingredients</Header>
         <Table celled>
           <Table.Header>
