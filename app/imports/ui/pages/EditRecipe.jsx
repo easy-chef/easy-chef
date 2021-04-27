@@ -8,7 +8,7 @@ import {
   NumField,
   SubmitField,
   TextField,
-  LongTextField, ListField,
+  ListField,
 } from 'uniforms-semantic';
 import { Meteor } from 'meteor/meteor';
 import { withTracker } from 'meteor/react-meteor-data';
