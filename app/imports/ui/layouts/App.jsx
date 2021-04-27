@@ -9,7 +9,8 @@ import Footer from '../components/Footer';
 import Landing from '../pages/Landing';
 // import ListStuff from '../pages/ListStuff';
 import ListRecipe from '../pages/ListRecipe';
-import ListStuffAdmin from '../pages/ListStuffAdmin';
+import ListItemsAdmin from '../pages/ListItemsAdmin';
+// import ListStuffAdmin from '../pages/ListStuffAdmin';
 // import AddStuff from '../pages/AddStuff';
 import AddRecipe from '../pages/AddRecipe';
 import EditStuff from '../pages/EditStuff';
@@ -43,7 +44,7 @@ class App extends React.Component {
             <ProtectedRoute path="/edit/:_id" component={EditStuff}/>
             <ProtectedRoute path="/viewprofile" component={ViewProfile}/>
             <ProtectedRoute path="/editprofile" component={EditProfile}/>
-            <AdminProtectedRoute path="/admin" component={ListStuffAdmin}/>
+            <AdminProtectedRoute path="/admin" component={ListItemsAdmin}/>
             <VendorProtectedRoute path="/listingredients" component={ListIngredients}/>
             <VendorProtectedRoute path="/editingredients/:_id" component={EditIngredients}/>
             <VendorProtectedRoute path="/addingredient" component={AddIngredient}/>
