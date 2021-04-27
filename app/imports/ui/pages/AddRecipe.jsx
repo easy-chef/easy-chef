@@ -1,11 +1,12 @@
 import React from 'react';
-import { Grid, Segment, Header } from 'semantic-ui-react';
-import { AutoForm, ErrorsField, NumField, SelectField, AutoField, SubmitField, RatingField, TextField, LongTextField } from 'uniforms-semantic';
+import { Grid, Segment, Header, Form } from 'semantic-ui-react';
+import { AutoForm, ErrorsField, NumField, SubmitField, TextField, LongTextField } from 'uniforms-semantic';
 import swal from 'sweetalert';
 import { Meteor } from 'meteor/meteor';
 import SimpleSchema2Bridge from 'uniforms-bridge-simple-schema-2';
 import SimpleSchema from 'simpl-schema';
 import { Recipes } from '../../api/recipe/Recipes';
+import MultiSelectField from '../forms/MultiSelectField';
 
 // Create a schema to specify the structure of the data to appear in the form.
 const formSchema = new SimpleSchema({
@@ -21,13 +22,26 @@ const formSchema = new SimpleSchema({
   'restrictions.$': {
     type: String,
     allowedValues: ['gluten-free', 'lactose intolerance', 'vegetarian', 'no peanuts'],
+    optional: true,
   },
   ingredients: Array,
-  'ingredients.$': String,
+  'ingredients.$': {
+    type: String,
+    label: 'ingredients',
+    optional: false,
+  },
   tools: Array,
-  'tools.$': String,
+  'tools.$': {
+    type: String,
+    label: 'tools',
+    optional: false,
+  },
   steps: Array,
-  'steps.$': String,
+  'steps.$': {
+    type: String,
+    label: 'steps',
+    optional: false,
+  },
 });
 
 const bridge = new SimpleSchema2Bridge(formSchema);
@@ -59,15 +73,20 @@ class AddRecipe extends React.Component {
           <Header as="h2" textAlign="center">Add Recipes</Header>
           <AutoForm ref={ref => { fRef = ref; }} schema={bridge} onSubmit={data => this.submit(data, fRef)} >
             <Segment>
-              <TextField name='recipeName'/>
-              <TextField name='recipeAuthor'/>
+              <Form.Group widths={'equal'}>
+                <TextField name='recipeName'/>
+                <TextField name='recipeAuthor'/>
+              </Form.Group>
+              <span>Note: *You must input your account email or it will not show up under your recipe list!*</span>
               <TextField name='recipeEmail'/>
               <LongTextField name='description'/>
               <TextField name='image'/>
-              <NumField name='total' decimal={false}/>
-              <NumField name='rating' decimal={false}/>
-              <NumField name='servings' decimal={false}/>
-              <AutoField name='restrictions' />
+              <Form.Group widths={'equal'}>
+                <NumField name='total' decimal={false} showInlineError={true} placeholder={'Estimated Cost'}/>
+                <NumField name='rating' decimal={false} showInlineError={true} placeholder={'Select Rating'}/>
+                <NumField name='servings' decimal={false} showInlineError={true} placeholder={'Select Serving Amount'}/>
+              </Form.Group>
+              <MultiSelectField name='restrictions' showInlineError={true} placeholder={'Select restrictions (optional)'}/>
               <LongTextField name='ingredients'/>
               <LongTextField name='tools'/>
               <LongTextField name='steps'/>
