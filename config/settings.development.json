@@ -35,6 +35,7 @@
       "image": "https://images.unsplash.com/photo-1543339531-242d0bc29010?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bWFjYXJvbmklMjBhbmQlMjBjaGVlc2V8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
       "rating": 4,
       "total": 15,
+      "servings": 4,
       "restrictions": [
         "gluten-free"
       ],
@@ -60,24 +61,31 @@
       ]
     },
     {
-      "recipeName": "Tasty Mac 'n Cheese 2",
+      "recipeName": "Chili Pasta",
       "recipeAuthor": "Elliot",
       "recipeEmail": "john@foo.com",
-      "description": "The sequel to Mac 'n Cheese",
-      "image": "https://images.unsplash.com/photo-1543339531-242d0bc29010?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bWFjYXJvbmklMjBhbmQlMjBjaGVlc2V8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+      "description": "A healthy meal that is full of flavor, protein and fiber!",
+      "image": "https://www.budgetbytes.com/wp-content/uploads/2014/09/One-Pot-Chili-Pasta-fork-400x300-1-200x200.jpg",
       "rating": 3,
-      "total": 15,
+      "total": 10,
+      "servings": 3,
       "restrictions": [
-        "vegetarian"
+        "vegetarian",
+        "no peanuts"
       ],
       "ingredients": [
-        "8oz. elbow macaroni",
-        "3 tablespoon butter",
-        "3 tablespoon flour",
-        "1/4 teaspoon salt",
-        "dash pepper",
-        "1 cup milk",
-        "1 cup shredded cheese"
+        "1 Tbsp. olive oil",
+        "yellow onion",
+        "2 cloves garlic",
+        "1/2 lb. ground beef",
+        "2 Tbsp. flour",
+        "2 Tbsp. chili powder",
+        "15oz. tomato sauce",
+        "15oz. black ad kidney beans",
+        "1 cup corn kernels",
+        "2 cups macaroni",
+        "1 cup cheese",
+        "2 cups beef broth"
       ],
       "tools": [
         "stove",
@@ -85,10 +93,43 @@
         "large pot"
       ],
       "steps": [
-        "Boil lightly salted water then proceed to cook elbow macaroni until cooked.  Afterwards, proceed to drain.",
-        "Melt butter in a saucepan over medium heat, then stir in flour and salt for 5 minutes.  Then pour in milk while stirring until it is smooth and bubbling. Next, add cheddar cheese and continue to stir until cheese is melted",
-        "Fold macaroni into cheese sauce until it is coated.",
-        "Enjoy!"
+        "Dice onion and mince the garlic, then cook both in a large pot with olive oil with medium heat for 1-2 minutes.  Next add ground beef and cook until it is browned.",
+        "Add flour and the chili powder to the pot and coat the meat.  Continue to stir for 1-2 minutes.",
+        "Drain and rinse the black and kidney beans.  Then add them along with the tomato sauce, and kernels to the pot.  Continue to stir after adding in the items.",
+        "Add macaroni and beef broth then proceed to stir.",
+        "Place lid on top of pot and turn the heat to high to allow pot to boil.  After boiling, stir to loosen any pasta.",
+        "Allow the pot to simmer on medium-low for 15 minutes.",
+        "Once cooked, turn heat off and stir in additional cheese until melted.",
+        "Serve and enjoy while it's still hot!"
+      ]
+    },
+    {
+      "recipeName": "Green Smoothie",
+      "recipeAuthor": "Elliot",
+      "recipeEmail": "john@foo.com",
+      "description": "A very nutritious smoothie for breakfast",
+      "image": "https://www.fromvalerieskitchen.com/wordpress/wp-content/uploads/2014/02/Tropical-Green-Smoothie-109-1.jpg",
+      "rating": 5,
+      "total": 30,
+      "servings": 2,
+      "restrictions": [
+        "none"
+      ],
+      "ingredients": [
+        "freeze Bananas",
+        "frozen fruits (any works!)",
+        "spinach",
+        "almond milk"
+      ],
+      "tools": [
+        "blender"
+      ],
+      "steps": [
+        "First, add milk into the blender. The amount of how much want to drink is up to you!",
+        "Next, add spinach but make sure not to add too much.",
+        "Finally, add your frozen fruits.  If you want you can additional toppings such as other fruits!",
+        "Blend!",
+        "Transfer contents into cups and enjoy!"
       ]
     }
   ],

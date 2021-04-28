@@ -15,7 +15,7 @@ import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
 import SimpleSchema2Bridge from 'uniforms-bridge-simple-schema-2';
 import { Recipes } from '../../api/recipe/Recipes';
-import MultiSelectField from '../forms/MultiSelectField';
+import MultiSelectField from '../forms/controllers/MultiSelectField';
 
 const bridge = new SimpleSchema2Bridge(Recipes.schema);
 

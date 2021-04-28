@@ -1,7 +1,7 @@
 import React from 'react';
 import { Grid, Loader, Header, Segment } from 'semantic-ui-react';
 import swal from 'sweetalert';
-import { AutoForm, ErrorsField, HiddenField, LongTextField, SubmitField, TextField } from 'uniforms-semantic';
+import { AutoForm, ErrorsField, LongTextField, SubmitField, TextField, HiddenField } from 'uniforms-semantic';
 import { Meteor } from 'meteor/meteor';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
@@ -15,8 +15,8 @@ class EditProfile extends React.Component {
 
   // On successful submit, insert the data.
   submit(data) {
-    const { name, bio, image, owner, _id } = data;
-    Profiles.collection.update(_id, { $set: { name, bio, image, owner } }, (error) => (error ?
+    const { name, bio, image, _id } = data;
+    Profiles.collection.update(_id, { $set: { name, bio, image } }, (error) => (error ?
       swal('Error', error.message, 'error') :
       swal('Success', 'Item updated successfully', 'success')));
   }
@@ -28,18 +28,19 @@ class EditProfile extends React.Component {
 
   // Render the form. Use Uniforms: https://github.com/vazco/uniforms
   renderPage() {
+    console.log(this.props.doc);
     return (
       <Grid id="edit-profile" container centered>
         <Grid.Column>
           <Header as="h2" textAlign="center" inverted>Edit Profile</Header>
-          <AutoForm schema={bridge} onSubmit={data => this.submit(data)} model={this.props.doc}>
+          <AutoForm schema={bridge} onSubmit={data => this.submit(data) } model={this.props.doc}>
             <Segment>
               <TextField name='name'/>
               <LongTextField name='bio'/>
               <TextField name='image'/>
               <SubmitField value='Submit'/>
               <ErrorsField/>
-              <HiddenField name='owner'/>
+              <HiddenField name='owner' />
             </Segment>
           </AutoForm>
         </Grid.Column>
@@ -56,14 +57,20 @@ EditProfile.propTypes = {
 };
 
 // withTracker connects Meteor data to React components. https://guide.meteor.com/react.html#using-withTracker
-export default withTracker(({ match }) => {
+export default withTracker(() => {
   // Get the documentID from the URL field. See imports/ui/layouts/App.jsx for the route containing :_id.
-  const documentId = match.params._id;
-  // Get access to Stuff documents.
+  // const userId = Meteor.userId();
   const subscription = Meteor.subscribe(Profiles.userPublicationName);
+  const user = Meteor.user();
+  const username = Object(user).username;
+  console.log(user);
   // Get the document
+  // const username = Meteor.users.findOne(userId).username;
+  const document = Profiles.collection.findOne({ owner: username });
+  // console.log(typeof document);
+  // console.log(document);
   return {
-    doc: Profiles.collection.findOne(documentId),
+    doc: document,
     ready: subscription.ready(),
   };
 })(EditProfile);

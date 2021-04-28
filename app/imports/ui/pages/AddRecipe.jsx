@@ -6,7 +6,7 @@ import { Meteor } from 'meteor/meteor';
 import SimpleSchema2Bridge from 'uniforms-bridge-simple-schema-2';
 import SimpleSchema from 'simpl-schema';
 import { Recipes } from '../../api/recipe/Recipes';
-import MultiSelectField from '../forms/MultiSelectField';
+import MultiSelectField from '../forms/controllers/MultiSelectField';
 
 // Create a schema to specify the structure of the data to appear in the form.
 const formSchema = new SimpleSchema({

@@ -11,7 +11,7 @@ class RecipeDetails extends React.Component {
         <Grid container columns={2}>
           <Grid.Column>
             <div className="recipe-title">
-              <Item relaxed>
+              <Item>
                 <Item.Content>
                   <Item.Header><Header as='h1' size='huge'>{this.props.recipe.recipeName}</Header></Item.Header>
                   <Item.Meta><Header size='medium'>By {this.props.recipe.recipeAuthor}</Header></Item.Meta>
