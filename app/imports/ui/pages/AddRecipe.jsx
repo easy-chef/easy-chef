@@ -1,6 +1,6 @@
 import React from 'react';
 import { Grid, Segment, Header, Form } from 'semantic-ui-react';
-import { AutoForm, ErrorsField, NumField, SubmitField, TextField, LongTextField } from 'uniforms-semantic';
+import { AutoForm, ErrorsField, NumField, SubmitField, TextField, LongTextField, ListField } from 'uniforms-semantic';
 import swal from 'sweetalert';
 import { Meteor } from 'meteor/meteor';
 import SimpleSchema2Bridge from 'uniforms-bridge-simple-schema-2';
@@ -87,9 +87,9 @@ class AddRecipe extends React.Component {
                 <NumField name='servings' decimal={false} showInlineError={true} placeholder={'Select Serving Amount'}/>
               </Form.Group>
               <MultiSelectField name='restrictions' showInlineError={true} placeholder={'Select restrictions (optional)'}/>
-              <LongTextField name='ingredients'/>
-              <LongTextField name='tools'/>
-              <LongTextField name='steps'/>
+              <ListField name='ingredients'/>
+              <ListField name='tools'/>
+              <ListField name='steps'/>
               <SubmitField value='Submit'/>
               <ErrorsField/>
             </Segment>
