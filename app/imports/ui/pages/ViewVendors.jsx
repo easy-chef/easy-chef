@@ -17,7 +17,7 @@ class ViewVendors extends React.Component {
   // Render the page once subscriptions have been received.
   renderPage() {
     return (
-      <Container>
+      <Container id='view-vendors'>
         <Header as="h2" textAlign="center" inverted>Vendors</Header>
         <Card.Group>
           {this.props.vendors.map((vendor, index) => <Vendor key={index}

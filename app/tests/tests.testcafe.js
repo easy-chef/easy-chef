@@ -11,6 +11,7 @@ import { addRecipePage } from './addrecipe.page';
 import { viewIngredientPage } from './viewingredient.page';
 import { editIngredientPage } from './editingredient.page';
 import { addIngredientPage } from './addingredient.page';
+import { viewVendorsPage } from './viewvendors.page';
 
 /* global fixture:false, test:false */
 
@@ -83,5 +84,7 @@ test('Test that View/Edit and Add Ingredients appears', async (testController) =
   await editIngredientPage.isDisplayed(testController);
   await navBar.gotoAddIngredients(testController);
   await addIngredientPage.isDisplayed(testController);
+  await navBar.gotoViewVendors(testController);
+  await viewVendorsPage.isDisplayed(testController);
 
 });
