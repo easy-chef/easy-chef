@@ -43,31 +43,34 @@ class EditRecipe extends React.Component {
           <Header as="h2" textAlign="center" inverted>Edit Recipe</Header>
           <AutoForm schema={bridge} onSubmit={data => this.submit(data)} model={this.props.doc}>
             <Segment>
-              <TextField name='recipeName'/>
-              <TextField name='description'/>
-              <TextField name='image'/>
-              <NumField name='total' decimal={true}/>
-              <NumField name='servings' decimal={true}/>
-              <MultiSelectField name='restrictions' showInlineError={true} placeholder={'Restrictions'}/>
+              <TextField id='edit-recipe-name' name='recipeName'/>
+              <TextField id='edit-recipe-description' name='description'/>
+              <TextField id='edit-recipe-image' name='image'/>
+              <NumField id='edit-recipe-total' name='total' decimal={true}/>
+              <NumField id='edit-recipe-servings' name='servings' decimal={true}/>
+              <MultiSelectField id='edit-recipe-restrictions' name='restrictions' showInlineError={true} placeholder={'Restrictions'}/>
               <ListField
+                id='edit-recipe-ingredients'
                 name='ingredients'
                 showInlineError={true}
                 initialCount={this.props.doc.ingredients.length}
                 itemProps={this.props.doc.ingredients}>
               </ListField>
               <ListField
+                id='edit-recipe-tools'
                 name='tools'
                 showInlineError={true}
                 initialCount={this.props.doc.tools.length}
                 itemProps={this.props.doc.tools}>
               </ListField>
               <ListField
+                id='edit-recipe-steps'
                 name='steps'
                 showInlineError={true}
                 initialCount={this.props.doc.steps.length}
                 itemProps={this.props.doc.steps}>
               </ListField>
-              <SubmitField value='Submit'/>
+              <SubmitField id='submit' value='Submit'/>
               <ErrorsField/>
               <HiddenField name='recipeEmail' />
             </Segment>

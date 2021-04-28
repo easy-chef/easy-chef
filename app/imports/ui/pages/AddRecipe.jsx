@@ -74,23 +74,23 @@ class AddRecipe extends React.Component {
           <AutoForm ref={ref => { fRef = ref; }} schema={bridge} onSubmit={data => this.submit(data, fRef)} >
             <Segment>
               <Form.Group widths={'equal'}>
-                <TextField name='recipeName'/>
-                <TextField name='recipeAuthor'/>
+                <TextField id='add-recipe-name' name='recipeName'/>
+                <TextField id='add-recipe-author' name='recipeAuthor'/>
               </Form.Group>
               <span>Note: *You must input your account email or it will not show up under your recipe list!*</span>
-              <TextField name='recipeEmail'/>
-              <LongTextField name='description'/>
-              <TextField name='image'/>
+              <TextField id='add-recipe-email' name='recipeEmail'/>
+              <LongTextField id='add-recipe-description' name='description'/>
+              <TextField id='add-recipe-image' name='image'/>
               <Form.Group widths={'equal'}>
-                <NumField name='total' decimal={false} showInlineError={true} placeholder={'Estimated Cost'}/>
-                <NumField name='rating' decimal={false} showInlineError={true} placeholder={'Select Rating'}/>
-                <NumField name='servings' decimal={false} showInlineError={true} placeholder={'Select Serving Amount'}/>
+                <NumField id='add-recipe-total' name='total' decimal={false} showInlineError={true} placeholder={'Estimated Cost'}/>
+                <NumField id='add-recipe-rating' name='rating' decimal={false} showInlineError={true} placeholder={'Select Rating'}/>
+                <NumField id='add-recipe-servings' name='servings' decimal={false} showInlineError={true} placeholder={'Select Serving Amount'}/>
               </Form.Group>
-              <MultiSelectField name='restrictions' showInlineError={true} placeholder={'Select restrictions (optional)'}/>
-              <ListField name='ingredients'/>
-              <ListField name='tools'/>
-              <ListField name='steps'/>
-              <SubmitField value='Submit'/>
+              <MultiSelectField id='add-recipe-restriction' name='restrictions' showInlineError={true} placeholder={'Select restrictions (optional)'}/>
+              <ListField id='add-recipe-ingredients' name='ingredients'/>
+              <ListField id='add-recipe-tools' name='tools'/>
+              <ListField id='add-recipe-steps' name='steps'/>
+              <SubmitField id='submit' value='Submit'/>
               <ErrorsField/>
             </Segment>
           </AutoForm>

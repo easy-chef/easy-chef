@@ -44,11 +44,11 @@ class AddIngredient extends React.Component {
           <Header as="h2" textAlign="center" inverted>Add Ingredient</Header>
           <AutoForm ref={ref => { fRef = ref; }} schema={bridge} onSubmit={data => this.submit(data, fRef)} >
             <Segment>
-              <TextField name='ingredient'/>
-              <TextField name='price' iconLeft="dollar"/>
-              <TextField name='size' placeholder="Please enter a number followed by the unit of measurement. Example: 3 oz"/>
-              <NumField name='quantity' decimal={false}/>
-              <SubmitField value='Submit'/>
+              <TextField id='add-ingredient-ingredient' name='ingredient'/>
+              <TextField id='add-ingredient-price' name='price' iconLeft="dollar"/>
+              <TextField id='add-ingredient-size' name='size' placeholder="Please enter a number followed by the unit of measurement. Example: 3 oz"/>
+              <NumField id='add-ingredient-quantity' name='quantity' decimal={false}/>
+              <SubmitField id='submit' value='Submit'/>
               <ErrorsField/>
             </Segment>
           </AutoForm>

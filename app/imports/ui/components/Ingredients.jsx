@@ -21,7 +21,7 @@ class Ingredients extends React.Component {
           <Link id='view-edit-ingredient' to={`/editingredients/${this.props.vendoringredient._id}`}>Edit</Link>
         </Table.Cell>
         <Table.Cell>
-          <Icon name='trash' textAlign='right' onClick={this.handleClick}></Icon>
+          <Icon id='delete-ingredient' name='trash' textAlign='right' onClick={this.handleClick}></Icon>
         </Table.Cell>
       </Table.Row>
     );

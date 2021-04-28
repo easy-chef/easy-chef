@@ -34,11 +34,11 @@ class EditIngredients extends React.Component {
           <Header as="h2" textAlign="center" inverted>Edit Ingredient</Header>
           <AutoForm schema={bridge} onSubmit={data => this.submit(data)} model={this.props.doc}>
             <Segment>
-              <TextField name='ingredient'/>
-              <TextField name='price' iconLeft="dollar"/>
-              <TextField name='size'/>
-              <NumField name='quantity' decimal={false}/>
-              <SubmitField value='Submit'/>
+              <TextField id='edit-ingredient-ingredient' name='ingredient'/>
+              <TextField id='edit-ingredient-price' name='price' iconLeft="dollar"/>
+              <TextField id='edit-ingredient-size' name='size'/>
+              <NumField id='edit-ingredient-quantity' name='quantity' decimal={false}/>
+              <SubmitField id='submit' value='Submit'/>
               <ErrorsField/>
               <HiddenField name='owner' />
             </Segment>

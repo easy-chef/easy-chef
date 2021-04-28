@@ -35,10 +35,10 @@ class EditProfile extends React.Component {
           <Header as="h2" textAlign="center" inverted>Edit Profile</Header>
           <AutoForm schema={bridge} onSubmit={data => this.submit(data) } model={this.props.doc}>
             <Segment>
-              <TextField name='name'/>
-              <LongTextField name='bio'/>
-              <TextField name='image'/>
-              <SubmitField value='Submit'/>
+              <TextField id='profile-name' name='name'/>
+              <LongTextField id='profile-bio' name='bio'/>
+              <TextField id='profile-image' name='image'/>
+              <SubmitField id='submit' value='Submit'/>
               <ErrorsField/>
               <HiddenField name='owner' />
             </Segment>

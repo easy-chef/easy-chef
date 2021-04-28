@@ -8,8 +8,17 @@ class EditIngredientPage {
 
   /** Asserts that this page is currently displayed. */
   async isDisplayed(testController) {
-    // This is first test to be run. Wait 80 seconds to avoid timeouts with GitHub Actions.
-    await testController.wait(80000).expect(this.pageSelector.exists).ok();
+    // This is first test to be run.
+    await testController.expect(this.pageSelector.exists).ok();
+  }
+
+  async editIngredient(testController, ingredient, price, size, quantity) {
+    await this.isDisplayed(testController);
+    await testController.typeText('#edit-ingredient-ingredient', ingredient);
+    await testController.typeText('#edit-ingredient-price', price);
+    await testController.typeText('#edit-ingredient-size', quantity);
+    await testController.click('#submit');
+    await testController.click('#submit');
   }
 }
 
