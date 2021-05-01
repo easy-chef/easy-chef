@@ -12,7 +12,6 @@ import MultiSelectField from '../forms/controllers/MultiSelectField';
 const formSchema = new SimpleSchema({
   recipeName: String,
   recipeAuthor: String,
-  recipeEmail: String,
   description: String,
   image: String,
   total: Number,
@@ -21,7 +20,7 @@ const formSchema = new SimpleSchema({
   restrictions: Array,
   'restrictions.$': {
     type: String,
-    allowedValues: ['gluten-free', 'lactose intolerance', 'vegetarian', 'no peanuts'],
+    allowedValues: ['gluten-free', 'lactose intolerance', 'vegetarian', 'no peanuts', 'none'],
     optional: true,
   },
   ingredients: Array,
@@ -51,9 +50,9 @@ class AddRecipe extends React.Component {
 
   // On submit, insert the data.
   submit(data, formRef) {
-    const { recipeName, recipeAuthor, recipeEmail, description, image, total, rating, servings, restrictions, ingredients, tools, steps } = data;
-    const owner = Meteor.user().username;
-    Recipes.collection.insert({ recipeName, recipeAuthor, recipeEmail, description, image, total, rating, servings, restrictions, ingredients, tools, steps, owner },
+    const { recipeName, recipeAuthor, description, image, total, rating, servings, restrictions, ingredients, tools, steps } = data;
+    const recipeEmail = Meteor.user().username;
+    Recipes.collection.insert({ recipeName, recipeAuthor, recipeEmail, description, image, total, rating, servings, restrictions, ingredients, tools, steps },
       (error) => {
         if (error) {
           swal('Error', error.message, 'error');
@@ -70,15 +69,13 @@ class AddRecipe extends React.Component {
     return (
       <Grid id="add-recipe-page" container centered>
         <Grid.Column>
-          <Header as="h2" textAlign="center">Add Recipes</Header>
+          <Header as="h2" textAlign="center" inverted>Add Recipe</Header>
           <AutoForm ref={ref => { fRef = ref; }} schema={bridge} onSubmit={data => this.submit(data, fRef)} >
             <Segment>
               <Form.Group widths={'equal'}>
                 <TextField id='add-recipe-name' name='recipeName'/>
                 <TextField id='add-recipe-author' name='recipeAuthor'/>
               </Form.Group>
-              <span>Note: *You must input your account email or it will not show up under your recipe list!*</span>
-              <TextField id='add-recipe-email' name='recipeEmail'/>
               <LongTextField id='add-recipe-description' name='description'/>
               <TextField id='add-recipe-image' name='image'/>
               <Form.Group widths={'equal'}>
@@ -86,7 +83,7 @@ class AddRecipe extends React.Component {
                 <NumField id='add-recipe-rating' name='rating' decimal={false} showInlineError={true} placeholder={'Select Rating'}/>
                 <NumField id='add-recipe-servings' name='servings' decimal={false} showInlineError={true} placeholder={'Select Serving Amount'}/>
               </Form.Group>
-              <MultiSelectField id='add-recipe-restriction' name='restrictions' showInlineError={true} placeholder={'Select restrictions (optional)'}/>
+              <MultiSelectField id='add-recipe-restriction' name='restrictions' showInlineError={true} placeholder={'Select restrictions (select "none" if there are no restrictions)'}/>
               <ListField id='add-recipe-ingredients' name='ingredients'/>
               <ListField id='add-recipe-tools' name='tools'/>
               <ListField id='add-recipe-steps' name='steps'/>

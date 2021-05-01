@@ -89,8 +89,7 @@ test('Test that list recipe, individual recipe details and edit recipe pages app
   await viewListUserRecipesPage.gotoEditRecipe(testController);
   await editRecipePage.editRecipe(testController, recipe.recipeName, recipe.description, recipe.image, recipe.total, recipe.servings, recipe.ingredients, recipe.tools, recipe.steps);
   await navBar.gotoAddRecipe(testController);
-  await addRecipePage.addRecipe(testController, recipe.recipeName, recipe.recipeAuthor,
-    recipe.recipeEmail, recipe.description, recipe.image, recipe.total, recipe.rating, recipe.servings, recipe.ingredients, recipe.tools, recipe.steps);
+  await addRecipePage.addRecipe(testController, recipe.recipeName, recipe.recipeAuthor, recipe.description, recipe.image, recipe.total, recipe.rating, recipe.servings, recipe.ingredients, recipe.tools, recipe.steps);
 });
 
 test('Test that vendor profile page and edit profile page appears and that forms work', async (testController) => {

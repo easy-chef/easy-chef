@@ -9,7 +9,9 @@
     { "email": "vendor@foo.com", "password":  "changeme", "role":  "vendor"},
     { "email": "foodland@foo.com", "password":  "changeme", "role":  "vendor"},
     { "email": "safeway@foo.com", "password":  "changeme", "role":  "vendor"},
-    { "email": "john@foo.com", "password": "changeme" }
+    { "email": "john@foo.com", "password": "changeme" },
+    { "email": "marcus@foo.com", "password": "changeme" },
+    { "email": "alyssa@foo.com", "password": "changeme" }
   ],
   "defaultData": [
     { "name": "Basket", "quantity": 3, "owner": "john@foo.com", "condition": "excellent" },
@@ -20,6 +22,8 @@
 
   "defaultProfiles": [
     { "name": "John", "bio": "I love to cook!", "image": "https://openclipart.org/image/800px/4749", "owner": "john@foo.com" },
+    { "name": "Marcus", "bio": "I'm a computer science student who likes to make dishes on the side!", "image": "https://react.semantic-ui.com/images/avatar/large/matthew.png", "owner": "marcus@foo.com" },
+    { "name": "Alyssa", "bio": "On a quest to learn all about the gastronomy here at UH: Manoa!", "image": "https://react.semantic-ui.com/images/avatar/small/molly.png", "owner": "alyssa@foo.com" },
     { "name": "Admin", "bio": "I'm an admin!", "image": "http://getdrawings.com/free-icon/default-avatar-icon-60.png", "owner": "admin@foo.com" },
     { "name": "Vendor", "bio": "I'm a vendor!", "image": "https://openclipart.org/image/800px/256581", "owner": "vendor@foo.com" },
     { "name": "Safeway", "bio": "We're a part of your neighborhood, providing fresh ingredients and more ways to save.", "image": "https://www.pngitem.com/pimgs/m/489-4897030_logo-safeway-hd-png-download.png", "owner": "safeway@foo.com" },
@@ -62,8 +66,8 @@
     },
     {
       "recipeName": "Chili Pasta",
-      "recipeAuthor": "Elliot",
-      "recipeEmail": "john@foo.com",
+      "recipeAuthor": "Marcus",
+      "recipeEmail": "marcus@foo.com",
       "description": "A healthy meal that is full of flavor, protein and fiber!",
       "image": "https://www.budgetbytes.com/wp-content/uploads/2014/09/One-Pot-Chili-Pasta-fork-400x300-1-200x200.jpg",
       "rating": 3,
@@ -130,6 +134,73 @@
         "Finally, add your frozen fruits.  If you want you can additional toppings such as other fruits!",
         "Blend!",
         "Transfer contents into cups and enjoy!"
+      ]
+    },
+    {
+      "recipeName": "Pancakes",
+      "recipeAuthor": "Alyssa",
+      "recipeEmail": "alyssa@foo.com",
+      "description": "A delicious and healthy type of pancake!",
+      "image": "https://fitfoodiefinds.com/wp-content/uploads/2020/11/pancakes2-1365x2048.jpeg",
+      "rating": 5,
+      "total": 9,
+      "servings": 2,
+      "restrictions": [
+        "none"
+      ],
+      "ingredients": [
+        "1 1/2 cups whole wheat flour",
+        "2 tsp. baking powder",
+        "1 tsp. ground cinnamon",
+        "1/4 tsp. ground ginger",
+        "1/8 tsp. ground allspice",
+        "1/8 tsp. salt",
+        "2 eggs",
+        "3/4 cup almond milk",
+        "1 cup potato puree",
+        "2 tbsp. maple syrup",
+        "1 tsp. vanilla extract",
+        "2 tbsp. melted coconut oil"
+      ],
+      "tools": [
+        "skillet"
+      ],
+      "steps": [
+        "Mix together the first 6 ingredients in a bowl then set aside.  Then mix together the next 6 ingredients in a separate bowl.",
+        "Mix the two bowls into one and mix thoroughly.",
+        "Heat skillet to medium heat and pour batter.  Then cook for 2-3 min. per pancake",
+        "Enjoy!"
+      ]
+    },
+    {
+      "recipeName": "Pizzadillas",
+      "recipeAuthor": "Alyssa",
+      "recipeEmail": "alyssa@foo.com",
+      "description": "Everything you love about pizza stuffed into a quesadilla!",
+      "image": "https://www.budgetbytes.com/wp-content/uploads/2011/08/Pizzadillas252520close-380x380.jpg",
+      "rating": 4,
+      "total": 20,
+      "servings": 2,
+      "restrictions": [
+        "no peanuts"
+      ],
+      "ingredients": [
+        "flour tortillas",
+        "shredded mozzarella",
+        "bell pepper",
+        "red onion",
+        "black olives",
+        "mushrooms",
+        "pizza sauce"
+      ],
+      "tools": [
+        "skillet"
+      ],
+      "steps": [
+        "Slice up vegetables then drain olives and mushrooms.",
+        "Measure 1/3 cup mozzarella per tortillas and spread over half of the tortillas.  Add additional toppings on top of the cheese",
+        "Place the pizzadilla on top of a skillet and cook until brown",
+        "Repeat steps 2 and 3 if you want to make any additional pizzadillas!"
       ]
     }
   ],
