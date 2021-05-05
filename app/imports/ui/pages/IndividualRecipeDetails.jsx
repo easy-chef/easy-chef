@@ -17,11 +17,11 @@ function lowestIngredients(recipeIngredients) {
   const lowestPrices = _.uniq(ingredientList, function (eachIngredient) {
     return _.min(eachIngredient);
   });
-  return lowestPrices;
+  return _.reduce(lowestPrices, function (memo, num) { return memo + num; });
 }
 
-function costUpdate(totalCalcuated) {
-  const { total, _id } = totalCalcuated;
+function costUpdate(totalCalculated) {
+  const { total, _id } = totalCalculated;
   Recipes.collection.update(_id, { $set: { total } });
 }
 */
@@ -58,14 +58,12 @@ export default withTracker(({ match }) => {
   const recipeId = match.params._id;
   // Get access to Recipe documents.
   const subscriptionRecipe = Meteor.subscribe(Recipes.userPublicationName);
-  // const subscriptionIngredients = Meteor.subscribe(VendorIngredients);
-  // Determine if subscription is ready
-  const ready = subscriptionRecipe.ready();
+  // const subscriptionIngredients = Meteor.subscribe(VendorIngredients.userPublicationName);
   // Get the Recipe documents
   const recipe = Recipes.collection.findOne(recipeId);
-  // const ingredients = VendorIngredients.collection;
+  // const ingredients = VendorIngredients.collection.find();
   return {
     recipe,
-    ready,
+    ready: subscriptionRecipe.ready(),
   };
 })(IndividualRecipeDetails);
