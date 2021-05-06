@@ -5,8 +5,8 @@ import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
 // import { Stuffs } from '../../api/stuff/Stuff';
 import { Recipes } from '../../api/recipe/Recipes';
-import ItemAdmin from '../components/ItemAdmin';
 // import StuffItemAdmin from '../components/StuffItemAdmin';
+import ItemAdmin from '../components/ItemAdmin';
 
 /** Renders a table containing all of the Stuff documents. Use <StuffItem> to render each row. */
 class ListItemsAdmin extends React.Component {
@@ -24,18 +24,9 @@ class ListItemsAdmin extends React.Component {
         <Table celled>
           <Table.Header>
             <Table.Row>
-              <Table.HeaderCell>Recipe Name</Table.HeaderCell>
-              <Table.HeaderCell>Recipe Author</Table.HeaderCell>
-              <Table.HeaderCell>Recipe Email</Table.HeaderCell>
-              <Table.HeaderCell>Description</Table.HeaderCell>
-              <Table.HeaderCell>Image</Table.HeaderCell>
-              <Table.HeaderCell>Cost</Table.HeaderCell>
-              <Table.HeaderCell>Rating</Table.HeaderCell>
-              <Table.HeaderCell>Servings</Table.HeaderCell>
-              <Table.HeaderCell>Restrictions</Table.HeaderCell>
-              <Table.HeaderCell>Ingredients</Table.HeaderCell>
-              <Table.HeaderCell>Tools</Table.HeaderCell>
-              <Table.HeaderCell>Steps</Table.HeaderCell>
+              <Table.HeaderCell>Name</Table.HeaderCell>
+              <Table.HeaderCell>Quantity</Table.HeaderCell>
+              <Table.HeaderCell>Condition</Table.HeaderCell>
               <Table.HeaderCell>Owner</Table.HeaderCell>
             </Table.Row>
           </Table.Header>
