@@ -23,6 +23,7 @@ class VendorIngredientsCollection {
     this.collection.attachSchema(this.schema);
     // Define names for publications and subscriptions
     this.vendorPublicationName = `${this.name}.publication.vendor`;
+    this.adminPublicationName = `${this.name}.publication.admin`;
   }
 }
 
