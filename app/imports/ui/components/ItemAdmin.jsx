@@ -22,7 +22,7 @@ ItemAdmin.propTypes = {
   item: PropTypes.shape({
     recipeName: PropTypes.string,
     recipeAuthor: PropTypes.string,
-    ingredients: PropTypes.string,
+    ingredients: PropTypes.array,
     total: PropTypes.number,
     owner: PropTypes.string,
     _id: PropTypes.string,
