@@ -4,7 +4,7 @@ import { Stuffs } from '../../api/stuff/Stuff';
 import { Profiles } from '../../api/profile/Profile';
 import { Recipes } from '../../api/recipe/Recipes';
 import { VendorIngredients } from '../../api/vendor/VendorIngredient';
-import { Vendors } from '../../api/vendor/Vendors';
+import { VendorProfiles } from '../../api/vendor/VendorProfile';
 
 // User-level publication.
 // If logged in, then publish documents owned by this user. Otherwise publish nothing.
@@ -54,9 +54,9 @@ Meteor.publish(VendorIngredients.adminPublicationName, function () {
   return this.ready();
 });
 
-Meteor.publish(Vendors.adminPublicationName, function () {
+Meteor.publish(VendorProfiles.adminPublicationName, function () {
   if (this.userId && Roles.userIsInRole(this.userId, 'admin')) {
-    return Vendors.collection.find();
+    return VendorProfiles.collection.find();
   }
   return this.ready();
 });

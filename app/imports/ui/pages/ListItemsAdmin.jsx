@@ -4,7 +4,7 @@ import { Container, Table, Header, Loader } from 'semantic-ui-react';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
 import { Recipes } from '../../api/recipe/Recipes';
-import { Vendors } from '../../api/vendor/Vendors';
+import { VendorProfiles } from '../../api/vendor/VendorProfile';
 import { VendorIngredients } from '../../api/vendor/VendorIngredient';
 import ItemAdmin from '../components/ItemAdmin';
 import VendorAdmin from '../components/VendorAdmin';
@@ -27,8 +27,9 @@ class ListItemsAdmin extends React.Component {
           <Table.Header>
             <Table.Row>
               <Table.HeaderCell>Name</Table.HeaderCell>
-              <Table.HeaderCell>Quantity</Table.HeaderCell>
-              <Table.HeaderCell>Condition</Table.HeaderCell>
+              <Table.HeaderCell>Author</Table.HeaderCell>
+              <Table.HeaderCell>Ingredients</Table.HeaderCell>
+              <Table.HeaderCell>Price $</Table.HeaderCell>
               <Table.HeaderCell>Owner</Table.HeaderCell>
             </Table.Row>
           </Table.Header>
@@ -82,14 +83,14 @@ ListItemsAdmin.propTypes = {
 export default withTracker(() => {
   // Get access to documents.
   const subscription = Meteor.subscribe(Recipes.adminPublicationName);
-  const subscription2 = Meteor.subscribe(Vendors.adminPublicationName);
+  const subscription2 = Meteor.subscribe(VendorProfiles.adminPublicationName);
   const subscription3 = Meteor.subscribe(VendorIngredients.adminPublicationName);
 
   // Determine if the subscription is ready
   const ready = subscription.ready() && subscription2.ready() && subscription3.ready();
   // Get the documents
   const items = Recipes.collection.find({}).fetch();
-  const vendors = Vendors.collection.find({}).fetch();
+  const vendors = VendorProfiles.collection.find({}).fetch();
   const ingredients = VendorIngredients.collection.find({}).fetch();
   return {
     items,

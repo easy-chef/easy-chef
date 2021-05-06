@@ -9,6 +9,7 @@ class ItemAdmin extends React.Component {
       <Table.Row>
         <Table.Cell>{this.props.item.recipeName}</Table.Cell>
         <Table.Cell>{this.props.item.recipeAuthor}</Table.Cell>
+        <Table.Cell>{this.props.item.ingredients}</Table.Cell>
         <Table.Cell>{this.props.item.total}</Table.Cell>
         <Table.Cell>{this.props.item.owner}</Table.Cell>
       </Table.Row>
@@ -21,6 +22,7 @@ ItemAdmin.propTypes = {
   item: PropTypes.shape({
     recipeName: PropTypes.string,
     recipeAuthor: PropTypes.string,
+    ingredients: PropTypes.string,
     total: PropTypes.number,
     owner: PropTypes.string,
     _id: PropTypes.string,

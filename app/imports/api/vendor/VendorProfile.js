@@ -25,6 +25,7 @@ class VendorProfilesCollection {
     this.collection.attachSchema(this.schema);
     // Define names for publications and subscriptions
     this.public = `${this.name}.publication.value`;
+    this.adminPublicationName = `${this.name}.publication.admin`;
   }
 }
 
