@@ -40,6 +40,7 @@
       "rating": 4,
       "total": 15,
       "servings": 4,
+      "owner": "john@foo.com",
       "restrictions": [
         "gluten-free"
       ],
@@ -73,6 +74,7 @@
       "rating": 3,
       "total": 10,
       "servings": 3,
+      "owner": "marcus@foo.com",
       "restrictions": [
         "vegetarian",
         "no peanuts"
@@ -116,6 +118,7 @@
       "rating": 5,
       "total": 30,
       "servings": 2,
+      "owner": "john@foo.com",
       "restrictions": [
         "none"
       ],
@@ -145,6 +148,7 @@
       "rating": 5,
       "total": 9,
       "servings": 2,
+      "owner": "alyssa@foo.com",
       "restrictions": [
         "none"
       ],
@@ -181,6 +185,7 @@
       "rating": 4,
       "total": 20,
       "servings": 2,
+      "owner": "alyssa@foo.com",
       "restrictions": [
         "no peanuts"
       ],

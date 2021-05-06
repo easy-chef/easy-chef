@@ -21,6 +21,7 @@ class RecipesCollection {
       rating: Number,
       servings: Number,
       total: Number,
+      owner: String,
       restrictions: Array,
       'restrictions.$': {
         type: String,

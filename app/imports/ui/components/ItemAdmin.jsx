@@ -7,10 +7,10 @@ class ItemAdmin extends React.Component {
   render() {
     return (
       <Table.Row>
-        <Table.Cell>{this.props.stuff.name}</Table.Cell>
-        <Table.Cell>{this.props.stuff.quantity}</Table.Cell>
-        <Table.Cell>{this.props.stuff.condition}</Table.Cell>
-        <Table.Cell>{this.props.stuff.owner}</Table.Cell>
+        <Table.Cell>{this.props.item.recipeName}</Table.Cell>
+        <Table.Cell>{this.props.item.recipeAuthor}</Table.Cell>
+        <Table.Cell>{this.props.item.total}</Table.Cell>
+        <Table.Cell>{this.props.item.owner}</Table.Cell>
       </Table.Row>
     );
   }
@@ -18,12 +18,12 @@ class ItemAdmin extends React.Component {
 
 // Require a document to be passed to this component.
 ItemAdmin.propTypes = {
-  stuff: PropTypes.shape({
-    name: PropTypes.string,
-    quantity: PropTypes.number,
-    condition: PropTypes.string,
-    _id: PropTypes.string,
+  item: PropTypes.shape({
+    recipeName: PropTypes.string,
+    recipeAuthor: PropTypes.string,
+    total: PropTypes.number,
     owner: PropTypes.string,
+    _id: PropTypes.string,
   }).isRequired,
 };
 

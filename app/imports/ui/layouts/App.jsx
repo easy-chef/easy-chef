@@ -8,10 +8,12 @@ import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import Landing from '../pages/Landing';
 // import ListStuff from '../pages/ListStuff';
-import ListStuffAdmin from '../pages/ListStuffAdmin';
+import ListRecipe from '../pages/ListRecipe';
+import ListItemsAdmin from '../pages/ListItemsAdmin';
+// import ListStuffAdmin from '../pages/ListStuffAdmin';
 // import AddStuff from '../pages/AddStuff';
 import AddRecipe from '../pages/AddRecipe';
-import EditRecipe from '../pages/EditRecipe';
+import EditStuff from '../pages/EditStuff';
 import NotFound from '../pages/NotFound';
 import Signin from '../pages/Signin';
 import Signup from '../pages/Signup';
@@ -22,9 +24,6 @@ import EditProfile from '../pages/EditProfile';
 import ListIngredients from '../pages/ListIngredients';
 import EditIngredients from '../pages/EditIngredients';
 import AddIngredient from '../pages/AddIngredient';
-import ViewVendors from '../pages/ViewVendors';
-import ListRecipe from '../pages/ListRecipe';
-import ComingSoon from '../pages/ComingSoon';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 class App extends React.Component {
@@ -38,15 +37,14 @@ class App extends React.Component {
             <Route path="/signin" component={Signin}/>
             <Route path="/signup" component={Signup}/>
             <Route path="/signout" component={Signout}/>
-            <Route path="/inprogress" component={ComingSoon}/>
-            <Route path="/viewvendors" component={ViewVendors}/>
+            <Route path="/inprogress" component={NotFound}/>
             <ProtectedRoute path="/list" component={ListRecipe}/>
             <ProtectedRoute path="/add" component={AddRecipe}/>
-            <ProtectedRoute path="/recipe/:_id" component={IndividualRecipe}/>
-            <ProtectedRoute path="/edit/:_id" component={EditRecipe}/>
+            <ProtectedRoute path="/recipe" component={IndividualRecipe}/>
+            <ProtectedRoute path="/edit/:_id" component={EditStuff}/>
             <ProtectedRoute path="/viewprofile" component={ViewProfile}/>
             <ProtectedRoute path="/editprofile" component={EditProfile}/>
-            <AdminProtectedRoute path="/admin" component={ListStuffAdmin}/>
+            <AdminProtectedRoute path="/admin" component={ListItemsAdmin}/>
             <VendorProtectedRoute path="/listingredients" component={ListIngredients}/>
             <VendorProtectedRoute path="/editingredients/:_id" component={EditIngredients}/>
             <VendorProtectedRoute path="/addingredient" component={AddIngredient}/>
