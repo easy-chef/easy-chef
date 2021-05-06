@@ -63,6 +63,8 @@ Meteor.publish(VendorProfiles.public, function () {
   });
 });
 
+Meteor.publish(VendorIngredients.userPublicationName, () => VendorIngredients.collection.find());
+
 // alanning:roles publication
 // Recommended code to publish roles for each user.
 Meteor.publish(null, function () {
