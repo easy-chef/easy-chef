@@ -78,6 +78,8 @@ Meteor.publish(Profiles.vendorPublicationName, function () {
   return this.ready();
 });
 
+Meteor.publish(VendorIngredients.userPublicationName, () => VendorIngredients.collection.find());
+
 // alanning:roles publication
 // Recommended code to publish roles for each user.
 Meteor.publish(null, function () {

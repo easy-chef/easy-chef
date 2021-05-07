@@ -24,8 +24,8 @@ class EditRecipe extends React.Component {
 
   // On successful submit, insert the data.
   submit(data) {
-    const { recipeName, description, image, servings, total, restrictions, ingredients, tools, steps, recipeEmail, _id } = data;
-    Recipes.collection.update(_id, { $set: { recipeName, description, image, servings, total, restrictions, ingredients, tools, steps, recipeEmail } }, (error) => (error ?
+    const { recipeName, description, image, servings, restrictions, ingredients, tools, steps, recipeEmail, _id } = data;
+    Recipes.collection.update(_id, { $set: { recipeName, description, image, servings, restrictions, ingredients, tools, steps, recipeEmail } }, (error) => (error ?
       swal('Error', error.message, 'error') :
       swal('Success', 'Recipe updated successfully', 'success')));
   }
@@ -46,9 +46,9 @@ class EditRecipe extends React.Component {
               <TextField id='edit-recipe-name' name='recipeName'/>
               <TextField id='edit-recipe-description' name='description'/>
               <TextField id='edit-recipe-image' name='image'/>
-              <NumField id='edit-recipe-total' name='total' decimal={true}/>
               <NumField id='edit-recipe-servings' name='servings' decimal={true}/>
               <MultiSelectField id='edit-recipe-restrictions' name='restrictions' showInlineError={true} placeholder={'Restrictions'}/>
+              <span>*Please capitalize and specify only the name of ingredient*</span>
               <ListField
                 id='edit-recipe-ingredients'
                 name='ingredients'
@@ -63,6 +63,7 @@ class EditRecipe extends React.Component {
                 initialCount={this.props.doc.tools.length}
                 itemProps={this.props.doc.tools}>
               </ListField>
+              <span>*Be sure to mention the amount of a certain ingredient that is being used!*</span>
               <ListField
                 id='edit-recipe-steps'
                 name='steps'

@@ -72,7 +72,7 @@
       "description": "A healthy meal that is full of flavor, protein and fiber!",
       "image": "https://www.budgetbytes.com/wp-content/uploads/2014/09/One-Pot-Chili-Pasta-fork-400x300-1-200x200.jpg",
       "rating": 3,
-      "total": 10,
+      "total": 50,
       "servings": 3,
       "owner": "marcus@foo.com",
       "restrictions": [
@@ -80,18 +80,9 @@
         "no peanuts"
       ],
       "ingredients": [
-        "1 Tbsp. olive oil",
-        "yellow onion",
-        "2 cloves garlic",
-        "1/2 lb. ground beef",
-        "2 Tbsp. flour",
-        "2 Tbsp. chili powder",
-        "15oz. tomato sauce",
-        "15oz. black ad kidney beans",
-        "1 cup corn kernels",
-        "2 cups macaroni",
-        "1 cup cheese",
-        "2 cups beef broth"
+        "Butter",
+        "Mozzarella Cheese",
+        "Milk"
       ],
       "tools": [
         "stove",
@@ -123,7 +114,7 @@
         "none"
       ],
       "ingredients": [
-        "freeze Bananas",
+        "Bananas",
         "frozen fruits (any works!)",
         "spinach",
         "almond milk"
@@ -211,18 +202,20 @@
   ],
 
   "defaultIngredients": [
-    { "ingredient": "Milk", "price": "5.99", "size": "Gallon", "quantity": "75", "owner": "vendor@foo.com" },
-    { "ingredient": "Butter", "price": "7.39", "size": "16 oz", "quantity": "200", "owner": "vendor@foo.com" },
-    { "ingredient": "Flour", "price": "3.69", "size": "2 lb", "quantity": "50", "owner": "vendor@foo.com" },
-    { "ingredient": "Salt", "price": "2.79", "size": "26 oz", "quantity": "125", "owner": "vendor@foo.com" },
-    { "ingredient": "Milk", "price": "5.99", "size": "Gallon", "quantity": "75", "owner": "foodland@foo.com" },
-    { "ingredient": "Butter", "price": "7.39", "size": "16 oz", "quantity": "200", "owner": "foodland@foo.com" },
-    { "ingredient": "Flour", "price": "3.69", "size": "2 lb", "quantity": "50", "owner": "foodland@foo.com" },
-    { "ingredient": "Salt", "price": "2.79", "size": "26 oz", "quantity": "125", "owner": "foodland@foo.com" },
-    { "ingredient": "Milk", "price": "4.49", "size": "Gallon", "quantity": "60", "owner": "safeway@foo.com" },
-    { "ingredient": "Butter", "price": "3.50", "size": "16 oz", "quantity": "210", "owner": "safeway@foo.com" },
-    { "ingredient": "Flour", "price": "3.99", "size": "5 lb", "quantity": "80", "owner": "safeway@foo.com" },
-    { "ingredient": "Salt", "price": "0.99", "size": "26 oz", "quantity": "100", "owner": "safeway@foo.com" }
+    { "ingredient": "Milk", "price": 5.99, "size": "Gallon", "quantity": "75", "owner": "vendor@foo.com" },
+    { "ingredient": "Butter", "price": 7.39, "size": "16 oz", "quantity": "200", "owner": "vendor@foo.com" },
+    { "ingredient": "Flour", "price": 3.69, "size": "2 lb", "quantity": "50", "owner": "vendor@foo.com" },
+    { "ingredient": "Salt", "price": 2.79, "size": "26 oz", "quantity": "125", "owner": "vendor@foo.com" },
+    { "ingredient": "Banana", "price": 2.79, "size": "24 oz", "quantity": "125", "owner": "vendor@foo.com" },
+    { "ingredient": "Milk", "price": 5.99, "size": "Gallon", "quantity": "75", "owner": "foodland@foo.com" },
+    { "ingredient": "Mozzarella Cheese", "price": 5.99, "size": "Gallon", "quantity": "75", "owner": "foodland@foo.com" },
+    { "ingredient": "Butter", "price": 7.39, "size": "16 oz", "quantity": "200", "owner": "foodland@foo.com" },
+    { "ingredient": "Flour", "price": 3.69, "size": "2 lb", "quantity": "50", "owner": "foodland@foo.com" },
+    { "ingredient": "Salt", "price": 2.79, "size": "26 oz", "quantity": "125", "owner": "foodland@foo.com" },
+    { "ingredient": "Milk", "price": 4.49, "size": "Gallon", "quantity": "60", "owner": "safeway@foo.com" },
+    { "ingredient": "Butter", "price": 3.50, "size": "16 oz", "quantity": "210", "owner": "safeway@foo.com" },
+    { "ingredient": "Flour", "price": 3.99, "size": "5 lb", "quantity": "80", "owner": "safeway@foo.com" },
+    { "ingredient": "Salt", "price": 0.99, "size": "26 oz", "quantity": "100", "owner": "safeway@foo.com" }
   ],
 
   "vendorProfiles": [

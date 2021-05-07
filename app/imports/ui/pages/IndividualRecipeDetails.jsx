@@ -3,12 +3,29 @@ import { Meteor } from 'meteor/meteor';
 import { Loader } from 'semantic-ui-react';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
+import { _ } from 'meteor/underscore';
 import { Recipes } from '../../api/recipe/Recipes';
+import { VendorIngredients } from '../../api/vendor/VendorIngredient';
 import RecipeName from '../components/RecipeName';
 import RecipeDetails from '../components/RecipeDetails';
 
 /** Renders a page of an individual recipe and its details.  Use <RecipeName> and <RecipeDetails> to render specific info.  */
 class IndividualRecipeDetails extends React.Component {
+
+  lowestIngredients = (recipeIngredients) => {
+    const ingredientList = _.map(recipeIngredients, (ingredient) => _.filter(this.props.ingredients, (vendorIngredient) => vendorIngredient.ingredient === ingredient));
+    const lowestIngredientPrices = _.map(ingredientList, function (eachIngredient) {
+      return _.min(_.pluck(eachIngredient, 'price'));
+    });
+    const lowestRecipeCost = _.filter(lowestIngredientPrices, (ingredientPrice) => ingredientPrice !== Infinity);
+    console.log(lowestRecipeCost);
+    return _.reduce(lowestRecipeCost, function (memo, num) { return memo + num; }, 0);
+  }
+
+  costUpdate = (totalCalculated) => {
+    const total = totalCalculated;
+    Recipes.collection.update(this.props.recipe._id, { $set: { total } });
+  }
 
   // If the subscription(s) have been received, render the page, otherwise show a loading icon.
   render() {
@@ -17,6 +34,8 @@ class IndividualRecipeDetails extends React.Component {
 
   // Render the page once subscriptions have been received.
   renderPage() {
+    // console.log(this.lowestIngredients(this.props.recipe.ingredients));
+    this.costUpdate(this.lowestIngredients(this.props.recipe.ingredients));
     return (
       <div id="individual-recipe">
         <RecipeName recipe={this.props.recipe}/>
@@ -29,6 +48,7 @@ class IndividualRecipeDetails extends React.Component {
 // Require an array of Recipe documents in the props.
 IndividualRecipeDetails.propTypes = {
   recipe: PropTypes.object,
+  ingredients: PropTypes.array,
   ready: PropTypes.bool.isRequired,
 };
 
@@ -38,12 +58,13 @@ export default withTracker(({ match }) => {
   const recipeId = match.params._id;
   // Get access to Recipe documents.
   const subscriptionRecipe = Meteor.subscribe(Recipes.userPublicationName);
-  // Determine if the subscription is ready
-  const ready = subscriptionRecipe.ready();
+  const subscriptionIngredients = Meteor.subscribe(VendorIngredients.userPublicationName);
   // Get the Recipe documents
   const recipe = Recipes.collection.findOne(recipeId);
+  const ingredients = VendorIngredients.collection.find().fetch();
   return {
     recipe,
-    ready,
+    ingredients,
+    ready: subscriptionRecipe.ready() && subscriptionIngredients.ready(),
   };
 })(IndividualRecipeDetails);
