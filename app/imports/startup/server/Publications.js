@@ -71,6 +71,12 @@ Meteor.publish(VendorIngredients.vendorPublicationName, function () {
   return this.ready();
 });
 
+Meteor.publish(VendorProfiles.public, function () {
+  return VendorProfiles.collection.find({
+    userId: { $exists: false },
+  });
+});
+
 Meteor.publish(Profiles.vendorPublicationName, function () {
   if (this.userId && Roles.userIsInRole(this.userId, 'vendor')) {
     return Profiles.collection.find();

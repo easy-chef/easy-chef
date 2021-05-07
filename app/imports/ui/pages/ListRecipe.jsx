@@ -16,7 +16,7 @@ class ListRecipe extends React.Component {
 
   renderPage() {
     return (
-      <Container>
+      <Container id="list-recipes">
         <Header as="h2" textAlign="center" inverted>Your Recipe List</Header>
         <Card.Group>
           {this.props.recipes.map((recipe, index) => <Recipe key={index} recipe={recipe}/>)}
