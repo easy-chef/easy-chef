@@ -14,15 +14,16 @@ class IndividualRecipeDetails extends React.Component {
 
   lowestIngredients = (recipeIngredients) => {
     const ingredientList = _.map(recipeIngredients, (ingredient) => _.filter(this.props.ingredients, (vendorIngredient) => vendorIngredient.ingredient === ingredient));
-    const lowestPrices = _.map(ingredientList, function (eachIngredient) {
+    const lowestIngredientPrices = _.map(ingredientList, function (eachIngredient) {
       return _.min(_.pluck(eachIngredient, 'price'));
     });
-    return _.reduce(lowestPrices, function (memo, num) { return memo + num; });
+    const lowestRecipeCost = _.filter(lowestIngredientPrices, (ingredientPrice) => ingredientPrice !== Infinity);
+    console.log(lowestRecipeCost);
+    return _.reduce(lowestRecipeCost, function (memo, num) { return memo + num; }, 0);
   }
 
   costUpdate = (totalCalculated) => {
     const total = totalCalculated;
-    console.log(total);
     Recipes.collection.update(this.props.recipe._id, { $set: { total } });
   }
 
@@ -33,6 +34,7 @@ class IndividualRecipeDetails extends React.Component {
 
   // Render the page once subscriptions have been received.
   renderPage() {
+    // console.log(this.lowestIngredients(this.props.recipe.ingredients));
     this.costUpdate(this.lowestIngredients(this.props.recipe.ingredients));
     return (
       <div id="individual-recipe">

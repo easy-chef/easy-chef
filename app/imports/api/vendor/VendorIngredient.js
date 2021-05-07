@@ -14,7 +14,7 @@ class VendorIngredientsCollection {
     // Define the structure of each document in the collection.
     this.schema = new SimpleSchema({
       ingredient: String,
-      price: String,
+      price: Number,
       size: String,
       quantity: {
         type: Number,

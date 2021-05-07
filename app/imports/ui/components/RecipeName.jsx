@@ -20,6 +20,23 @@ class RecipeDetails extends React.Component {
                   </div>
                 </Item.Content>
               </Item>
+              <Card>
+                <Card.Content>
+                  <Card.Header>Lowest Estimated Cost <Icon name='dollar sign'/></Card.Header>
+                </Card.Content>
+                <Card.Content>
+                  {this.props.recipe.total}
+                </Card.Content>
+                <Card.Content extra> *Cost computed based on price listings of vendors and may not be entirely accurate.*</Card.Content>
+              </Card>
+              <Card>
+                <Card.Content>
+                  <Card.Header>Restrictions <Icon name='food'/></Card.Header>
+                </Card.Content>
+                <Card.Content>
+                  <List items={this.props.recipe.restrictions}/>
+                </Card.Content>
+              </Card>
             </div>
           </Grid.Column>
           <Grid.Column>
@@ -27,14 +44,6 @@ class RecipeDetails extends React.Component {
               <Image alt="sample" src={this.props.recipe.image} size='medium' centered/>
               <Card.Content>
                 <Rating icon='star' defaultRating={this.props.recipe.rating} maxRating={5}/>
-              </Card.Content>
-              <Card.Content extra>
-                <Icon name='food'/>
-                <List items={this.props.recipe.restrictions}/>
-              </Card.Content>
-              <Card.Content extra>
-                <Icon name='dollar sign'/>
-                {this.props.recipe.total}
               </Card.Content>
             </Card>
           </Grid.Column>

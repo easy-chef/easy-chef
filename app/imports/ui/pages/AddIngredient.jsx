@@ -10,7 +10,7 @@ import { VendorIngredients } from '../../api/vendor/VendorIngredient';
 // Create a schema to specify the structure of the data to appear in the form.
 const formSchema = new SimpleSchema({
   ingredient: String,
-  price: String,
+  price: Number,
   size: String,
   quantity: Number,
 });
