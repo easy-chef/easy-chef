@@ -18,7 +18,6 @@ class IndividualRecipeDetails extends React.Component {
       return _.min(_.pluck(eachIngredient, 'price'));
     });
     const lowestRecipeCost = _.filter(lowestIngredientPrices, (ingredientPrice) => ingredientPrice !== Infinity);
-    console.log(lowestRecipeCost);
     return _.reduce(lowestRecipeCost, function (memo, num) { return memo + num; }, 0);
   }
 

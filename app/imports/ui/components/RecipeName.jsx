@@ -43,7 +43,7 @@ class RecipeDetails extends React.Component {
             <Card centered>
               <Image alt="sample" src={this.props.recipe.image} size='medium' centered/>
               <Card.Content>
-                <Rating icon='star' defaultRating={this.props.recipe.rating} maxRating={5}/>
+                <Rating icon='star' defaultRating={this.props.recipe.rating} maxRating={5} disabled/>
               </Card.Content>
             </Card>
           </Grid.Column>

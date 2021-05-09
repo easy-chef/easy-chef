@@ -16,7 +16,6 @@ const formSchema = new SimpleSchema({
   recipeAuthor: String,
   description: String,
   image: String,
-  rating: Number,
   servings: Number,
   restrictions: Array,
   'restrictions.$': {
@@ -54,7 +53,6 @@ class AddRecipe extends React.Component {
     const lowestPrices = _.map(ingredientList, function (eachIngredient) {
       return _.min(_.pluck(eachIngredient, 'price'));
     });
-    console.log(lowestPrices);
     return _.reduce(lowestPrices, function (memo, num) { return memo + num; }, 0);
   }
 
@@ -65,10 +63,13 @@ class AddRecipe extends React.Component {
 
   // On submit, insert the data.
   submit(data, formRef) {
-    const { recipeName, recipeAuthor, description, image, rating, servings, restrictions, ingredients, tools, steps } = data;
+    const { recipeName, recipeAuthor, description, image, servings, restrictions, ingredients, tools, steps } = data;
+    const owner = Meteor.user().username;
     const recipeEmail = Meteor.user().username;
     const total = this.costUpdate(this.lowestIngredients(ingredients));
-    Recipes.collection.insert({ recipeName, recipeAuthor, recipeEmail, description, image, total, rating, servings, restrictions, ingredients, tools, steps },
+    const userRatings = [];
+    const rating = 0;
+    Recipes.collection.insert({ recipeName, recipeAuthor, recipeEmail, description, image, total, owner, rating, servings, restrictions, ingredients, tools, steps, userRatings },
       (error) => {
         if (error) {
           swal('Error', error.message, 'error');
@@ -95,7 +96,6 @@ class AddRecipe extends React.Component {
               <LongTextField id='add-recipe-description' name='description'/>
               <TextField id='add-recipe-image' name='image'/>
               <Form.Group widths={'equal'}>
-                <NumField id='add-recipe-rating' name='rating' decimal={false} showInlineError={true} placeholder={'Select Rating'}/>
                 <NumField id='add-recipe-servings' name='servings' decimal={false} showInlineError={true} placeholder={'Select Serving Amount'}/>
               </Form.Group>
               <MultiSelectField id='add-recipe-restriction' name='restrictions' showInlineError={true} placeholder={'Select restrictions (select "none" if there are no restrictions)'}/>
