@@ -18,7 +18,7 @@ class RecipesCollection {
       recipeEmail: String,
       description: String,
       image: String,
-      rating: Number,
+      averageRating: Number,
       servings: Number,
       total: Number,
       owner: String,

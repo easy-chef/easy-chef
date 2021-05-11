@@ -11,7 +11,7 @@ class NavBar extends React.Component {
   render() {
     const menuStyle = { marginBottom: '10px', padding: '0em 1em 1em 1em', backgroundColor: '#013220' };
     return (
-      <Menu fixed pointing secondary style={menuStyle} borderless size='large' inverted>
+      <Menu pointing secondary style={menuStyle} borderless size='large' inverted>
         <Menu.Item onClick={this.handleItemClick} as={NavLink} activeClassName="" exact to="/" >
           <Header inverted as='h1'>Easy Chef</Header>
         </Menu.Item>

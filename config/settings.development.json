@@ -37,7 +37,7 @@
       "recipeEmail": "john@foo.com",
       "description": "A family recipe passed down to generations that is affordable to make! I was able to get the ingredients relatively cheap at The Market near student housing. Foodland at Ala Moana is also a great alternative to search for ingredients.",
       "image": "https://images.unsplash.com/photo-1543339531-242d0bc29010?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bWFjYXJvbmklMjBhbmQlMjBjaGVlc2V8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
-      "rating": 4,
+      "averageRating": 3,
       "total": 15,
       "servings": 4,
       "owner": "john@foo.com",
@@ -64,7 +64,7 @@
         "Fold macaroni into cheese sauce until it is coated.",
         "Enjoy!"
       ],
-      "userRatings": []
+      "userRatings": [3]
     },
     {
       "recipeName": "Chili Pasta",
@@ -72,7 +72,7 @@
       "recipeEmail": "marcus@foo.com",
       "description": "A healthy meal that is full of flavor, protein and fiber!",
       "image": "https://www.budgetbytes.com/wp-content/uploads/2014/09/One-Pot-Chili-Pasta-fork-400x300-1-200x200.jpg",
-      "rating": 3,
+      "averageRating": 4,
       "total": 50,
       "servings": 3,
       "owner": "marcus@foo.com",
@@ -100,7 +100,7 @@
         "Once cooked, turn heat off and stir in additional cheese until melted.",
         "Serve and enjoy while it's still hot!"
       ],
-      "userRatings": []
+      "userRatings": [4]
     },
     {
       "recipeName": "Green Smoothie",
@@ -108,7 +108,7 @@
       "recipeEmail": "john@foo.com",
       "description": "A very nutritious smoothie for breakfast",
       "image": "https://www.fromvalerieskitchen.com/wordpress/wp-content/uploads/2014/02/Tropical-Green-Smoothie-109-1.jpg",
-      "rating": 5,
+      "averageRating": 5,
       "total": 30,
       "servings": 2,
       "owner": "john@foo.com",
@@ -131,7 +131,7 @@
         "Blend!",
         "Transfer contents into cups and enjoy!"
       ],
-      "userRatings": []
+      "userRatings": [5]
     },
     {
       "recipeName": "Pancakes",
@@ -139,7 +139,7 @@
       "recipeEmail": "alyssa@foo.com",
       "description": "A delicious and healthy type of pancake!",
       "image": "https://fitfoodiefinds.com/wp-content/uploads/2020/11/pancakes2-1365x2048.jpeg",
-      "rating": 5,
+      "averageRating": 5,
       "total": 9,
       "servings": 2,
       "owner": "alyssa@foo.com",
@@ -169,7 +169,7 @@
         "Heat skillet to medium heat and pour batter.  Then cook for 2-3 min. per pancake",
         "Enjoy!"
       ],
-      "userRatings": []
+      "userRatings": [5]
     },
     {
       "recipeName": "Pizzadillas",
@@ -177,7 +177,7 @@
       "recipeEmail": "alyssa@foo.com",
       "description": "Everything you love about pizza stuffed into a quesadilla!",
       "image": "https://www.budgetbytes.com/wp-content/uploads/2011/08/Pizzadillas252520close-380x380.jpg",
-      "rating": 4,
+      "averageRating": 4,
       "total": 20,
       "servings": 2,
       "owner": "alyssa@foo.com",
@@ -202,7 +202,7 @@
         "Place the pizzadilla on top of a skillet and cook until brown",
         "Repeat steps 2 and 3 if you want to make any additional pizzadillas!"
       ],
-      "userRatings": []
+      "userRatings": [4]
     }
   ],
 

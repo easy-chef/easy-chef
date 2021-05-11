@@ -68,8 +68,8 @@ class AddRecipe extends React.Component {
     const recipeEmail = Meteor.user().username;
     const total = this.costUpdate(this.lowestIngredients(ingredients));
     const userRatings = [];
-    const rating = 0;
-    Recipes.collection.insert({ recipeName, recipeAuthor, recipeEmail, description, image, total, owner, rating, servings, restrictions, ingredients, tools, steps, userRatings },
+    const averageRating = 0;
+    Recipes.collection.insert({ recipeName, recipeAuthor, recipeEmail, description, image, total, owner, averageRating, servings, restrictions, ingredients, tools, steps, userRatings },
       (error) => {
         if (error) {
           swal('Error', error.message, 'error');

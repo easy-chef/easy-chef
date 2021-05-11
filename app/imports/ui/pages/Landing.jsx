@@ -10,7 +10,7 @@ class Landing extends React.Component {
         <div className="easychef-landing-background">
           <Grid id="landing-page" container centered stackable columns={1} verticalAlign="middle" style={gridStyle}>
 
-            <Grid.Column textAlign='center' fluid>
+            <Grid.Column textAlign='center'>
               <Icon size="huge" name="food" inverted />
               <Header as='h1' inverted >Cook, Eat, Repeat</Header>
               <Header as='h3' inverted >EasyChef is the only site you will ever need to find simple yet amazing recipes</Header>
