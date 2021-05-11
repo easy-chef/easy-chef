@@ -12,10 +12,10 @@ class Profile extends React.Component {
           <Image src={this.props.profile.image} size='medium' rounded />
         </Grid.Column>
         <Grid.Column width={8}>
-          <Header as="h1" inverted>
+          <Header as="h1">
             {this.props.profile.name}
           </Header>
-          <Header as="h3" inverted>
+          <Header as="h3">
             {this.props.profile.bio}
           </Header>
         </Grid.Column>

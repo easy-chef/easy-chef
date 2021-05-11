@@ -85,7 +85,7 @@ class AddRecipe extends React.Component {
     return (
       <Grid id="add-recipe-page" container centered>
         <Grid.Column>
-          <Header as="h2" textAlign="center" inverted>Add Recipe</Header>
+          <Header as="h2" textAlign="center">Add Recipe</Header>
           <AutoForm ref={ref => { fRef = ref; }} schema={bridge} onSubmit={data => this.submit(data, fRef)} >
             <Segment>
               <Form.Group widths={'equal'}>

@@ -5,7 +5,7 @@ import { Header } from 'semantic-ui-react';
 class ComingSoon extends React.Component {
   render() {
     return (
-      <Header as="h2" textAlign="center" inverted>
+      <Header as="h2" textAlign="center">
         <p>This page is currently in development and is coming soon!</p>
       </Header>
     );

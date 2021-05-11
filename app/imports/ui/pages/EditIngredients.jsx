@@ -31,7 +31,7 @@ class EditIngredients extends React.Component {
     return (
       <Grid id='edit-ingredient' container centered>
         <Grid.Column>
-          <Header as="h2" textAlign="center" inverted>Edit Ingredient</Header>
+          <Header as="h2" textAlign="center">Edit Ingredient</Header>
           <AutoForm schema={bridge} onSubmit={data => this.submit(data)} model={this.props.doc}>
             <Segment>
               <TextField id='edit-ingredient-ingredient' name='ingredient'/>

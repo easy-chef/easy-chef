@@ -1,6 +1,9 @@
 .easychef-landing-background {
-  background: url('images/easychef-header.jpeg');
+  background: url('images/easychef-header.jpeg'),
+  no-repeat center center;
   background-size: cover;
+  width: 100%;
+  height: 520px;
 }
 
 .recipe-background {
@@ -19,4 +22,3 @@
 .recipe-description {
   margin-top: 10px;
 }
-
