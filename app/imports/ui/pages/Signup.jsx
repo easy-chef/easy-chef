@@ -29,6 +29,7 @@ class Signup extends React.Component {
         this.setState({ error: '', redirectToReferer: true });
       }
     });
+
   }
 
   /* Display the signup form. Redirect to add page after successful registration and login. */

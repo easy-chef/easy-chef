@@ -1,13 +1,19 @@
 import React from 'react';
 import { Meteor } from 'meteor/meteor';
-import { Container, Card, Header, Loader } from 'semantic-ui-react';
+import { Container, Card, Header, Loader, Search } from 'semantic-ui-react';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
 import { Recipes } from '../../api/recipe/Recipes';
 import Recipe from '../components/Recipe';
 
 /** Renders a table containing all of the Recipe documents. */
-class ListRecipe extends React.Component {
+class SearchRecipe extends React.Component {
+
+  findRecipe(recipeName, searchString) {
+    return recipeName.toLowerCase().substr(0, searchString.length).includes(searchString.toLowerCase());
+  }
+
+  //  searchResult = Recipes.filter(i => this.findRecipe(i.recipeName, '<search_string>'))
 
   // If the subscription(s) have been received, render the page, otherwise show a loading icon.
   render() {
@@ -16,7 +22,9 @@ class ListRecipe extends React.Component {
 
   renderPage() {
     return (
-      <Container id="list-recipes">
+      <Container id="Search-recipes">
+        <Search placeholder={'Search Recipes'} input={'input'} onChange={Recipes.filter(i => this.findRecipe(i.recipeName, '<search_string>'))}
+        />
         <Header as="h2" textAlign="center" inverted>Your Recipe List</Header>
         <Card.Group>
           {this.props.recipes.map((recipe, index) => <Recipe key={index} recipe={recipe}/>)}
@@ -25,8 +33,9 @@ class ListRecipe extends React.Component {
     );
   }
 }
+
 // Require an array of Recipe documents in the props.
-ListRecipe.propTypes = {
+SearchRecipe.propTypes = {
   recipes: PropTypes.array.isRequired,
   ready: PropTypes.bool.isRequired,
 };
@@ -43,4 +52,4 @@ export default withTracker(() => {
     recipes,
     ready,
   };
-})(ListRecipe);
+})(SearchRecipe);

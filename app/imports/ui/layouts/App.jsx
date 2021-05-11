@@ -8,6 +8,7 @@ import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import Landing from '../pages/Landing';
 // import ListStuff from '../pages/ListStuff';
+import SearchRecipe from '../pages/SearchRecipe';
 import ListRecipe from '../pages/ListRecipe';
 import ListStuffAdmin from '../pages/ListStuffAdmin';
 // import AddStuff from '../pages/AddStuff';
@@ -38,6 +39,7 @@ class App extends React.Component {
             <Route path="/signout" component={Signout}/>
             <Route path="/inprogress" component={NotFound}/>
             <ProtectedRoute path="/list" component={ListRecipe}/>
+            <ProtectedRoute path="/search" component={SearchRecipe}/>
             <ProtectedRoute path="/add" component={AddRecipe}/>
             <ProtectedRoute path="/recipe/:_id" component={IndividualRecipe}/>
             <ProtectedRoute path="/edit/:_id" component={EditStuff}/>
