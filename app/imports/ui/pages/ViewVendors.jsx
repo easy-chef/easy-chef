@@ -18,7 +18,7 @@ class ViewVendors extends React.Component {
   renderPage() {
     return (
       <Container id='view-vendors'>
-        <Header as="h2" textAlign="center" inverted>Vendors</Header>
+        <Header as="h2" textAlign="center">Vendors</Header>
         <Card.Group>
           {this.props.vendors.map((vendor, index) => <Vendor key={index}
             vendor={vendor}/>)}

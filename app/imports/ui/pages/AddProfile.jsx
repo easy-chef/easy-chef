@@ -41,7 +41,7 @@ class AddProfile extends React.Component {
     return (
       <Grid container centered>
         <Grid.Column>
-          <Header as="h2" textAlign="center" inverted>Add Contact</Header>
+          <Header as="h2" textAlign="center">Add Contact</Header>
           <AutoForm ref={ref => { fRef = ref; }} schema={bridge} onSubmit={data => this.submit(data, fRef)} >
             <Segment>
               <TextField name='name'/>

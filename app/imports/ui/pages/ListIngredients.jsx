@@ -18,7 +18,7 @@ class ListIngredients extends React.Component {
   renderPage() {
     return (
       <Container id="view-ingredient">
-        <Header as="h2" textAlign="center" inverted>List Ingredients</Header>
+        <Header as="h2" textAlign="center">List Ingredients</Header>
         <Table celled>
           <Table.Header>
             <Table.Row>

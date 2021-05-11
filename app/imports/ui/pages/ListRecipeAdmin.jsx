@@ -17,7 +17,7 @@ class ListRecipeAdmin extends React.Component {
   renderPage() {
     return (
       <Container>
-        <Header as="h2" textAlign="center" inverted>All Recipes</Header>
+        <Header as="h2" textAlign="center">All Recipes</Header>
         <Card.Group>
           {this.props.recipes.map((recipe, index) => <RecipeAdmin key={index} recipe={recipe}/>)}
         </Card.Group>
