@@ -12,7 +12,6 @@ const formSchema = new SimpleSchema({
   name: String,
   bio: String,
   image: String,
-  owner: String,
 });
 
 const bridge = new SimpleSchema2Bridge(formSchema);
@@ -41,7 +40,7 @@ class AddProfile extends React.Component {
     return (
       <Grid container centered>
         <Grid.Column>
-          <Header as="h2" textAlign="center">Add Contact</Header>
+          <Header as="h2" textAlign="center">Add Profile</Header>
           <AutoForm ref={ref => { fRef = ref; }} schema={bridge} onSubmit={data => this.submit(data, fRef)} >
             <Segment>
               <TextField name='name'/>

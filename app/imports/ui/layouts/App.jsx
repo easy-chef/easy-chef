@@ -18,6 +18,7 @@ import Signout from '../pages/Signout';
 import IndividualRecipe from '../pages/IndividualRecipeDetails';
 import ViewProfile from '../pages/ViewProfile';
 import EditProfile from '../pages/EditProfile';
+import AddProfile from '../pages/AddProfile';
 import ListIngredients from '../pages/ListIngredients';
 import EditIngredients from '../pages/EditIngredients';
 import AddIngredient from '../pages/AddIngredient';
@@ -43,6 +44,7 @@ class App extends React.Component {
             <ProtectedRoute path="/edit/:_id" component={EditRecipe}/>
             <ProtectedRoute path="/viewprofile" component={ViewProfile}/>
             <ProtectedRoute path="/editprofile" component={EditProfile}/>
+            <ProtectedRoute path="/addprofile" component={AddProfile}/>
             <AdminProtectedRoute path="/admin" component={ListItemsAdmin}/>
             <VendorProtectedRoute path="/listingredients" component={ListIngredients}/>
             <VendorProtectedRoute path="/editingredients/:_id" component={EditIngredients}/>
