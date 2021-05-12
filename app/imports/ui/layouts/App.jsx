@@ -13,7 +13,7 @@ import ListItemsAdmin from '../pages/ListItemsAdmin';
 // import ListStuffAdmin from '../pages/ListStuffAdmin';
 // import AddStuff from '../pages/AddStuff';
 import AddRecipe from '../pages/AddRecipe';
-import EditStuff from '../pages/EditStuff';
+import EditRecipe from '../pages/EditRecipe';
 import NotFound from '../pages/NotFound';
 import Signin from '../pages/Signin';
 import Signup from '../pages/Signup';
@@ -26,6 +26,7 @@ import EditIngredients from '../pages/EditIngredients';
 import AddIngredient from '../pages/AddIngredient';
 // import SearchUsers from '../pages/SearchUsers';
 import SearchRecipes from '../components/SearchRecipes';
+import RecipeName from '../components/RecipeName';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 class App extends React.Component {
@@ -41,10 +42,11 @@ class App extends React.Component {
             <Route path="/signout" component={Signout}/>
             <Route path="/inprogress" component={NotFound}/>
             <Route path="/search" component={SearchRecipes}/>
+            <Route path="/view/:_id" component={RecipeName}/>
             <ProtectedRoute path="/list" component={ListRecipe}/>
             <ProtectedRoute path="/add" component={AddRecipe}/>
             <ProtectedRoute path="/recipe" component={IndividualRecipe}/>
-            <ProtectedRoute path="/edit/:_id" component={EditStuff}/>
+            <ProtectedRoute path="/edit/:_id" component={EditRecipe}/>
             <ProtectedRoute path="/viewprofile" component={ViewProfile}/>
             <ProtectedRoute path="/editprofile" component={EditProfile}/>
             <AdminProtectedRoute path="/admin" component={ListItemsAdmin}/>

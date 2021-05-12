@@ -61,6 +61,8 @@ Meteor.publish(VendorProfiles.adminPublicationName, function () {
   return this.ready();
 });
 
+Meteor.publish(Recipes.allPublicationName, () => Recipes.collection.find());
+
 // Vendor-level publication.
 // If logged in and with vendor role, then publish all documents from all users. Otherwise publish nothing.
 Meteor.publish(VendorIngredients.vendorPublicationName, function () {

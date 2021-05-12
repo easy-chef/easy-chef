@@ -2,14 +2,13 @@ import React from 'react';
 import SimpleSchema2Bridge from 'uniforms-bridge-simple-schema-2';
 import { Meteor } from 'meteor/meteor';
 import SimpleSchema from 'simpl-schema';
-import { Container, Loader, Card, Segment, Image, Header } from 'semantic-ui-react';
+import { Container, Loader, Card, Segment, Image, Header, List, Icon, Rating } from 'semantic-ui-react';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
 import { _ } from 'meteor/underscore';
 import { AutoForm, SubmitField } from 'uniforms-semantic';
 import { Recipes } from '../../api/recipe/Recipes';
 import MultiSelectField from '../forms/controllers/MultiSelectField';
-// import RecipeDetails from './RecipeDetails';
 
 /** Create a schema to specify the structure of the data to appear in the form. */
 const formSchema = new SimpleSchema({
@@ -27,15 +26,37 @@ const MakeCard = (props) => (
   <Card>
     <Image src={props.rpage.image}/>
     <Card.Content>
-      <Card.Header>{props.rpage.recipeName}</Card.Header>
       <Card.Meta>
-        <span className='date'>{props.rpage.recipeEmail} {props.rpage.recipeAuthor}</span>
+        <Header as='h1' size='huge'>{props.rpage.recipeName}</Header>
+        <Header size='medium'>By {props.rpage.recipeAuthor}</Header>
+        <span className='date'>{props.rpage.recipeEmail}</span>
       </Card.Meta>
+    </Card.Content>
+    <Card.Content>
       <Card.Description>
         {props.rpage.description}
       </Card.Description>
-
     </Card.Content>
+    <Card.Content>
+      <Card.Header><Icon name='pencil alternate'/>Steps</Card.Header>
+      <Card.Description>
+        <List ordered items={props.rpage.steps}/>
+      </Card.Description>
+    </Card.Content>
+    <Card.Content>
+      <Card.Header><Icon name='utensil spoon'/>Tools</Card.Header>
+      <Card.Description>
+        <List bulleted items={props.rpage.tools}/>
+      </Card.Description>
+    </Card.Content>
+    <Card.Content extra>
+      <Icon name='dollar sign'/>
+      {props.rpage.total}
+    </Card.Content>
+    <Card.Content extra>
+      <Rating icon='star' defaultRating={props.rpage.rating} maxRating={5}/>
+    </Card.Content>
+
   </Card>
 );
 
@@ -91,7 +112,7 @@ Filter.propTypes = {
 /** withTracker connects Meteor data to React components. https://guide.meteor.com/react.html#using-withTracker */
 export default withTracker(() => {
   // Ensure that minimongo is populated with all collections prior to running render().
-  const sub2 = Meteor.subscribe(Recipes.adminPublicationName);
+  const sub2 = Meteor.subscribe(Recipes.allPublicationName);
 
   return {
     ready: sub2.ready(),
