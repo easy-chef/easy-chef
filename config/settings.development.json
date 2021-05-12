@@ -11,7 +11,9 @@
     { "email": "safeway@foo.com", "password":  "changeme", "role":  "vendor"},
     { "email": "john@foo.com", "password": "changeme" },
     { "email": "marcus@foo.com", "password": "changeme" },
-    { "email": "alyssa@foo.com", "password": "changeme" }
+    { "email": "alyssa@foo.com", "password": "changeme" },
+    { "email": "robert@foo.com", "password": "changeme" },
+    { "email": "haley@foo.com", "password": "changeme" }
   ],
   "defaultData": [
     { "name": "Basket", "quantity": 3, "owner": "john@foo.com", "condition": "excellent" },
@@ -24,6 +26,8 @@
     { "name": "John", "bio": "I love to cook!", "image": "https://openclipart.org/image/800px/4749", "owner": "john@foo.com" },
     { "name": "Marcus", "bio": "I'm a computer science student who likes to make dishes on the side!", "image": "https://react.semantic-ui.com/images/avatar/large/matthew.png", "owner": "marcus@foo.com" },
     { "name": "Alyssa", "bio": "On a quest to learn all about the gastronomy here at UH: Manoa!", "image": "https://react.semantic-ui.com/images/avatar/small/molly.png", "owner": "alyssa@foo.com" },
+    { "name": "Robert", "bio": "I am a student who desperately needs to budget", "image": "https://openclipart.org/image/800px/4749", "owner": "robert@foo.com" },
+    { "name": "Haley", "bio": "I love to cook!", "image": "https://openclipart.org/image/800px/4749", "owner": "haley@foo.com" },
     { "name": "Admin", "bio": "I'm an admin!", "image": "http://getdrawings.com/free-icon/default-avatar-icon-60.png", "owner": "admin@foo.com" },
     { "name": "Vendor", "bio": "I'm a vendor!", "image": "https://openclipart.org/image/800px/256581", "owner": "vendor@foo.com" },
     { "name": "Safeway", "bio": "We're a part of your neighborhood, providing fresh ingredients and more ways to save.", "image": "https://www.pngitem.com/pimgs/m/489-4897030_logo-safeway-hd-png-download.png", "owner": "safeway@foo.com" },
@@ -38,20 +42,20 @@
       "description": "A family recipe passed down to generations that is affordable to make! I was able to get the ingredients relatively cheap at The Market near student housing. Foodland at Ala Moana is also a great alternative to search for ingredients.",
       "image": "https://images.unsplash.com/photo-1543339531-242d0bc29010?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bWFjYXJvbmklMjBhbmQlMjBjaGVlc2V8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
       "averageRating": 3,
-      "total": 15,
+      "total": 0,
       "servings": 4,
       "owner": "john@foo.com",
       "restrictions": [
         "gluten-free"
       ],
       "ingredients": [
-        "8oz. elbow macaroni",
-        "3 tablespoon butter",
-        "3 tablespoon flour",
-        "1/4 teaspoon salt",
-        "dash pepper",
-        "1 cup milk",
-        "1 cup shredded cheese"
+        "8oz. Elbow Macaroni",
+        "3 Tablespoon Butter",
+        "3 Tablespoon Flour",
+        "1/4 Teaspoon Salt",
+        "Dash Pepper",
+        "1 Cup Milk",
+        "1 cup Shredded Cheese"
       ],
       "tools": [
         "stove",
@@ -203,6 +207,232 @@
         "Repeat steps 2 and 3 if you want to make any additional pizzadillas!"
       ],
       "userRatings": [4]
+    },
+    {
+      "recipeName": "Spaghetti and Meatballs",
+      "recipeAuthor": "Robert",
+      "recipeEmail": "robert@foo.com",
+      "description": "A classic serving of spaghetti and meatballs.",
+      "image": "https://thumbs.dreamstime.com/z/spaghetti-meatballs-14633957.jpg",
+      "averageRating": 4,
+      "total": 0,
+      "servings": 4,
+      "owner": "robert@foo.com",
+      "restrictions": [
+        "gluten-free"
+      ],
+      "ingredients": [
+        "1 lb. Spaghetti",
+        "1 lb. Ground Beef",
+        "1/3 cup Chopped Parsley",
+        "1/4 cup Parmesan",
+        "2 Garlic Cloves",
+        "1 Egg",
+        "1 tbsp. Olive Oil",
+        "1/2 cup Onions",
+        "28 oz. Crushed Tomatoes",
+        "Salt"
+      ],
+      "tools": [
+        "stove",
+        "saucepan",
+        "large pot",
+        "large bowl"
+      ],
+      "steps": [
+        "In large pot, cook spaghetti then proceed to drain.",
+        "In a separate large bowl, combine the beef, parsley, parmesan, egg, and a dash of salt.  Mix then form into balls of desired size. ",
+        "In another pot, put over medium heat and add oil.  Add meatballs and cook until brown.  Then transfer to a seperate plate",
+        "Add onion and tomatoes as well as salt and pepper to the pot to make the sauce and cook until it is soft.  Simmer until the sauce is thickened.",
+        "Serve spaghetti with meatballs and sauce then enjoy!"
+      ],
+      "userRatings": [4]
+    },
+    {
+      "recipeName": "Air Fryer Shrimp",
+      "recipeAuthor": "Haley",
+      "recipeEmail": "haley@foo.com",
+      "description": "Make shrimp with an air fryer.",
+      "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/190417-air-fryer-shrimp-horizontal-2-1556207476.png?crop=0.668xw:1.00xh;0.168xw,0&resize=980:*",
+      "averageRating": 5,
+      "total": 0,
+      "servings": 4,
+      "owner": "haley@foo.com",
+      "restrictions": [
+        "none"
+      ],
+      "ingredients": [
+        "1/2 cup Flour",
+        "Salt",
+        "Black Pepper",
+        "1 lb. Large Shrimp with Tails on",
+        "2 Eggs",
+        "1/2 cup Mayonnaise",
+        "1 tbsp. Sriracha",
+        "1 cup Bread Crumbs",
+        "1/2 cup Shredded Sweetened Coconut"
+      ],
+      "tools": [
+        "stove",
+        "air fryer",
+        "large bowls"
+      ],
+      "steps": [
+        "In a bowl, add flour and season it with salt and pepper",
+        "In another bowl, mix bread crumbs and coconut.  Store eggs in another bowl. ",
+        "Dip shrimp in the flour, then dip in eggs then dip in coconut and bread crumbs mix.",
+        "Place dipped shrimps in air fryer basket and heat to 400 degrees.  Bake until golden for 10 to 12 minutes.",
+        "Create sauce by mixing mayonnaise and Sriracha.",
+        "Serve with shrimp after is has been finished in the air fryer."
+      ],
+      "userRatings": [5]
+    },
+    {
+      "recipeName": "Sugar Cookies",
+      "recipeAuthor": "Alyssa",
+      "recipeEmail": "alyssa@foo.com",
+      "description": "Easy to make cookies at home!",
+      "image": "https://images.unsplash.com/photo-1612388307727-afe00578ca21?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80",
+      "averageRating": 3,
+      "total": 0,
+      "servings": 48,
+      "owner": "alyssa@foo.com",
+      "restrictions": [
+        "none"
+      ],
+      "ingredients": [
+        "2 1/2 cup Flour",
+        "1 teaspoon Baking Soda",
+        "1/2 teaspoon Baking Powder",
+        "1 cup Butter",
+        "1 1/2 cups Sugar",
+        "1 Egg",
+        "1 Vanilla Extract"
+      ],
+      "tools": [
+        "oven",
+        "small bowl",
+        "large bowl"
+      ],
+      "steps": [
+        "Preheat oven to 375 degrees.",
+        "In the small bowl, add flour, baking soda, and baking powder then stir together.",
+        "In the large bowl, mix butter and sugar until it is smooth. Then add in beaten egg and vanilla.  Finally, add in and blend in contents of the small bowl.",
+        "Roll the dough of desired size an place onto cookie sheets.",
+        "Bake for 8 to 10 minutes until golden.  After, let coolies stand for 2 minutes before eating."
+      ],
+      "userRatings": [3]
+    },
+    {
+      "recipeName": "Homemade Pizza",
+      "recipeAuthor": "Haley",
+      "recipeEmail": "haley@foo.com",
+      "description": "Pizza always tastes great when its homemade!",
+      "image": "https://cdn.pixabay.com/photo/2016/04/21/22/50/pizza-1344720_960_720.jpg",
+      "averageRating": 5,
+      "total": 0,
+      "servings": 4,
+      "owner": "haley@foo.com",
+      "restrictions": [
+        "none"
+      ],
+      "ingredients": [
+        "2 1/2 cup Flour",
+        "1 tsp. Salt",
+        "1 tsp. Sugar",
+        "1 tbsp. Yeast",
+        "1 tbsp. Oil",
+        "1/4 cup Tomato Sauce",
+        "1 cup Mozzarella Cheese"
+      ],
+      "tools": [
+        "oven",
+        "large bowl"
+      ],
+      "steps": [
+        "In a bowl, mix flour, salt, sugar, and yeast.  After mixing, add in water and oil.",
+        "Knead mixture for 2 minutes.",
+        "Transfer  mixture into greased bowl.  Then let it rise for approximately 20 minutes.",
+        "Flatten and place on pizza pan.  Proceed to further flatten into a circle.",
+        "Spread tomato sauce and cheese over crust.  Add additional toppings if desired.",
+        "Bake at 400 degrees until it is light brown.",
+        "Enjoy!"
+      ],
+      "userRatings": [5]
+    },
+    {
+      "recipeName": "Chocolate Chip Cookies",
+      "recipeAuthor": "Marcus",
+      "recipeEmail": "marcus@foo.com",
+      "description": "Cookies that are better than ready-made cookies",
+      "image": "https://cdn.pixabay.com/photo/2012/04/11/15/10/cookies-28423_960_720.jpg",
+      "averageRating": 5,
+      "total": 0,
+      "servings": 24,
+      "owner": "marcus@foo.com",
+      "restrictions": [
+        "none"
+      ],
+      "ingredients": [
+        "1 cup Butter",
+        "1 cup Sugar",
+        "1 cup Brown Sugar",
+        "2 Eggs",
+        "2 tsp. Vanilla Extract",
+        "1 teaspoon Baking Soda",
+        "2 teaspoon water",
+        "1/2 tsp. Salt",
+        "3 cups Flour",
+        "2 cups Chocolate Chips"
+      ],
+      "tools": [
+        "oven",
+        "large bowl"
+      ],
+      "steps": [
+        "Preheat oven to 350 degrees",
+        "In a large bowl, mix together butter, sugar, brown sugar until it is smooth.  Beat eggs and stir in vanilla.",
+        "Dissolve baking soda in hot water and add to bowl.",
+        "Stir in flour, salt and chocolate chip.",
+        "Transfer batter onto non-grease pan and bake in oven for approximately 10 minutes."
+      ],
+      "userRatings": [5]
+    },
+    {
+      "recipeName": "Chocolate Chip Cookies",
+      "recipeAuthor": "Elliot",
+      "recipeEmail": "john@foo.com",
+      "description": "Cookies that are better than ready-made cookies",
+      "image": "https://cdn.shortpixel.ai/client/to_avif,q_glossy,ret_img,w_683/https://thereislifeafterwheat.com/wp-content/uploads/2020/06/Gluten-Free-Chocolate-Chip-Cookies-Step-By-Step-Step-By-Step-683x1024.png",
+      "averageRating": 5,
+      "total": 0,
+      "servings": 24,
+      "owner": "john@foo.com",
+      "restrictions": [
+        "gluten-free"
+      ],
+      "ingredients": [
+        "10 tablespoon Cream Butter",
+        "1 cup Sugar",
+        "1 cup Cream Cheese",
+        "2 Eggs",
+        "1 tsp. Vanilla Extract",
+        "1/2 tsp. Salt",
+        "2 cups Chocolate Chips",
+        "2 cups Almond Flour"
+      ],
+      "tools": [
+        "oven",
+        "large bowl"
+      ],
+      "steps": [
+        "Preheat oven to 350 degrees",
+        "In a large bowl, mix together cream butter, cream cheese and sugar until fluffy.",
+        "Add in and mix eggs and vanilla extract.",
+        "Add in almond flour and chocolate chips and mix until dough is sticky.",
+        "Place dough in non-grease pan and bake in oven until golden brown."
+      ],
+      "userRatings": [5]
     }
   ],
 
