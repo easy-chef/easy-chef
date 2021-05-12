@@ -24,6 +24,7 @@ import EditProfile from '../pages/EditProfile';
 import ListIngredients from '../pages/ListIngredients';
 import EditIngredients from '../pages/EditIngredients';
 import AddIngredient from '../pages/AddIngredient';
+import SearchUsers from '../pages/SearchUsers';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 class App extends React.Component {
@@ -38,6 +39,7 @@ class App extends React.Component {
             <Route path="/signup" component={Signup}/>
             <Route path="/signout" component={Signout}/>
             <Route path="/inprogress" component={NotFound}/>
+            <Route path="/search" component={SearchUsers}/>
             <ProtectedRoute path="/list" component={ListRecipe}/>
             <ProtectedRoute path="/add" component={AddRecipe}/>
             <ProtectedRoute path="/recipe" component={IndividualRecipe}/>

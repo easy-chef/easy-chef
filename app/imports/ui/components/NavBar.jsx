@@ -15,7 +15,7 @@ class NavBar extends React.Component {
         <Menu.Item onClick={this.handleItemClick} as={NavLink} activeClassName="" exact to="/" >
           <Header inverted as='h1'>Easy Chef</Header>
         </Menu.Item>
-        <Menu.Item id='navbar-search-recipe' as={NavLink} activeClassName="active" exact to="/inprogress" key='search'><Icon name="search"/>Search for Recipes</Menu.Item>
+        <Menu.Item id='navbar-search-recipe' as={NavLink} activeClassName="active" exact to="/search" key='search'><Icon name="search"/>Search for Recipes</Menu.Item>
         <Menu.Item id='navbar-view-vendors' as={NavLink} activeClassName="active" exact to="/viewvendors" key='viewvendors'><Icon name="shopping basket"/>View Vendors</Menu.Item>
         {this.props.currentUser ? (
           [<Menu.Item key='recipe'>
