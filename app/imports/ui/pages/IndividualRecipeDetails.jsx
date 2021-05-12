@@ -14,7 +14,7 @@ class IndividualRecipeDetails extends React.Component {
   ratingState = {};
 
   lowestIngredients = (recipeIngredients) => {
-    const ingredientList = _.map(recipeIngredients, (ingredient) => _.filter(this.props.ingredients, (vendorIngredient) => vendorIngredient.ingredient === ingredient));
+    const ingredientList = _.map(recipeIngredients, (ingredient) => _.filter(this.props.ingredients, (vendorIngredient) => ingredient.includes(vendorIngredient.ingredient)));
     const lowestIngredientPrices = _.map(ingredientList, function (eachIngredient) {
       return _.min(_.pluck(eachIngredient, 'price'));
     });
