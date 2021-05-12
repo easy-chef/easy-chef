@@ -730,6 +730,453 @@
         "Serve with additional toppings and enjoy!"
       ],
       "userRatings": [3]
+    },
+    {
+      "recipeName": "Chicken Fettuccine Alfredo (Low-Fat)",
+      "recipeAuthor": "haley",
+      "recipeEmail": "haley@foo.com",
+      "description": "With just a microwave, you can easily make fried rice!",
+      "image": "https://i2.wp.com/pixahive.com/wp-content/uploads/2020/09/Chicken-Alfredo-pasta-26204-pixahive.jpg?fit=1560%2C873&ssl=1",
+      "averageRating": 5,
+      "total": 0,
+      "servings": 8,
+      "owner": "haley@foo.com",
+      "restrictions": [
+        "none"
+      ],
+      "ingredients": [
+        "1 pound Pasta",
+        "10 oz. Boneless Chicken Breasts",
+        "1/4 cup Chicken Broth",
+        "2 Cloves Garlic",
+        "1/4 cup Flour",
+        "2 1/4 cups Skim Milk",
+        "1 cup Cheese",
+        "1/2 tsp. Salt",
+        "1/2 tsp. Black Pepper"
+      ],
+      "tools": [
+        "stove",
+        "pot",
+        "skillet",
+        "sauce pan"
+      ],
+      "steps": [
+        "Cook pasta in a pot and let it sit on medium heat.",
+        "In the skillet, add in chicken broth, and chicken then cook until the meat is cooked.",
+        "In the sauce pan, add butter and garlic until melted.  Afterwards proceed to whisk in flour and add milk.",
+        "Add cheese and cooked chicken to the pot and reduce heat to low until sauce thickens.  Add the sauce to the cooked.",
+        "Season with salt and pepper and enjoy!"
+      ],
+      "userRatings": [5]
+    },
+    {
+      "recipeName": "Homemade Microwavable Pizza",
+      "recipeAuthor": "Robert",
+      "recipeEmail": "robert@foo.com",
+      "description": "You just need a microwave to make a delicious pizza",
+      "image": "https://i2.wp.com/pixahive.com/wp-content/uploads/2020/11/Pizza-204418-pixahive.jpg?fit=1560%2C1175&ssl=1",
+      "averageRating": 5,
+      "total": 0,
+      "servings": 4,
+      "owner": "robert@foo.com",
+      "restrictions": [
+        "none"
+      ],
+      "ingredients": [
+        "English Muffins",
+        "Tomato Sauce",
+        "Mozzarella Cheese"
+      ],
+      "tools": [
+        "microwave"
+      ],
+      "steps": [
+        "Place desired amount of muffins/pizzas on a plate.",
+        "Spread tomato sauce on half of each muffin.",
+        "Sprinkle in mozzarella cheese and additional cheese if desired.",
+        "Add in additional toppings like pepperoni.",
+        "Microwave pizzas for 2 minutes or until cheese is fully melted.",
+        "Enjoy!"
+      ],
+      "userRatings": [5]
+    },
+    {
+      "recipeName": "Chocolate Brownies",
+      "recipeAuthor": "Alyssa",
+      "recipeEmail": "alyssa@foo.com",
+      "description": "Delicious brownies with only a toaster oven.",
+      "image": "https://i2.wp.com/pixahive.com/wp-content/uploads/2020/11/Pizza-204418-pixahive.jpg?fit=1560%2C1175&ssl=1",
+      "averageRating": 2,
+      "total": 0,
+      "servings": 3,
+      "owner": "alyssa@foo.com",
+      "restrictions": [
+        "none"
+      ],
+      "ingredients": [
+        "1/4 cup Butter",
+        "1/2 cup Sugar",
+        "1/4 cup Cocoa Powder",
+        "1 Egg",
+        "1 tsp. Vanilla Extract",
+        "2 tbsp. Flour"
+      ],
+      "tools": [
+        "toaster oven",
+        "stove",
+        "sauce pan"
+      ],
+      "steps": [
+        "In a sauce pan, cook butter and cocoa powder until powder is aromatic.",
+        "Add in sugar and whisked egg as well as the vanilla extract.",
+        "Mix in flour until batter is completely mixed.",
+        "Transfer batter into pan that fits into toaster oven.",
+        "Set toaster oven to toast for approximately 15 minutes.",
+        "Remove pan from toaster oven then let brownies cool."
+      ],
+      "userRatings": [2]
+    },
+    {
+      "recipeName": "Homemade Ramen",
+      "recipeAuthor": "haley",
+      "recipeEmail": "haley@foo.com",
+      "description": "No longer will you have to resort to cup of noodles.",
+      "image": "https://images.pexels.com/photos/1395319/pexels-photo-1395319.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+      "averageRating": 5,
+      "total": 0,
+      "servings": 5,
+      "owner": "haley@foo.com",
+      "restrictions": [
+        "none"
+      ],
+      "ingredients": [
+        "2 Eggs",
+        "1 tbsp. Olive Oil",
+        "4 Cloves Garlic",
+        "4 cups Chicken Broth",
+        "1 tbsp. Soy Sauce",
+        "3 packages Yaki-Soba Noodles",
+        "3 cups Spinach"
+      ],
+      "tools": [
+        "stove",
+        "sauce pan",
+        "stock pot"
+      ],
+      "steps": [
+        "In a sauce pan, place eggs and add cold water. Then proceed to boil for 1 minute.  Remove from heat and set aside from 8-10 minutes.  Then peel and half the eggs.",
+        "In a stock pot, heat olive oil and add garlic then proceed to stir for approximately 2 minutes",
+        "Add in 3 additional cups of water and the chicken broth.  Then whisk.",
+        "Bring pot to a boil for 10 minutes.  Then add in and stir the Yaki-Soba noodles until it is loosened.",
+        "Stir in spinach for an additional 2 minutes",
+        "Serve and garnish with eggs from step 1."
+      ],
+      "userRatings": [5]
+    },
+    {
+      "recipeName": "Caramel Popcorn",
+      "recipeAuthor": "Robert",
+      "recipeEmail": "robert@foo.com",
+      "description": "Make delicious caramel popcorn that is better than traditional popcorn!",
+      "image": "https://cdn.pixabay.com/photo/2016/08/11/22/27/popcorn-1587092_1280.jpg",
+      "averageRating": 5,
+      "total": 0,
+      "servings": 5,
+      "owner": "robert@foo.com",
+      "restrictions": [
+        "none"
+      ],
+      "ingredients": [
+        "Popcorn kernels",
+        "1 cup Butter",
+        "1 cup Sugar",
+        "2 tsp. Vanilla",
+        "1/2 tsp. Baking Soda"
+      ],
+      "tools": [
+        "microwave",
+        "saucepan"
+      ],
+      "steps": [
+        "In a sauce pan, add butter and let it melt over medium heat.",
+        "Add in sugar and stir until thoroughly mixed",
+        "Continue to stir then add in the vanilla.  Continue to mixing.",
+        "Add in baking soda and mix until mixture changes colors.",
+        "Microwave desired amount of popcorn.",
+        "Drizzle mixture onto popcorn and enjoy!"
+      ],
+      "userRatings": [5]
+    },
+    {
+      "recipeName": "Biscuits and Sausage Gravy",
+      "recipeAuthor": "Marcus",
+      "recipeEmail": "marcus@foo.com",
+      "description": "Make delicious caramel popcorn that is better than traditional popcorn!",
+      "image": "https://cdn.pixabay.com/photo/2016/08/11/22/27/popcorn-1587092_1280.jpg",
+      "averageRating": 5,
+      "total": 0,
+      "servings": 2,
+      "owner": "marcus@foo.com",
+      "restrictions": [
+        "none"
+      ],
+      "ingredients": [
+        "1/4 pound Sausage",
+        "2 tbsp. Butter",
+        "3 tbsp. Flour",
+        "1 1/4 tbsp. Salt",
+        "1/8 tsp. Pepper",
+        "1 1/4 cup Milk",
+        "Biscuit Dough"
+      ],
+      "tools": [
+        "toaster oven",
+        "stove",
+        "skillet"
+      ],
+      "steps": [
+        "In the toaster oven, bake biscuit dough according to package instructions.",
+        "In the skillet, cook sausages over medium heat for 3-5 minutes.  Then mash into small pieces and drain.",
+        "Add butter and heat until melted.",
+        "Stir in flour, salt, milk and pepper.",
+        "Bring skillet to a boil and stir until it is thickened.",
+        "Serve gravy with biscuits when it is completed in the toaster oven."
+      ],
+      "userRatings": [5]
+    },
+    {
+      "recipeName": "Waffles",
+      "recipeAuthor": "Elliot",
+      "recipeEmail": "john@foo.com",
+      "description": "Start your day with delicious waffles.",
+      "image": "https://images.pexels.com/photos/378008/pexels-photo-378008.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+      "averageRating": 1,
+      "total": 0,
+      "servings": 2,
+      "owner": "john@foo.com",
+      "restrictions": [
+        "none"
+      ],
+      "ingredients": [
+        "2 tsp. Flour",
+        "1/4 cup Baking Powder",
+        "1 tsp. Sugar",
+        "1 tsp. Salt",
+        "2 Eggs",
+        "1 cup Milk",
+        "2 tbsp. Butter"
+      ],
+      "tools": [
+        "large bowls",
+        "waffle iron"
+      ],
+      "steps": [
+        "In the large bowl, mix in eggs, milk and butter until mixture is softened.",
+        "In another large bowl, mix together flour, baking soda, sugar and salt.",
+        "Combine contents of both bowls into one.",
+        "Prepare waffle iron by spraying it with baking spray.",
+        "Pour in batter and cook until waffle is golden brown.",
+        "Remove waffle and continue to make more or store batter for later use."
+      ],
+      "userRatings": [1]
+    },
+    {
+      "recipeName": "Blueberry Waffles",
+      "recipeAuthor": "Haley",
+      "recipeEmail": "haley@foo.com",
+      "description": "Blueberry waffles has never tasted so good.",
+      "image": "https://images.unsplash.com/photo-1562376552-0d160a2f238d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1250&q=80",
+      "averageRating": 3,
+      "total": 0,
+      "servings": 2,
+      "owner": "haley@foo.com",
+      "restrictions": [
+        "none"
+      ],
+      "ingredients": [
+        "2 tsp. Flour",
+        "1/4 cup Baking Powder",
+        "1 tsp. Sugar",
+        "1 tsp. Salt",
+        "2 Eggs",
+        "1 cup Milk",
+        "2 tbsp. Butter",
+        "1 tsp. Vanilla",
+        "1 cup Blueberries"
+      ],
+      "tools": [
+        "large bowl",
+        "small bowl",
+        "waffle iron"
+      ],
+      "steps": [
+        "In the small bowl, mix in eggs, milk and butter until mixed.",
+        "In a large bowl, mix together flour, baking soda, sugar and salt.",
+        "Pour contents of step 1 into the large bowl.",
+        "Add in and pour blueberries",
+        "Pour in batter and cook until waffle is crispy.",
+        "Serve with butter and syrup and enjoy!"
+      ],
+      "userRatings": [3]
+    },
+    {
+      "recipeName": "Fluffy Blueberry Pancakes",
+      "recipeAuthor": "Robert",
+      "recipeEmail": "robert@foo.com",
+      "description": "Blueberry Pancakes. Yummy.",
+      "image": "https://images.unsplash.com/photo-1619592982904-ef0a0da5b7e6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80",
+      "averageRating": 2,
+      "total": 0,
+      "servings": 2,
+      "owner": "robert@foo.com",
+      "restrictions": [
+        "none"
+      ],
+      "ingredients": [
+        "1 1/4 cup Flour",
+        "1/2 tsp. Salt",
+        "1 tbsp. Baking Powder",
+        "1 1/4 tbsp. Sugar",
+        "1 Egg",
+        "1 cup Milk",
+        "1/2 tbsp. Butter",
+        "1/2 cup Blueberries"
+      ],
+      "tools": [
+        "large bowl",
+        "small bowl",
+        "frying pan"
+      ],
+      "steps": [
+        "In the small bowl, mix in eggs, milk.",
+        "In a large bowl, sift flour, salt, baking powder, and sugar.",
+        "Pour contents of step 1 into the large bowl.",
+        "Add in and pour blueberries.  Set aside for 1 our",
+        "Pour in batter onto frying pan until bottom is brown.  Flip and brown other side",
+        "Repeat previous step for additional pancakes.",
+        "Serve with additional toppings and enjoy."
+      ],
+      "userRatings": [2]
+    },
+    {
+      "recipeName": "Strawberry Banana Smoothie",
+      "recipeAuthor": "Alyssa",
+      "recipeEmail": "alyssa@foo.com",
+      "description": "Simple strawberry banana smoothie.",
+      "image": "https://images.unsplash.com/photo-1619592982904-ef0a0da5b7e6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80",
+      "averageRating": 4,
+      "total": 0,
+      "servings": 1,
+      "owner": "alyssa@foo.com",
+      "restrictions": [
+        "no peanuts"
+      ],
+      "ingredients": [
+        "1 Frozen Banana",
+        "1 cup Strawberries",
+        "1/2 cup Yogurt",
+        "1 cup Milk"
+      ],
+      "tools": [
+        "blender"
+      ],
+      "steps": [
+        "Simply put in all ingredients in blender jar.",
+        "Cover lid and blend until mixture is smooth.",
+        "Transfer content onto a cup and enjoy!"
+      ],
+      "userRatings": [4]
+    },
+    {
+      "recipeName": "Berry Smoothie",
+      "recipeAuthor": "Alyssa",
+      "recipeEmail": "alyssa@foo.com",
+      "description": "A delicious berry smoothie.",
+      "image": "https://cdn.pixabay.com/photo/2018/02/23/16/58/milk-3176015_1280.jpg",
+      "averageRating": 4,
+      "total": 0,
+      "servings": 1,
+      "owner": "alyssa@foo.com",
+      "restrictions": [
+        "no peanuts"
+      ],
+      "ingredients": [
+        "1 Frozen Banana",
+        "1 cup Berries",
+        "1/2 cup Yogurt",
+        "1 cup Unsweetened Milk"
+      ],
+      "tools": [
+        "blender"
+      ],
+      "steps": [
+        "Simply put in all ingredients in blender jar.",
+        "Cover lid and blend until mixture is smooth.",
+        "Transfer content onto a cup and enjoy!"
+      ],
+      "userRatings": [4]
+    },
+    {
+      "recipeName": "Peanut Butter Smoothie",
+      "recipeAuthor": "Alyssa",
+      "recipeEmail": "alyssa@foo.com",
+      "description": "A yummy peanut butter smoothie.",
+      "image": "https://cdn.pixabay.com/photo/2014/08/03/22/21/chocolate-409439_1280.jpg",
+      "averageRating": 5,
+      "total": 0,
+      "servings": 1,
+      "owner": "alyssa@foo.com",
+      "restrictions": [
+        "none"
+      ],
+      "ingredients": [
+        "1 Frozen Banana",
+        "1 tbsp. Peanut Butter",
+        "1/2 cup Yogurt",
+        "1 cup Unsweetened Milk"
+      ],
+      "tools": [
+        "blender"
+      ],
+      "steps": [
+        "Simply put in all ingredients in blender jar.",
+        "Cover lid and blend until mixture is smooth.",
+        "Transfer content onto a cup and enjoy!"
+      ],
+      "userRatings": [5]
+    },
+    {
+      "recipeName": "Green Smoothie",
+      "recipeAuthor": "Alyssa",
+      "recipeEmail": "alyssa@foo.com",
+      "description": "A green smoothie to help start your day.",
+      "image": "https://cdn.pixabay.com/photo/2017/08/08/13/37/green-smoothie-2611407_1280.jpg",
+      "averageRating": 4,
+      "total": 0,
+      "servings": 1,
+      "owner": "alyssa@foo.com",
+      "restrictions": [
+        "no peanuts"
+      ],
+      "ingredients": [
+        "1/2 Frozen Banana",
+        "1 cup. Blueberry ",
+        "1/2 Orange",
+        "1 cup Baby Kale",
+        "1 cup Unsweetened Milk",
+        "Green leaves"
+      ],
+      "tools": [
+        "blender"
+      ],
+      "steps": [
+        "Simply put in all ingredients in blender jar.",
+        "Cover lid and blend until mixture is smooth.",
+        "Transfer content onto a cup and top with green leaves.",
+        "Enjoy!"
+      ],
+      "userRatings": [4]
     }
   ],
 

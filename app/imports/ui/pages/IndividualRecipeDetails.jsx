@@ -72,10 +72,10 @@ class IndividualRecipeDetails extends React.Component {
                 </Card>
                 <Card>
                   <Card.Content>
-                    <Card.Header>Restrictions <Icon name='food'/></Card.Header>
+                    <Card.Header>Servings</Card.Header>
                   </Card.Content>
                   <Card.Content>
-                    <List items={this.props.recipe.restrictions}/>
+                    {this.props.recipe.servings}
                   </Card.Content>
                 </Card>
               </div>
@@ -86,6 +86,14 @@ class IndividualRecipeDetails extends React.Component {
                 <Card.Content>
                   <Card.Header className="rating-display">Average User Rating <Icon name='star'/></Card.Header>
                   <Rating icon='star' defaultRating={this.props.recipe.averageRating} maxRating={5} disabled/>
+                </Card.Content>
+              </Card>
+              <Card centered>
+                <Card.Content>
+                  <Card.Header>Restrictions <Icon name='food'/></Card.Header>
+                </Card.Content>
+                <Card.Content>
+                  <List items={this.props.recipe.restrictions}/>
                 </Card.Content>
               </Card>
             </Grid.Column>
