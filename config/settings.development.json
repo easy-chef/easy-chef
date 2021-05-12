@@ -75,7 +75,7 @@
       "recipeAuthor": "Marcus",
       "recipeEmail": "marcus@foo.com",
       "description": "A healthy meal that is full of flavor, protein and fiber!",
-      "image": "https://www.budgetbytes.com/wp-content/uploads/2014/09/One-Pot-Chili-Pasta-fork-400x300-1-200x200.jpg",
+      "image": "https://cdn.pixabay.com/photo/2019/05/21/15/21/noodle-4219235_1280.jpg",
       "averageRating": 4,
       "total": 50,
       "servings": 3,
@@ -111,7 +111,7 @@
       "recipeAuthor": "Elliot",
       "recipeEmail": "john@foo.com",
       "description": "A very nutritious smoothie for breakfast",
-      "image": "https://www.fromvalerieskitchen.com/wordpress/wp-content/uploads/2014/02/Tropical-Green-Smoothie-109-1.jpg",
+      "image": "https://cdn.pixabay.com/photo/2018/09/23/09/31/smoothie-3697014_1280.jpg",
       "averageRating": 5,
       "total": 30,
       "servings": 2,
@@ -142,7 +142,7 @@
       "recipeAuthor": "Alyssa",
       "recipeEmail": "alyssa@foo.com",
       "description": "A delicious and healthy type of pancake!",
-      "image": "https://fitfoodiefinds.com/wp-content/uploads/2020/11/pancakes2-1365x2048.jpeg",
+      "image": "https://cdn.pixabay.com/photo/2015/04/10/00/41/food-715541_1280.jpg",
       "averageRating": 5,
       "total": 9,
       "servings": 2,
@@ -180,7 +180,7 @@
       "recipeAuthor": "Alyssa",
       "recipeEmail": "alyssa@foo.com",
       "description": "Everything you love about pizza stuffed into a quesadilla!",
-      "image": "https://www.budgetbytes.com/wp-content/uploads/2011/08/Pizzadillas252520close-380x380.jpg",
+      "image": "https://images.unsplash.com/photo-1618040996337-56904b7850b9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80",
       "averageRating": 4,
       "total": 20,
       "servings": 2,
@@ -402,7 +402,7 @@
       "recipeName": "Chocolate Chip Cookies",
       "recipeAuthor": "Elliot",
       "recipeEmail": "john@foo.com",
-      "description": "Cookies that are better than ready-made cookies",
+      "description": "Cookies that are better than ready-made cookies.",
       "image": "https://cdn.shortpixel.ai/client/to_avif,q_glossy,ret_img,w_683/https://thereislifeafterwheat.com/wp-content/uploads/2020/06/Gluten-Free-Chocolate-Chip-Cookies-Step-By-Step-Step-By-Step-683x1024.png",
       "averageRating": 5,
       "total": 0,
@@ -433,6 +433,303 @@
         "Place dough in non-grease pan and bake in oven until golden brown."
       ],
       "userRatings": [5]
+    },
+    {
+      "recipeName": "Instant Ramen Deluxe",
+      "recipeAuthor": "Alyssa",
+      "recipeEmail": "alyssa@foo.com",
+      "description": "Everyone as a college student relies on ramen, why not give it an upgrade!",
+      "image": "https://burst.shopifycdn.com/photos/bowl-of-noodle-soup-with-more-ingredients-behind.jpg?height=364&format=pjpg&exif=0&iptc=0",
+      "averageRating": 3,
+      "total": 0,
+      "servings": 24,
+      "owner": "alyssa@foo.com",
+      "restrictions": [
+        "none"
+      ],
+      "ingredients": [
+        "Instant Ramen",
+        "Beef",
+        "Ginger",
+        "Oil",
+        "Sriracha",
+        "Minced Garlic",
+        "Scallions",
+        "Chicken Broth"
+      ],
+      "tools": [
+        "stove",
+        "large pot"
+      ],
+      "steps": [
+        "Preheat oven to 350 degrees",
+        "In a large pot, add garlic, scallions, ginger and sriracha and cook until scallions have softened.",
+        "Next stir in chicken broth into mixture.",
+        "Add in your ramen of choice (do not include the seasoning packet)",
+        "Wait until noodles soften and enjoy!"
+      ],
+      "userRatings": [3]
+    },
+    {
+      "recipeName": "Tacos",
+      "recipeAuthor": "Marcus",
+      "recipeEmail": "marcus@foo.com",
+      "description": "Easy to make tacos at home",
+      "image": "https://burst.shopifycdn.com/photos/bowl-of-noodle-soup-with-more-ingredients-behind.jpg?height=364&format=pjpg&exif=0&iptc=0",
+      "averageRating": 4,
+      "total": 0,
+      "servings": 24,
+      "owner": "marcus@foo.com",
+      "restrictions": [
+        "none"
+      ],
+      "ingredients": [
+        "1 pound Ground Beef",
+        "1 cup Salsa",
+        "Taco Shells",
+        "Shredded Lettuce",
+        "3/4 cup chopped Tomato",
+        "1 cup shredded Cheddar Cheese"
+      ],
+      "tools": [
+        "skillet",
+        "bowl"
+      ],
+      "steps": [
+        "Preheat oven to 350 degrees",
+        "Cook beef in skillet with medium heat for 8 to 10 minutes while stirring.",
+        "Add in and stir salsa onto the beef and heat to boiling.  Mix and cook for 5 minutes and pour beef mixture into separate bowl.",
+        "Heat taco shells and serve each shell with a serving a of the beef mixture, lettuce, tomato and cheddar cheese."
+      ],
+      "userRatings": [4]
+    },
+    {
+      "recipeName": "Custom Popcorn",
+      "recipeAuthor": "Haley",
+      "recipeEmail": "haley@foo.com",
+      "description": "Add a custom spin to popcorn!",
+      "image": "https://images.unsplash.com/photo-1505686994434-e3cc5abf1330?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1652&q=80",
+      "averageRating": 5,
+      "total": 0,
+      "servings": 4,
+      "owner": "haley@foo.com",
+      "restrictions": [
+        "none"
+      ],
+      "ingredients": [
+        "Popcorn kernels",
+        "Butter",
+        "Powdered Cheese"
+      ],
+      "tools": [
+        "microwave",
+        "large bowl"
+      ],
+      "steps": [
+        "Pour desired amount of kernels onto bowl.",
+        "Add in desired amount of butter and cheese.",
+        "Be sure to add in any additional toppings if desired!",
+        "Cover bowl with microwave safe lid and place in microwave until all kernels have been popped."
+      ],
+      "userRatings": [5]
+    },
+    {
+      "recipeName": "Spicy Popcorn",
+      "recipeAuthor": "robert",
+      "recipeEmail": "robert@foo.com",
+      "description": "Add a custom spin to popcorn!",
+      "image": "https://images.unsplash.com/photo-1543627147-47da2f9f8978?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80",
+      "averageRating": 5,
+      "total": 0,
+      "servings": 4,
+      "owner": "robert@foo.com",
+      "restrictions": [
+        "none"
+      ],
+      "ingredients": [
+        "Popcorn kernels",
+        "Butter",
+        "2 sheets dried seaweed",
+        "2 tbsp. Sesame Seeds",
+        "1 tbsp. Chile Seasoning",
+        "1 tbsp. salt",
+        "Butter"
+      ],
+      "tools": [
+        "microwave",
+        "large bowl"
+      ],
+      "steps": [
+        "In a bowl, add in dried seaweed, sesame seeds, chile seasoning and salt and pulse until it becomes powder",
+        "Pour desired amount of kernels onto bowl.",
+        "Add in desired amount of liquid butter",
+        "Cover bowl with microwave safe lid and put in microwave.",
+        "Heat bowl in microwave until all kernels have been popped.",
+        "Enjoy!"
+      ],
+      "userRatings": [5]
+    },
+    {
+      "recipeName": "Scrambled Eggs",
+      "recipeAuthor": "alyssa",
+      "recipeEmail": "alyssa@foo.com",
+      "description": "Make morning scrambled eggs the easy way.",
+      "image": "https://cdn.stocksnap.io/img-thumbs/960w/scrambled%20eggs-tomatoes_GT7CMO72J2.jpg",
+      "averageRating": 3,
+      "total": 0,
+      "servings": 4,
+      "owner": "alyssa@foo.com",
+      "restrictions": [
+        "none"
+      ],
+      "ingredients": [
+        "4 Eggs",
+        "Butter",
+        "Shredded Cheese",
+        "Salt",
+        "Sliced Tomatoes"
+      ],
+      "tools": [
+        "large bowl",
+        "skillet",
+        "stove"
+      ],
+      "steps": [
+        "In a bowl, shred cheese (ignore step if cheese is already shredded",
+        "Place skillet on stove over medium low heat",
+        "In a separate bowl, break eggs and toss away shell.  Add in water or milk.",
+        "With a fork, beat eggs for 30 seconds or longer until eggs are mixed well.",
+        "Grease skillet and pour mixed eggs onto the skillet.",
+        "Using a spoon, move the mix toward the center as it attempts to spread out on the skillet.",
+        "Once the the mix no longer spreads out, turn and cook any undercooked areas.",
+        "Turn off stove once all sides have been cooked and serve."
+      ],
+      "userRatings": [3]
+    },
+    {
+      "recipeName": "Toaster Oven Bacon",
+      "recipeAuthor": "Elliot",
+      "recipeEmail": "john@foo.com",
+      "description": "All you need is a toaster oven to start your day with bacon.",
+      "image": "https://images.unsplash.com/photo-1606851094655-b2593a9af63f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80",
+      "averageRating": 2,
+      "total": 0,
+      "servings": 4,
+      "owner": "john@foo.com",
+      "restrictions": [
+        "none"
+      ],
+      "ingredients": [
+        "Bacon Strips"
+      ],
+      "tools": [
+        "toaster oven"
+      ],
+      "steps": [
+        "Pre-heat toaster oven to 400 degrees",
+        "Cover tray with foil and lay out desired amount of baking strips.",
+        "Set toaster oven to bake.  Then bake for approximately 7-9 minutes.",
+        "When back curls up, flip over bacon to cook any undercooked sides.",
+        "Transfer bacon onto plate and enjoy!"
+      ],
+      "userRatings": [2]
+    },
+    {
+      "recipeName": "Pita Chips",
+      "recipeAuthor": "Robert",
+      "recipeEmail": "robert@foo.com",
+      "description": "Easy to make pita chips with just a toaster oven",
+      "image": "https://images.unsplash.com/photo-1574448857443-dc1d7e9c4dad?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1347&q=80",
+      "averageRating": 3,
+      "total": 0,
+      "servings": 4,
+      "owner": "robert@foo.com",
+      "restrictions": [
+        "none"
+      ],
+      "ingredients": [
+        "2 Mini Pitas",
+        "Oil",
+        "Seasoning"
+      ],
+      "tools": [
+        "toaster oven"
+      ],
+      "steps": [
+        "Pre-heat toaster oven to 375 degrees and set to bake.",
+        "Spread oil and choice of seasoning onto the pitas.",
+        "Slice pitas into triangles and place them on toaster oven tray with baking sheet",
+        "Place pits into toaster oven abd bake until lightly brown.",
+        "Serve with additional sides and enjoy!"
+      ],
+      "userRatings": [3]
+    },
+    {
+      "recipeName": "Microwave Chicken Quesadilla",
+      "recipeAuthor": "Marcus",
+      "recipeEmail": "marcus@foo.com",
+      "description": "Make quesadilla with just a microwave.",
+      "image": "https://cdn.pixabay.com/photo/2017/05/09/01/34/quesadilla-2297035_1280.jpg",
+      "averageRating": 3,
+      "total": 0,
+      "servings": 1,
+      "owner": "marcus@foo.com",
+      "restrictions": [
+        "none"
+      ],
+      "ingredients": [
+        "2 Flour Tortillas",
+        "1/2 cup Chicken Strips",
+        "1/2 Bell Pepper",
+        "1 tbsp. Taco Seasoning",
+        "1/4 cup shredded Cheese"
+      ],
+      "tools": [
+        "microwave"
+      ],
+      "steps": [
+        "Microwave tortillas until crispy.",
+        "In a bowl, mix chicken, pepper and seasoning until combine.  Then cook in microwave for 1 minute.",
+        "Spread the bowl mixture evenly on the tortillas.",
+        "Cook tortillas once again for approximately 30 seconds or more.",
+        "Remove from microwave and serve!"
+      ],
+      "userRatings": [3]
+    },
+    {
+      "recipeName": "Fried Rice",
+      "recipeAuthor": "Alyssa",
+      "recipeEmail": "alyssa@foo.com",
+      "description": "With just a microwave, you can easily make fried rice!",
+      "image": "https://cdn.pixabay.com/photo/2016/10/23/09/37/restaurant-1762493_1280.jpg",
+      "averageRating": 4,
+      "total": 0,
+      "servings": 1,
+      "owner": "alyssa@foo.com",
+      "restrictions": [
+        "none"
+      ],
+      "ingredients": [
+        "1/2 cup Rice",
+        "1 cup of Water",
+        "1 tbsp. Soy Sauce",
+        "1 tbsp. Oil",
+        "2 Eggs",
+        "1/2 cup Frozen Peas"
+      ],
+      "tools": [
+        "microwave",
+        "bowl"
+      ],
+      "steps": [
+        "In the bowl, add in and stir rice, water, soy sauce, and oil.",
+        "Cover bowl with microwave safe lid and microwave for approximately 6 minutes.",
+        "Add in frozen peas after bowl has been microwaved.",
+        "In a separate bowl, beat eggs.  Then, add in beaten eggs into bowl.",
+        "With the eggs, microwave bowl for a minute until eggs are cooked.",
+        "Serve with additional toppings and enjoy!"
+      ],
+      "userRatings": [3]
     }
   ],
 

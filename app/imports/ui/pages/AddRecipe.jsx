@@ -20,7 +20,7 @@ const formSchema = new SimpleSchema({
   restrictions: Array,
   'restrictions.$': {
     type: String,
-    allowedValues: ['gluten-free', 'lactose intolerance', 'vegetarian', 'no peanuts', 'none'],
+    allowedValues: ['gluten-free', 'lactose intolerance', 'vegetarian', 'no peanuts', 'vegan', 'kosher', 'halal', 'low-carbohydrates', 'none'],
     optional: true,
   },
   ingredients: Array,
