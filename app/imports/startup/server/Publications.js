@@ -24,6 +24,8 @@ Meteor.publish(Recipes.userPublicationName, function () {
   return this.ready();
 });
 
+Meteor.publish(Recipes.allPublicationName, () => Recipes.collection.find());
+
 // Admin/vendor-level publication.
 // If logged in and with admin role, then publish all documents from all users. Otherwise publish nothing.
 Meteor.publish(Stuffs.adminPublicationName, function () {
