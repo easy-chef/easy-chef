@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 import { Profiles } from '../../api/profile/Profile';
 import UserCard from '../components/UserCard';
 
-/** Renders a table containing all of the Stuff documents. Use <StuffItem> to render each row. */
+/** Renders a table containing all of the User documents. */
 class ViewUsers extends React.Component {
 
   // If the subscription(s) have been received, render the page, otherwise show a loading icon.
@@ -28,7 +28,7 @@ class ViewUsers extends React.Component {
   }
 }
 
-// Require an array of Stuff documents in the props.
+// Require an array of Profile documents in the props.
 ViewUsers.propTypes = {
   profiles: PropTypes.array.isRequired,
   ready: PropTypes.bool.isRequired,
@@ -36,7 +36,7 @@ ViewUsers.propTypes = {
 
 // withTracker connects Meteor data to React components. https://guide.meteor.com/react.html#using-withTracker
 export default withTracker(() => {
-  // Get access to Stuff documents.
+  // Get access to Profile documents.
   const subscription = Meteor.subscribe(Profiles.public);
   return {
     profiles: Profiles.collection.find({}).fetch(),

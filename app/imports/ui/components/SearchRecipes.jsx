@@ -13,7 +13,7 @@ import MultiSelectField from '../forms/controllers/MultiSelectField';
 /** Create a schema to specify the structure of the data to appear in the form. */
 const formSchema = new SimpleSchema({
   restrictions: { type: Array, label: 'Restrictions', optional: true },
-  'restrictions.$': { type: String, allowedValues: ['gluten-free', 'lactose intolerance', 'vegetarian', 'no peanuts', 'none'] },
+  'restrictions.$': { type: String, allowedValues: ['gluten-free', 'lactose intolerance', 'vegetarian', 'no peanuts', 'vegan', 'kosher', 'halal', 'low-carbohydrates', 'none'] },
 });
 
 function getProfileData(recipeName) {
@@ -56,7 +56,6 @@ const MakeCard = (props) => (
     <Card.Content extra>
       <Rating icon='star' defaultRating={props.rpage.rating} maxRating={5}/>
     </Card.Content>
-
   </Card>
 );
 

@@ -2,7 +2,7 @@ import React from 'react';
 import { Table } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
 
-/** Renders a single row in the List Ingredients (Admin) table. See pages/ListItemsAdmin.jsx. */
+/** Renders a single row in the List Ingredients (Admin) table. */
 class IngredientAdmin extends React.Component {
   render() {
     return (

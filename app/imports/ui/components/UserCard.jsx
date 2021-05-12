@@ -3,12 +3,12 @@ import { Card } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
 import { withRouter } from 'react-router-dom';
 
-/** Renders a single row in the List Stuff table. See pages/ListStuff.jsx. */
+/** Renders a single row in the List Users table. See pages/ViewUsers.jsx. */
 class UserCard extends React.Component {
   render() {
     return (
       <Card centered>
-        <img src={this.props.profile.image} height={250}/>
+        <img alt={'user image'} src={this.props.profile.image} height={250}/>
         <Card.Content>
           <Card.Header>{this.props.profile.name}</Card.Header>
           <Card.Description>

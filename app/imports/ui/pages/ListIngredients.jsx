@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 import { VendorIngredients } from '../../api/vendor/VendorIngredient';
 import Ingredients from '../components/Ingredients';
 
-/** Renders a table containing all of the Stuff documents. Use <StuffItem> to render each row. */
+/** Renders a table containing all of the Ingredients documents. */
 class ListIngredients extends React.Component {
 
   // If the subscription(s) have been received, render the page, otherwise show a loading icon.
@@ -35,12 +35,11 @@ class ListIngredients extends React.Component {
           </Table.Body>
         </Table>
       </Container>
-
     );
   }
 }
 
-// Require an array of Stuff documents in the props.
+// Require an array of Ingredients documents in the props.
 ListIngredients.propTypes = {
   vendoringredients: PropTypes.array.isRequired,
   ready: PropTypes.bool.isRequired,
@@ -48,11 +47,11 @@ ListIngredients.propTypes = {
 
 // withTracker connects Meteor data to React components. https://guide.meteor.com/react.html#using-withTracker
 export default withTracker(() => {
-  // Get access to Stuff documents.
+  // Get access to Ingredients documents.
   const subscription = Meteor.subscribe(VendorIngredients.vendorPublicationName);
   // Determine if the subscription is ready
   const ready = subscription.ready();
-  // Get the Stuff documents
+  // Get the Ingredients documents
   const vendoringredients = VendorIngredients.collection.find({}).fetch();
   return {
     vendoringredients,
