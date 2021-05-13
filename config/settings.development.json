@@ -1177,7 +1177,222 @@
         "Enjoy!"
       ],
       "userRatings": [4]
+    },
+    {
+      "recipeName": "Mango Smoothie",
+      "recipeAuthor": "Marcus",
+      "recipeEmail": "marcus@foo.com",
+      "description": "A delicious and healthy type of smoothie.",
+      "image": "https://cdn.pixabay.com/photo/2015/05/30/21/36/smoothie-790711_1280.jpg",
+      "averageRating": 3,
+      "total": 0,
+      "servings": 1,
+      "owner": "marcus@foo.com",
+      "restrictions": [
+        "no peanuts"
+      ],
+      "ingredients": [
+        "2 cups Mango",
+        "1 Frozen Banana",
+        "1/2 cup Yogurt"
+      ],
+      "tools": [
+        "blender"
+      ],
+      "steps": [
+        "Simply put in all ingredients in blender jar.",
+        "Cover lid and blend until mixture is smooth.",
+        "If mango is not fully blended, be sure to use the tempered option on your blender.",
+        "Transfer smoothie onto a jar and take a sip!.",
+        "Enjoy!"
+      ],
+      "userRatings": [3]
+    },
+    {
+      "recipeName": "Vanilla Mug Cake",
+      "recipeAuthor": "Robert",
+      "recipeEmail": "robert@foo.com",
+      "description": "Its cake in a mug!",
+      "image": "https://images.pexels.com/photos/2764272/pexels-photo-2764272.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+      "averageRating": 3,
+      "total": 0,
+      "servings": 1,
+      "owner": "robert@foo.com",
+      "restrictions": [
+        "none"
+      ],
+      "ingredients": [
+        "Flour",
+        "White Sugar",
+        "Baking Powder",
+        "Salt",
+        "Butter",
+        "Milk",
+        "Vanilla"
+      ],
+      "tools": [
+        "mug",
+        "microwave"
+      ],
+      "steps": [
+        "In a microwave safe mug, add in flour, sugar, baking powder and salt.",
+        "Mix in milk, butter, and vanilla and stir thoroughly.",
+        "Once completely stirred, microwave mug for approximately 1-2 minutes.",
+        "Allow mug to cool and add in any additional toppings."
+      ],
+      "userRatings": [3]
+    },
+    {
+      "recipeName": "Microwaveable Bacon",
+      "recipeAuthor": "Robert",
+      "recipeEmail": "marcus@foo.com",
+      "description": "Serve bacon fast with just a microwave",
+      "image": "https://images.pexels.com/photos/4110373/pexels-photo-4110373.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+      "averageRating": 2,
+      "total": 0,
+      "servings": 4,
+      "owner": "marcus@foo.com",
+      "restrictions": [
+        "none"
+      ],
+      "ingredients": [
+        "Bacon Slices"
+      ],
+      "tools": [
+        "microwave"
+      ],
+      "steps": [
+        "In a microwave safe plate, lay out strips of bacon evenly without overlapping.",
+        "Cover plate and bacon with with paper towels.",
+        "Microwave for approximately 6 minutes until bacon is crispy."
+      ],
+      "userRatings": [2]
+    },
+    {
+      "recipeName": "French Toast",
+      "recipeAuthor": "Haley",
+      "recipeEmail": "haley@foo.com",
+      "description": "Delicious French Toast to start your morning",
+      "image": "https://cdn.pixabay.com/photo/2015/10/19/06/13/french-toast-995532_1280.jpg",
+      "averageRating": 5,
+      "total": 0,
+      "servings": 4,
+      "owner": "haley@foo.com",
+      "restrictions": [
+        "none"
+      ],
+      "ingredients": [
+        "1 Egg",
+        "1 tsp. Vanilla Extract",
+        "1/2 tsp. Cinnamon",
+        "1/4 cup Milk",
+        "4 slices Bread"
+      ],
+      "tools": [
+        "skillet",
+        "stove"
+      ],
+      "steps": [
+        "In a separate bowl, add in beaten eggs, vanilla and cinnamon.  Afterwards, add in and stir milk.",
+        "Dip bread into mixture until it is thoroughly coated.",
+        "Cook slices on a skillet over medium heat until both sides are brown.  Repeat for any additional bread slides.",
+        "Serve with syrup and butter and enjoy!"
+      ],
+      "userRatings": [5]
+    },
+    {
+      "recipeName": "Cinnamon French Toast",
+      "recipeAuthor": "marcus",
+      "recipeEmail": "marcus@foo.com",
+      "description": "Serve bacon fast with just a microwave",
+      "image": "https://images.unsplash.com/photo-1588484588657-0bbbee05132f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1651&q=80",
+      "averageRating": 3,
+      "total": 0,
+      "servings": 4,
+      "owner": "marcus@foo.com",
+      "restrictions": [
+        "none"
+      ],
+      "ingredients": [
+        "1 tsp. Cinnamon",
+        "1/4 tsp. Nutmeg",
+        "2 tbsp. Butter",
+        "4 Eggs",
+        "1/4 cup Milk",
+        "1/2 tsp. Vanilla Extract",
+        "8 slices of Bread",
+        "1/2 cup Maple Syrup"
+      ],
+      "tools": [
+        "skillet",
+        "stove",
+        "bowl"
+      ],
+      "steps": [
+        "In a bowl, combine cinnamon, nugmeg, and sugar for later use.",
+        "Next, drop butter on skillet over medium heat.  Then whisk contents of step 1 as well as eggs, milk, and vanilla extract and pour into separate container.",
+        "Dip each bread slice onto the container mixture and fry slices.  Repeat for additional bread slices.",
+        "Serve with syrup and butter then enjoy!"
+      ],
+      "userRatings": [3]
+    },
+    {
+      "recipeName": "Easy Milkshake",
+      "recipeAuthor": "Robert",
+      "recipeEmail": "robert@foo.com",
+      "description": "A tasty and easy to make desert!",
+      "image": "https://images.unsplash.com/photo-1568901839119-631418a3910d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=602&q=80",
+      "averageRating": 3,
+      "total": 0,
+      "servings": 1,
+      "owner": "robert@foo.com",
+      "restrictions": [
+        "none"
+      ],
+      "ingredients": [
+        "Vanilla Ice Cream",
+        "1/4 cup Milk"
+      ],
+      "tools": [
+        "blender"
+      ],
+      "steps": [
+        "In a blender, simply add in 4 scoops of ice cream and your desired choice of milk.",
+        "Once the blend has been completed, extract shake to a separate cup.",
+        "Add additional toppings such as sprinkles and take a sip!"
+      ],
+      "userRatings": [3]
+    },
+    {
+      "recipeName": "Healthy Strawberry Milkshake",
+      "recipeAuthor": "Haley",
+      "recipeEmail": "haley@foo.com",
+      "description": "A delicious strawberry milkshake that is also healthy",
+      "image": "https://images.unsplash.com/photo-1568901839119-631418a3910d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=602&q=80",
+      "averageRating": 3,
+      "total": 0,
+      "servings": 1,
+      "owner": "haley@foo.com",
+      "restrictions": [
+        "none"
+      ],
+      "ingredients": [
+        "2 cups Milk",
+        "1 tbsp. Honey",
+        "1 tsp. Vanilla Extract",
+        "1 cup Strawberry",
+      ],
+      "tools": [
+        "blender"
+      ],
+      "steps": [
+        "Prepare ingredients listed and mix them all in the blender.",
+        "Continue to blend until it is smooth.",
+        "Add in any additional toppings if desired."
+      ],
+      "userRatings": [3]
     }
+
   ],
 
   "defaultIngredients": [
