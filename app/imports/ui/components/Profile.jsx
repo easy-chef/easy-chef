@@ -3,7 +3,7 @@ import { Image, Grid, Header } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
 import { withRouter } from 'react-router-dom';
 
-/** Renders a single row in the List Stuff table. See pages/ListStuff.jsx. */
+/** Renders a single row in the List Profile table. See pages/ViewProfile.jsx. */
 class Profile extends React.Component {
   render() {
     return (
@@ -20,7 +20,6 @@ class Profile extends React.Component {
           </Header>
         </Grid.Column>
       </Grid.Row>
-
     );
   }
 }

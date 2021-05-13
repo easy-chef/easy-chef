@@ -3,12 +3,12 @@ import { Card, Icon } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
 import { withRouter } from 'react-router-dom';
 
-/** Renders a single row in the List Stuff table. See pages/ListStuff.jsx. */
+/** Renders a single row in the List Vendor table. See pages/ViewVendors.jsx. */
 class Vendor extends React.Component {
   render() {
     return (
       <Card centered>
-        <img src={this.props.vendor.image} height={250}/>
+        <img alt={'vendor image'} src={this.props.vendor.image} height={250}/>
         <Card.Content>
           <Card.Header>{this.props.vendor.name}</Card.Header>
           <Card.Meta>

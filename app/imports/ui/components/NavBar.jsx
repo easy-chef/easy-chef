@@ -15,16 +15,18 @@ class NavBar extends React.Component {
         <Menu.Item onClick={this.handleItemClick} as={NavLink} activeClassName="" exact to="/" >
           <Header inverted as='h1'>Easy Chef</Header>
         </Menu.Item>
-        <Menu.Item id='navbar-search-recipe' as={NavLink} activeClassName="active" exact to="/inprogress" key='search'><Icon name="search"/>Search for Recipes</Menu.Item>
+        <Menu.Item id='navbar-search-recipe' as={NavLink} activeClassName="active" exact to="/search" key='search'><Icon name="search"/>Search for Recipes</Menu.Item>
         <Menu.Item id='navbar-view-vendors' as={NavLink} activeClassName="active" exact to="/viewvendors" key='viewvendors'><Icon name="shopping basket"/>View Vendors</Menu.Item>
         {this.props.currentUser ? (
-          [<Menu.Item key='recipe'>
-            <Dropdown id='navbar-your-recipes' text="Your Recipes" icon={'caret down'}>
-              <Dropdown.Menu>
-                <Dropdown.Item id="navbar-recipe-list" as={NavLink} activeClassName="active" exact to="/list" key='list'><Icon name='clone outline'/>Recipe List</Dropdown.Item>
-                <Dropdown.Item id="navbar-recipe-add" as={NavLink} activeClassName="active" exact to="/add" key='add'><Icon name='plus square outline'/>Add Recipe</Dropdown.Item>
-              </Dropdown.Menu>
-            </Dropdown></Menu.Item>,
+          [
+            <Menu.Item id='navbar-view-users' as={NavLink} activeClassName="active" exact to="/viewusers" key='viewusers'><Icon name="users"/>View Users</Menu.Item>,
+            <Menu.Item key='recipe'>
+              <Dropdown id='navbar-your-recipes' text="Your Recipes" icon={'caret down'}>
+                <Dropdown.Menu>
+                  <Dropdown.Item id="navbar-recipe-list" as={NavLink} activeClassName="active" exact to="/list" key='list'><Icon name='clone outline'/>Recipe List</Dropdown.Item>
+                  <Dropdown.Item id="navbar-recipe-add" as={NavLink} activeClassName="active" exact to="/add" key='add'><Icon name='plus square outline'/>Add Recipe</Dropdown.Item>
+                </Dropdown.Menu>
+              </Dropdown></Menu.Item>,
           ]
         ) : ''}
         {Roles.userIsInRole(Meteor.userId(), 'vendor') ? (

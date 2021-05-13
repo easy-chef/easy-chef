@@ -49,7 +49,7 @@ class EditProfile extends React.Component {
   }
 }
 
-// Require the presence of a Stuff document in the props object. Uniforms adds 'model' to the props, which we use.
+// Require the presence of a Profile document in the props object. Uniforms adds 'model' to the props, which we use.
 EditProfile.propTypes = {
   doc: PropTypes.object,
   model: PropTypes.object,
@@ -58,17 +58,11 @@ EditProfile.propTypes = {
 
 // withTracker connects Meteor data to React components. https://guide.meteor.com/react.html#using-withTracker
 export default withTracker(() => {
-  // Get the documentID from the URL field. See imports/ui/layouts/App.jsx for the route containing :_id.
-  // const userId = Meteor.userId();
   const subscription = Meteor.subscribe(Profiles.userPublicationName);
   const user = Meteor.user();
   const username = Object(user).username;
   console.log(user);
-  // Get the document
-  // const username = Meteor.users.findOne(userId).username;
   const document = Profiles.collection.findOne({ owner: username });
-  // console.log(typeof document);
-  // console.log(document);
   return {
     doc: document,
     ready: subscription.ready(),

@@ -3,7 +3,7 @@ import SimpleSchema from 'simpl-schema';
 import { Tracker } from 'meteor/tracker';
 
 /**
- * The StuffsCollection. It encapsulates state and variable values for stuff.
+ * The ProfilesCollection. It encapsulates state and variable values for Profiles.
  */
 class ProfilesCollection {
   constructor() {
@@ -24,6 +24,7 @@ class ProfilesCollection {
     this.userPublicationName = `${this.name}.publication.user`;
     this.adminPublicationName = `${this.name}.publication.admin`;
     this.vendorPublicationName = `${this.name}.publication.vendor`;
+    this.public = `${this.name}.publication.value`;
   }
 }
 

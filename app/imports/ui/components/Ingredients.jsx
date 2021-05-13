@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { Link, withRouter } from 'react-router-dom';
 import { VendorIngredients } from '../../api/vendor/VendorIngredient';
 
-/** Renders a single row in the List Stuff (Admin) table. See pages/ListStuffAdmin.jsx. */
+/** Renders a single row in the List Ingredients. See pages/ListIngredients.jsx. */
 class Ingredients extends React.Component {
   handleClick = () => {
     VendorIngredients.collection.remove(this.props.vendoringredient._id);

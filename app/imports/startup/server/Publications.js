@@ -1,6 +1,5 @@
 import { Meteor } from 'meteor/meteor';
 import { Roles } from 'meteor/alanning:roles';
-import { Stuffs } from '../../api/stuff/Stuff';
 import { Profiles } from '../../api/profile/Profile';
 import { Recipes } from '../../api/recipe/Recipes';
 import { VendorIngredients } from '../../api/vendor/VendorIngredient';
@@ -24,15 +23,10 @@ Meteor.publish(Recipes.userPublicationName, function () {
   return this.ready();
 });
 
+Meteor.publish(Recipes.allPublicationName, () => Recipes.collection.find());
+
 // Admin/vendor-level publication.
 // If logged in and with admin role, then publish all documents from all users. Otherwise publish nothing.
-Meteor.publish(Stuffs.adminPublicationName, function () {
-  if (this.userId && Roles.userIsInRole(this.userId, 'admin')) {
-    return Stuffs.collection.find();
-  }
-  return this.ready();
-});
-
 Meteor.publish(Profiles.adminPublicationName, function () {
   if (this.userId && Roles.userIsInRole(this.userId, 'admin')) {
     return Profiles.collection.find();
@@ -73,6 +67,12 @@ Meteor.publish(VendorIngredients.vendorPublicationName, function () {
 
 Meteor.publish(VendorProfiles.public, function () {
   return VendorProfiles.collection.find({
+    userId: { $exists: false },
+  });
+});
+
+Meteor.publish(Profiles.public, function () {
+  return Profiles.collection.find({
     userId: { $exists: false },
   });
 });
