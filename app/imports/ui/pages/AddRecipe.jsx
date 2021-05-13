@@ -99,10 +99,9 @@ class AddRecipe extends React.Component {
                 <NumField id='add-recipe-servings' name='servings' decimal={false} showInlineError={true} placeholder={'Select Serving Amount'}/>
               </Form.Group>
               <MultiSelectField id='add-recipe-restriction' name='restrictions' showInlineError={true} placeholder={'Select restrictions (select "none" if there are no restrictions)'}/>
-              <span>*Please capitalize and specify only the name of ingredient*</span>
+              <span>*Please capitalize ingredient names!*</span>
               <ListField id='add-recipe-ingredients' name='ingredients'/>
               <ListField id='add-recipe-tools' name='tools'/>
-              <span>*Be sure to mention the amount of a certain ingredient that is being used!*</span>
               <ListField id='add-recipe-steps' name='steps'/>
               <SubmitField id='submit' value='Submit'/>
               <ErrorsField/>
