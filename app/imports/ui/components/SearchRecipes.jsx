@@ -7,6 +7,7 @@ import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
 import { _ } from 'meteor/underscore';
 import { AutoForm, SubmitField } from 'uniforms-semantic';
+import { Link } from 'react-router-dom';
 import { Recipes } from '../../api/recipe/Recipes';
 import MultiSelectField from '../forms/controllers/MultiSelectField';
 
@@ -26,35 +27,18 @@ const MakeCard = (props) => (
   <Card>
     <Image src={props.rpage.image}/>
     <Card.Content>
+      <Card.Header>
+        <Link id="view-individual-recipe" to={`/recipe/${props.rpage._id}`}>{props.rpage.recipeName}</Link>
+      </Card.Header>
       <Card.Meta>
-        <Header as='h1' size='huge'>{props.rpage.recipeName}</Header>
-        <Header size='medium'>By {props.rpage.recipeAuthor}</Header>
-        <span className='date'>{props.rpage.recipeEmail}</span>
+        <Header size='medium'>By {props.rpage.recipeAuthor} ({props.rpage.recipeEmail})</Header>
+        <Card.Description>
+          {props.rpage.description}
+        </Card.Description>
       </Card.Meta>
     </Card.Content>
-    <Card.Content>
-      <Card.Description>
-        {props.rpage.description}
-      </Card.Description>
-    </Card.Content>
-    <Card.Content>
-      <Card.Header><Icon name='pencil alternate'/>Steps</Card.Header>
-      <Card.Description>
-        <List ordered items={props.rpage.steps}/>
-      </Card.Description>
-    </Card.Content>
-    <Card.Content>
-      <Card.Header><Icon name='utensil spoon'/>Tools</Card.Header>
-      <Card.Description>
-        <List bulleted items={props.rpage.tools}/>
-      </Card.Description>
-    </Card.Content>
     <Card.Content extra>
-      <Icon name='dollar sign'/>
-      {props.rpage.total}
-    </Card.Content>
-    <Card.Content extra>
-      <Rating icon='star' defaultRating={props.rpage.rating} maxRating={5}/>
+      <Rating icon='star' defaultRating={props.rpage.averageRating} maxRating={5} disabled/>
     </Card.Content>
   </Card>
 );
@@ -102,7 +86,7 @@ class Filter extends React.Component {
   }
 }
 
-/** Require an array of Stuff documents in the props. */
+/** Require an array of recipe documents in the props. */
 Filter.propTypes = {
   ready: PropTypes.bool.isRequired,
 };
