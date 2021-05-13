@@ -111,7 +111,7 @@ class IndividualRecipeDetails extends React.Component {
                     </Card.Description>
                   </Card.Content>
                   <Card.Content extra>
-                    <Item as={NavLink} exact to="/inprogress"><Icon name='map'/>Locate ingredients</Item>
+                    <Item as={NavLink} exact to="/viewvendors"><Icon name='map'/>Locate ingredients</Item>
                   </Card.Content>
                 </Card>
               </Grid.Column>

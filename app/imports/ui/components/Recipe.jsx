@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Header, Image } from 'semantic-ui-react';
+import { Card, Header, Image, Rating } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
 import { Link, withRouter } from 'react-router-dom';
 
@@ -19,6 +19,9 @@ class Recipe extends React.Component {
               {this.props.recipe.description}
             </Card.Description>
           </Card.Meta>
+        </Card.Content>
+        <Card.Content extra>
+          <Rating icon='star' defaultRating={this.props.recipe.averageRating} maxRating={5} disabled/>
         </Card.Content>
         <Card.Content extra>
           <Link id="view-edit-recipe" to={`/edit/${this.props.recipe._id}`}>Edit</Link>
