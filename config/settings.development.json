@@ -41,7 +41,7 @@
       "recipeEmail": "john@foo.com",
       "description": "A family recipe passed down to generations that is affordable to make! I was able to get the ingredients relatively cheap at The Market near student housing. Foodland at Ala Moana is also a great alternative to search for ingredients.",
       "image": "https://images.unsplash.com/photo-1543339531-242d0bc29010?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bWFjYXJvbmklMjBhbmQlMjBjaGVlc2V8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
-      "averageRating": 3,
+      "averageRating": 5,
       "total": 0,
       "servings": 4,
       "owner": "john@foo.com",
@@ -68,7 +68,7 @@
         "Fold macaroni into cheese sauce until it is coated.",
         "Enjoy!"
       ],
-      "userRatings": [3]
+      "userRatings": [5]
     },
     {
       "recipeName": "Chili Pasta",
@@ -399,10 +399,10 @@
       "userRatings": [5]
     },
     {
-      "recipeName": "Chocolate Chip Cookies",
+      "recipeName": "Gluten-Free Chocolate Chip Cookies",
       "recipeAuthor": "Elliot",
       "recipeEmail": "john@foo.com",
-      "description": "Cookies that are better than ready-made cookies.",
+      "description": "Cookies that are better than ready-made cookies that's also gluten-free.",
       "image": "https://cdn.shortpixel.ai/client/to_avif,q_glossy,ret_img,w_683/https://thereislifeafterwheat.com/wp-content/uploads/2020/06/Gluten-Free-Chocolate-Chip-Cookies-Step-By-Step-Step-By-Step-683x1024.png",
       "averageRating": 5,
       "total": 0,
@@ -475,7 +475,7 @@
       "recipeAuthor": "Marcus",
       "recipeEmail": "marcus@foo.com",
       "description": "Easy to make tacos at home",
-      "image": "https://burst.shopifycdn.com/photos/bowl-of-noodle-soup-with-more-ingredients-behind.jpg?height=364&format=pjpg&exif=0&iptc=0",
+      "image": "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=828&q=80",
       "averageRating": 4,
       "total": 0,
       "servings": 24,
@@ -806,7 +806,7 @@
       "recipeAuthor": "Alyssa",
       "recipeEmail": "alyssa@foo.com",
       "description": "Delicious brownies with only a toaster oven.",
-      "image": "https://i2.wp.com/pixahive.com/wp-content/uploads/2020/11/Pizza-204418-pixahive.jpg?fit=1560%2C1175&ssl=1",
+      "image": "https://images.unsplash.com/photo-1610611424854-5e07032143d8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
       "averageRating": 2,
       "total": 0,
       "servings": 3,
@@ -1302,7 +1302,7 @@
     },
     {
       "recipeName": "Cinnamon French Toast",
-      "recipeAuthor": "marcus",
+      "recipeAuthor": "Marcus",
       "recipeEmail": "marcus@foo.com",
       "description": "Serve bacon fast with just a microwave",
       "image": "https://images.unsplash.com/photo-1588484588657-0bbbee05132f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1651&q=80",
@@ -1368,7 +1368,7 @@
       "recipeAuthor": "Haley",
       "recipeEmail": "haley@foo.com",
       "description": "A delicious strawberry milkshake that is also healthy",
-      "image": "https://images.unsplash.com/photo-1568901839119-631418a3910d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=602&q=80",
+      "image": "https://images.unsplash.com/photo-1579954115545-a95591f28bfc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1650&q=80",
       "averageRating": 3,
       "total": 0,
       "servings": 1,
@@ -1391,8 +1391,329 @@
         "Add in any additional toppings if desired."
       ],
       "userRatings": [3]
-    }
+    },
+    {
+      "recipeName": "Banana Protein Shake",
+      "recipeAuthor": "Marcus",
+      "recipeEmail": "marcus@foo.com",
+      "description": "A delicious type of protein shake.",
+      "image": "https://images.unsplash.com/photo-1542444592-e6880e286bb9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=622&q=80",
+      "averageRating": 4,
+      "total": 0,
+      "servings": 1,
+      "owner": "haley@foo.com",
+      "restrictions": [
+        "none"
+      ],
+      "ingredients": [
+        "1 cup Almond Milk",
+        "1/2 cup Yogurt",
+        "1 scoop Vanilla Protein Powder",
+        "1 Frozen Banana",
+        "1/8 tsp Ground Cinnamon"
+      ],
+      "tools": [
+        "blender"
+      ],
+      "steps": [
+        "Gather all ingredients and add them in the blender",
+        "Blend ingredients until it is smooth.  If it is too thick, be sure to add additional milk if necessary.",
+        "Transfer contents into a jar or a cup."
+      ],
+      "userRatings": [3]
+    },
+    {
+      "recipeName": "Avocado Sandwich",
+      "recipeAuthor": "Haley",
+      "recipeEmail": "haley@foo.com",
+      "description": "A yummy avocado sandwich.",
+      "image": "https://images.pexels.com/photos/1351238/pexels-photo-1351238.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+      "averageRating": 4,
+      "total": 0,
+      "servings": 1,
+      "owner": "haley@foo.com",
+      "restrictions": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        "2 Bread Slices",
+        "Cheese",
+        "1/2 Avocado",
+        "6 Dried Cranberries",
+        "1/2 Tomato",
+        "1/2 tbsp. Vinegar"
+      ],
+      "tools": [
+        "toaster"
+      ],
+      "steps": [
+        "Toast bread slices.",
+        "Cut avocado into fresh slices.  Then proceed to cut up tomato, cheese and cranberries.",
+        "Place all contents on top of one bread slice.",
+        "Place second bread slice on top and make sure nothing leaks out in the middle."
 
+      ],
+      "userRatings": [3]
+    },
+    {
+      "recipeName": "Gluten-Free Brownies",
+      "recipeAuthor": "Robert",
+      "recipeEmail": "robert@foo.com",
+      "description": "Delicious brownies that is also gluten-free!",
+      "image": "https://images.pexels.com/photos/1351238/pexels-photo-1351238.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+      "averageRating": 4,
+      "total": 0,
+      "servings": 1,
+      "owner": "robert@foo.com",
+      "restrictions": [
+        "gluten-free"
+      ],
+      "ingredients": [
+        "3 tbsp. Flax",
+        "1 cup Gluten-Free Flour",
+        "1/2 cup Dairy-Free Cocoa Powder",
+        "1/2 tsp. Salt",
+        "1 tsp. Baking Powder",
+        "1/2 cup Coconut Oil",
+        "5 oz. dairy-free Chocolate",
+        "1 1/2 cups Sugar",
+        "1 tbsp. Vanilla Extract"
+      ],
+      "tools": [
+        "toaster oven",
+        "bowls",
+        "sauce pan"
+      ],
+      "steps": [
+        "In a bowl add in flax and 8 tbsp. of water and let it stand for 7 to 8 minutes.",
+        "In another bowl, add in flour, cocoa powder, baking powder and salt then whisk.",
+        "In the sauce pan, add coconut oil and chocolate and place on stove over low heat.  Wait until chocolate is melted.  Afterwards, add in sugar and vanilla.",
+        "Pour contents of previous step in another bowl, then add in contents from step 2.",
+        "Spread batter onto a toaster oven sized pan and make sure it is spread out evenly.",
+        "Set toaster oven for 400 degrees and bake for 20-30 minutes.",
+        "Once brownies edges are set, let brownies cool before serving."
+
+      ],
+      "userRatings": [4]
+    },
+    {
+      "recipeName": "Blueberry Protein Shake",
+      "recipeAuthor": "Marcus",
+      "recipeEmail": "marcus@foo.com",
+      "description": "A healthy protein shake filled with blueberries!",
+      "image": "https://images.unsplash.com/photo-1586258148113-d9679ac30485?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1534&q=80",
+      "averageRating": 5,
+      "total": 0,
+      "servings": 1,
+      "owner": "robert@foo.com",
+      "restrictions": [
+        "none"
+      ],
+      "ingredients": [
+        "1/2 cup Almond Milk",
+        "1 scoop Vanilla Protein Powder",
+        "1/2 cup Frozen Blueberries",
+        "1/2 tbsp. Natural Unsalted Almond Butter"
+      ],
+      "tools": [
+        "blender"
+      ],
+      "steps": [
+        "Gather all ingredients and add them in the blender",
+        "Blend ingredients until it is smooth.  If it is too thick, be sure to add additional milk if necessary.",
+        "Transfer contents into a jar or a cup.",
+        "Decorate your drink with toppings to make it more special."
+      ],
+      "userRatings": [5]
+    },
+    {
+      "recipeName": "Microwavable Mac and Cheese",
+      "recipeAuthor": "Alyssa",
+      "recipeEmail": "alyssa@foo.com",
+      "description": "Mac and Cheese, microwave edition!",
+      "image": "https://cdn.pixabay.com/photo/2019/06/29/09/00/food-4305743_1280.jpg",
+      "averageRating": 3,
+      "total": 0,
+      "servings": 1,
+      "owner": "alyssa@foo.com",
+      "restrictions": [
+        "none"
+      ],
+      "ingredients": [
+        "1/2 cup Elbow Macaroni",
+        "1/2 cup Water",
+        "1/2 cup Cheddar Cheese",
+        "1/2 cup Bacon"
+      ],
+      "tools": [
+        "microwave",
+        "mug/plate/bowl"
+      ],
+      "steps": [
+        "In a mug, plate, or bowl, add in elbow macaroni and microwave for 1 minute.",
+        "Remove microwave and stir.  Afterwards stir and microwave for another 30 seconds. If it is still dry, add water and stir then place in microwave for another 30 seconds.",
+        "Repeat previous step until macaroni is moist.",
+        "While hot, add in and stir cheese and drizzle with bacon.",
+        "Now you have an easy lunch made in just minutes!"
+      ],
+      "userRatings": [3]
+    },
+    {
+      "recipeName": "Toaster Oven Meatballs",
+      "recipeAuthor": "Elliot",
+      "recipeEmail": "john@foo.com",
+      "description": "Get your meatballs ready with a toaster oven!",
+      "image": "https://images.unsplash.com/photo-1541039615288-dda30f2ade62?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
+      "averageRating": 2,
+      "total": 0,
+      "servings": 1,
+      "owner": "john@foo.com",
+      "restrictions": [
+        "none"
+      ],
+      "ingredients": [
+        "1 lb Ground Beef",
+        "1 Egg",
+        "2 tbsp. Water",
+        "1/2 Breadcrumbs",
+        "1/4 cup Minced Onion",
+        "1/2 tsp. Salt",
+        "1/2 tsp. Pepper"
+      ],
+      "tools": [
+        "toaster oven",
+        "large bowl"
+      ],
+      "steps": [
+        "In a large bowl, mix egg, water, bread crumbs, onion as well as salt and pepper.  Break ground beef and add to bowl.",
+        "Form meatballs that is 1in. in diameter and place on toaster oven tray.  If contents of bowl cannot fit, store for later or cook in batches",
+        "Set toaster oven to 350 degrees and bake for 25 minutes until the center is not visibly pink."
+      ],
+      "userRatings": [2]
+    },
+    {
+      "recipeName": "Mini Biscuits",
+      "recipeAuthor": "Haley",
+      "recipeEmail": "haley@foo.com",
+      "description": "Simple yet delicious bite-sized biscuits!",
+      "image": "https://images.pexels.com/photos/4197905/pexels-photo-4197905.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+      "averageRating": 4,
+      "total": 0,
+      "servings": 1,
+      "owner": "haley@foo.com",
+      "restrictions": [
+        "none"
+      ],
+      "ingredients": [
+        "1 cup Flour",
+        "1 tsp. Baking Powder",
+        "1 tbsp. Butter",
+        "1/2 cup Milk"
+      ],
+      "tools": [
+        "toaster oven",
+        "large bowl"
+      ],
+      "steps": [
+        "In a large bowl, mix together, flour and baking powder.  After mixing melt butter and add it to the mix.",
+        "After adding in the butter, add milk and mix until soft dough is created.",
+        "Place 6 small sized dough on toaster oven tray.",
+        "Set toaster oven to 425 degrees and bake for 8 to 10 minutes until golden."
+      ],
+      "userRatings": [4]
+    },
+    {
+      "recipeName": "Egg Sandwich",
+      "recipeAuthor": "Marcus",
+      "recipeEmail": "marcus@foo.com",
+      "description": "Simple yet delicious bite-sized biscuits!",
+      "image": "https://i2.wp.com/pixahive.com/wp-content/uploads/2021/03/A-veg-sandwich-381371-pixahive.jpg?fit=1560%2C1040&ssl=1",
+      "averageRating": 3,
+      "total": 0,
+      "servings": 2,
+      "owner": "marcus@foo.com",
+      "restrictions": [
+        "none"
+      ],
+      "ingredients": [
+        "4 Bread Slices",
+        "6 Hard Boiled Eggs",
+        "2 tbsp. Mayonnaise",
+        "1/8 tsp. Salt",
+        "1/8 tsp. Pepper"
+      ],
+      "tools": [
+        "toaster",
+        "bowl"
+      ],
+      "steps": [
+        "In a bowl, mix in eggs, mayonnaise, salt and pepper.  Then stir to combine.",
+        "Spread content of bowl on top of two bread slices then cover it with the remaining two slices.",
+        "Cut sandwich into tiny pieces for a bite-sized experience."
+      ],
+      "userRatings": [3]
+    },
+    {
+      "recipeName": "Cup Ramen Upgraded",
+      "recipeAuthor": "Elliot",
+      "recipeEmail": "john@foo.com",
+      "description": "Simple yet delicious bite-sized biscuits!",
+      "image": "https://images.pexels.com/photos/4193842/pexels-photo-4193842.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+      "averageRating": 2,
+      "total": 0,
+      "servings": 2,
+      "owner": "john@foo.com",
+      "restrictions": [
+        "none"
+      ],
+      "ingredients": [
+        "Cup Ramen",
+        "1 Soft Boiled Egg",
+        "1/2 cup Mushrooms",
+        "Sriracha Sauce"
+      ],
+      "tools": [
+        "water heater",
+        "bowl"
+      ],
+      "steps": [
+        "Prepare hot water to pour in the cup noodle.",
+        "Open up packaging and add in soft boiled egg, mushrooms and desired amount of sriracha sauce.",
+        "Pour in hot water in the cup noodle and let it cool for 5 minutes.",
+        "Transfer contents of cup noodles onto separate bowl and now you have ramen that tastes even better!"
+      ],
+      "userRatings": [2]
+    },
+    {
+      "recipeName": "Simply Pasta",
+      "recipeAuthor": "Alyssa",
+      "recipeEmail": "alyssa@foo.com",
+      "description": "Simple yet delicious bite-sized biscuits!",
+      "image": "https://cdn.pixabay.com/photo/2014/11/11/18/20/pasta-527286_1280.jpg",
+      "averageRating": 3,
+      "total": 0,
+      "servings": 2,
+      "owner": "alyssa@foo.com",
+      "restrictions": [
+        "none"
+      ],
+      "ingredients": [
+        "Any type of Pasta",
+        "2 cup Water",
+        "Sriracha Sauce"
+      ],
+      "tools": [
+        "microwave",
+        "bowl"
+      ],
+      "steps": [
+        "Prepare pasta by place in a deep bowl and adding water until the pasta is completely submerged",
+        "Microwave pasta for 8-10 minutes until soft.  If it is not soft, microwave for an additional 2 minutes.",
+        "Remove pasta from microwave and let it cool.  Drizzle Sriracha sauce and any other toppings if desired.",
+        "Enjoy while it is still hot!"
+      ],
+      "userRatings": [3]
+    }
   ],
 
   "defaultIngredients": [
@@ -1400,15 +1721,26 @@
     { "ingredient": "Butter", "price": 7.39, "size": "16 oz", "quantity": "200", "owner": "vendor@foo.com" },
     { "ingredient": "Flour", "price": 3.69, "size": "2 lb", "quantity": "50", "owner": "vendor@foo.com" },
     { "ingredient": "Salt", "price": 2.79, "size": "26 oz", "quantity": "125", "owner": "vendor@foo.com" },
+    { "ingredient": "Banana", "price": 1.49, "size": "1lb", "quantity": "30", "owner": "vendor@foo.com" },
+    { "ingredient": "Blueberries", "price": 3.99, "size": "14oz", "quantity": "35", "owner": "vendor@foo.com" },
+    { "ingredient": "Eggs", "price": 5.99, "size": "Dozen", "quantity": "64", "owner": "vendor@foo.com" },
     { "ingredient": "Banana", "price": 2.79, "size": "24 oz", "quantity": "125", "owner": "vendor@foo.com" },
     { "ingredient": "Milk", "price": 5.99, "size": "Gallon", "quantity": "75", "owner": "foodland@foo.com" },
+    { "ingredient": "Sriracha Sauce", "price": 4.99, "size": "18oz", "quantity": "50", "owner": "foodland@foo.com" },
+    { "ingredient": "Mushrooms", "price": 3.49, "size": "12oz", "quantity": "55", "owner": "foodland@foo.com" },
+    { "ingredient": "Baking Powder", "price": 1.72, "size": "8oz", "quantity": "120", "owner": "foodland@foo.com" },
+    { "ingredient": "Baking Soda", "price": 5.99, "size": "3.5lb", "quantity": "94", "owner": "foodland@foo.com" },
     { "ingredient": "Mozzarella Cheese", "price": 5.99, "size": "Gallon", "quantity": "75", "owner": "foodland@foo.com" },
     { "ingredient": "Butter", "price": 7.39, "size": "16 oz", "quantity": "200", "owner": "foodland@foo.com" },
+    { "ingredient": "Vanilla", "price": 5.39, "size": "8 oz", "quantity": "40", "owner": "foodland@foo.com" },
     { "ingredient": "Flour", "price": 3.69, "size": "2 lb", "quantity": "50", "owner": "foodland@foo.com" },
     { "ingredient": "Salt", "price": 2.79, "size": "26 oz", "quantity": "125", "owner": "foodland@foo.com" },
     { "ingredient": "Milk", "price": 4.49, "size": "Gallon", "quantity": "60", "owner": "safeway@foo.com" },
+    { "ingredient": "Vanilla Ice Cream", "price": 3.53, "size": "48 fl. oz.", "quantity": "20", "owner": "safeway@foo.com" },
     { "ingredient": "Butter", "price": 3.50, "size": "16 oz", "quantity": "210", "owner": "safeway@foo.com" },
     { "ingredient": "Flour", "price": 3.99, "size": "5 lb", "quantity": "80", "owner": "safeway@foo.com" },
+    { "ingredient": "Bread", "price": 5.99, "size": "20oz", "quantity": "30", "owner": "safeway@foo.com" },
+    { "ingredient": "Mango", "price": 2.97, "size": "24oz", "quantity": "80", "owner": "safeway@foo.com" },
     { "ingredient": "Salt", "price": 0.99, "size": "26 oz", "quantity": "100", "owner": "safeway@foo.com" }
   ],
 
